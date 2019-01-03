@@ -16,3 +16,10 @@ Text Domain: planet4-child-theme-storytelling
 	Display which theme is active right now in bottom right corner
 	See also planet4-child-theme-storytelling. Feel free to drop or hide display
 */
+
+
+/* Commit Test */
+
+.btn-donate {
+    background-color: #fff !important;
+}
