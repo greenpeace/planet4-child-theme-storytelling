@@ -1,7 +1,367 @@
+@charset "UTF-8";
 /*!
  *# Crate Stylesheet */
+/*!
+ *# Import General Stylesheets */
+/* 
+ * Color Classes 
+ */
+@import url("https://fonts.googleapis.com/css?family=Karla:400,400i,700");
+.primary-green {
+  color: #145635; }
+
+.secondary-green {
+  color: #88a840; }
+
+.alternate-green {
+  color: #1e3920; }
+
+.primary-blue {
+  color: #cae8e1; }
+
+.secondary-blue {
+  color: #3ea3a0; }
+
+.gold {
+  color: #ba9c1e; }
+
+.primary-orange {
+  color: #ef5e48; }
+
+.secondary-orange {
+  color: #F9BA49; }
+
+.alternate-orange {
+  color: #963d3a; }
+
+.bg_primary-green {
+  background-color: #145635;
+  color: #fff; }
+
+.bg_secondary-green {
+  background-color: #88a840; }
+
+.bg_alternate-green {
+  background-color: #1e3920;
+  color: #fff; }
+
+.bg_primary-blue {
+  background-color: #cae8e1; }
+
+.bg_secondary-blue {
+  background-color: #3ea3a0; }
+
+.bg_gold {
+  background-color: #ba9c1e; }
+
+.bg_primary-orange {
+  background-color: #ef5e48; }
+
+.bg_secondary-orange {
+  background-color: #F9BA49; }
+
+.bg_alternate-orange {
+  background-color: #963d3a;
+  color: #fff; }
+
+.bg_tan {
+  background-color: #f7dca1; }
+
+.bg_light-tan {
+  background-color: #f9ead9; }
+
+/* 
+ * Typography Styles
+ */
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1em;
+  margin-bottom: 1em;
+  font-weight: 300;
+  font-family: "GT Walsheim Pro", sans-serif; }
+
+h3,
+h4 {
+  margin-top: 1em; }
+
+h1 {
+  font-size: 48px;
+  font-family: "GT Walsheim Pro Bold", sans-serif;
+  font-weight: 700;
+  margin-bottom: 0.5em; }
+  h1.style-guide {
+    margin-bottom: 0.25em; }
+  h1.header-display {
+    margin-bottom: 0.25em;
+    display: inline-block;
+    padding: 15px 20px; }
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 0.5em; }
+
+h3 {
+  font-size: 24px; }
+
+h4 {
+  font-size: 18px; }
+
+p {
+  font-family: "Karla", sans-serif;
+  font-size: 14px; }
+  p.color-sample {
+    margin: 0 0.5em 1em 0;
+    display: inline-block;
+    padding: 5px 15px; }
+
+a.button,
+button.button {
+  background: #a3a3a3;
+  border: 1px solid #a3a3a3;
+  text-transform: uppercase;
+  font-size: 18px;
+  min-width: 150px;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  display: inline-block;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out; }
+  a.button:hover, a.button:active, a.button:focus,
+  button.button:hover,
+  button.button:active,
+  button.button:focus {
+    background: #d3d3d3;
+    border-color: #d3d3d3;
+    text-decoration: none;
+    outline: none; }
+  a.button.outline,
+  button.button.outline {
+    background: #fff;
+    color: #333;
+    border-color: #333; }
+    a.button.outline:hover, a.button.outline:active, a.button.outline:focus,
+    button.button.outline:hover,
+    button.button.outline:active,
+    button.button.outline:focus {
+      background: #d3d3d3;
+      border-color: #333; }
+
+hr {
+  margin-top: 0;
+  margin-bottom: 2em; }
+
+blockquote {
+  font-family: "Karla", sans-serif;
+  position: relative;
+  font-size: 22px;
+  padding-left: 120px;
+  margin-left: 50px;
+  max-width: 1000px; }
+  blockquote p {
+    font-size: 22px; }
+  blockquote cite {
+    display: block;
+    font-size: 20px;
+    margin-top: 10px; }
+  blockquote::after {
+    content: "“";
+    font-size: 200px;
+    position: absolute;
+    height: 100px;
+    background-color: #ccc;
+    border-radius: 100%;
+    width: 100px;
+    padding-top: 12px;
+    padding-left: 7px;
+    top: 0;
+    left: 0;
+    line-height: 1em;
+    font-family: "GT Walsheim Pro", sans-serif; }
+
+/*
+ * Page Color Schemes
+ */
+.template-blue h1 {
+  color: #1e3920; }
+
+.template-blue a.button,
+.template-blue button.button {
+  background: #3ea3a0;
+  border: 1px solid #3ea3a0;
+  color: #cae8e1; }
+  .template-blue a.button:hover, .template-blue a.button:active, .template-blue a.button:focus,
+  .template-blue button.button:hover,
+  .template-blue button.button:active,
+  .template-blue button.button:focus {
+    background: #cae8e1;
+    border-color: #cae8e1;
+    color: #3ea3a0; }
+  .template-blue a.button.outline,
+  .template-blue button.button.outline {
+    background: #fff;
+    color: #3ea3a0;
+    border-color: #3ea3a0; }
+    .template-blue a.button.outline:hover, .template-blue a.button.outline:active, .template-blue a.button.outline:focus,
+    .template-blue button.button.outline:hover,
+    .template-blue button.button.outline:active,
+    .template-blue button.button.outline:focus {
+      background: #cae8e1;
+      border-color: #3ea3a0; }
+
+.template-blue blockquote::after {
+  background-color: #3ea3a0; }
+
+.template-green h1 {
+  color: #f7dca1; }
+
+.template-green a.button,
+.template-green button.button {
+  background: #145635;
+  border: 1px solid #145635;
+  color: #f7dca1; }
+  .template-green a.button:hover, .template-green a.button:active, .template-green a.button:focus,
+  .template-green button.button:hover,
+  .template-green button.button:active,
+  .template-green button.button:focus {
+    background: #88a840;
+    border-color: #88a840;
+    color: #145635; }
+  .template-green a.button.outline,
+  .template-green button.button.outline {
+    color: #145635;
+    border-color: #145635;
+    background: #fff; }
+    .template-green a.button.outline:hover, .template-green a.button.outline:active, .template-green a.button.outline:focus,
+    .template-green button.button.outline:hover,
+    .template-green button.button.outline:active,
+    .template-green button.button.outline:focus {
+      background: #145635;
+      border-color: #f7dca1;
+      color: #f7dca1; }
+
+.template-green blockquote::after {
+  background-color: #145635;
+  color: #f7dca1; }
+
+.template-yellow h1 {
+  color: #F9BA49; }
+
+.template-yellow a.button,
+.template-yellow button.button {
+  background: #963d3a;
+  border: 1px solid #963d3a;
+  color: #F9BA49; }
+  .template-yellow a.button:hover, .template-yellow a.button:active, .template-yellow a.button:focus,
+  .template-yellow button.button:hover,
+  .template-yellow button.button:active,
+  .template-yellow button.button:focus {
+    background: #F9BA49;
+    border-color: #F9BA49;
+    color: #963d3a; }
+  .template-yellow a.button.outline,
+  .template-yellow button.button.outline {
+    background: #fff;
+    color: #963d3a;
+    border-color: #963d3a; }
+    .template-yellow a.button.outline:hover, .template-yellow a.button.outline:active, .template-yellow a.button.outline:focus,
+    .template-yellow button.button.outline:hover,
+    .template-yellow button.button.outline:active,
+    .template-yellow button.button.outline:focus {
+      background: #F9BA49;
+      border-color: #963d3a; }
+
+.template-yellow blockquote::after {
+  background-color: #ef5e48; }
+
+.template-yellow-blue h1 {
+  color: #145635; }
+
+.template-yellow-blue a.button,
+.template-yellow-blue button.button {
+  background: #3ea3a0;
+  border: 1px solid #3ea3a0;
+  color: #F9BA49; }
+  .template-yellow-blue a.button:hover, .template-yellow-blue a.button:active, .template-yellow-blue a.button:focus,
+  .template-yellow-blue button.button:hover,
+  .template-yellow-blue button.button:active,
+  .template-yellow-blue button.button:focus {
+    background: #F9BA49;
+    border-color: #F9BA49;
+    color: #3ea3a0; }
+  .template-yellow-blue a.button.outline,
+  .template-yellow-blue button.button.outline {
+    background: #fff;
+    color: #3ea3a0;
+    border-color: #3ea3a0; }
+    .template-yellow-blue a.button.outline:hover, .template-yellow-blue a.button.outline:active, .template-yellow-blue a.button.outline:focus,
+    .template-yellow-blue button.button.outline:hover,
+    .template-yellow-blue button.button.outline:active,
+    .template-yellow-blue button.button.outline:focus {
+      background: #F9BA49;
+      border-color: #3ea3a0; }
+
+.template-yellow-blue blockquote::after {
+  background-color: #3ea3a0; }
+
+.template-orange h1 {
+  color: #963d3a; }
+
+.template-orange a.button,
+.template-orange button.button {
+  background: #ef5e48;
+  border: 1px solid #ef5e48;
+  color: #F9BA49; }
+  .template-orange a.button:hover, .template-orange a.button:active, .template-orange a.button:focus,
+  .template-orange button.button:hover,
+  .template-orange button.button:active,
+  .template-orange button.button:focus {
+    background: #F9BA49;
+    border-color: #F9BA49;
+    color: #963d3a; }
+  .template-orange a.button.outline,
+  .template-orange button.button.outline {
+    background: #fff;
+    color: #ef5e48;
+    border-color: #ef5e48; }
+    .template-orange a.button.outline:hover, .template-orange a.button.outline:active, .template-orange a.button.outline:focus,
+    .template-orange button.button.outline:hover,
+    .template-orange button.button.outline:active,
+    .template-orange button.button.outline:focus {
+      background: #F9BA49;
+      border-color: #ef5e48;
+      color: #ef5e48; }
+
+.template-orange blockquote::after {
+  background-color: #ef5e48; }
+
+/*!
+ *# Font Stacks */
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  src: url("../fonts/gt-walsheim-light.woff2") format("woff2"), url("../fonts/gt-walsheim-light.woff") format("woff"), url("../fonts/gt-walsheim-light.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'GT Walsheim Pro Bold';
+  src: url("../fonts/gt-walsheim-medium.woff2") format("woff2"), url("../fonts/gt-walsheim-medium.woff") format("woff"), url("../fonts/gt-walsheim-medium.ttf") format("truetype"); }
+
+/*!
+ *# Import Module Stylesheets */
+/*!
+ *# Import Template Stylesheets */
 /**
  * Styles specific to the page template
 **/
-.btn-donate {
-  background-color: #cdcdcd; }
+body {
+  background: #fff !important;
+  font-family: "Karla", sans-serif; }
+
+/* Potentially temporary */
+.page-header {
+  display: none; }
+
+.page-template {
+  margin: 100px 0; }

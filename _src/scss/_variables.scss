@@ -2,138 +2,32 @@
 // Variables
 //
 // 01. Colors
-// 02. Grid and layout
-// 03. Decorative details
-// 04. Form layout options
+// 02. Fonts
 
 // ---------------- 01. Colors
 
-// Colors used:
-$white: #fff;
-$black: #000;
-$dark:  #2f2f2f;
-$light: #eee;
+// Palette-Green
+$primary-green: #145635;
+$secondary-green: #88a840;
+$alternate-green: #1e3920;
 
-// The following are from the open color project.
-// Change, add or delete as needed. Then be sure to re-define the branding
-// and elements sections below.
+// Palette-Blue
+$primary-blue: rgb(202, 232, 225);
+$secondary-blue: #3ea3a0;
+$gold: #ba9c1e;
 
-$yellow:      #ffba00;
-$dark-gray:   #585551;
-$darker-gray: #413f3c;
-$gray:        #555555;
-$light-gray:  #e1ddd7;
-$lighter-gray:#f3efe9;
-$alt-gray:    #a1a1a1;
-$light-blue:  #63abd6;
-$blue:        #3a6f8f;
+// Palette-Orange
+$primary-orange: #ef5e48;
+$secondary-orange: #F9BA49;
+$alternate-orange: #963d3a;
 
-// Define branding
-$primary-color:            $dark-gray;
-$secondary-color:          $white;
-$default-background-color: $white;
-$default-text-color:       $dark;
-$default-link-color:       $light-blue;
-$default-link-color-hover: $blue;
-$inverse-background-color: $dark;
-$inverse-text-color:       $white;
-$inverse-link-color:       $yellow;
-$inverse-link-color-hover: $white;
-$footer-background-color:  $dark-gray;
-$header-background-color:  $dark-gray;
+//Neutral
+$tan: #f7dca1;
+$light-tan: #f9ead9;
 
+// ---------------- 02. Fonts
 
-// Define elements
+$primary-font: 'GT Walsheim Pro', sans-serif;
+$primary-font-bold: 'GT Walsheim Pro Bold', sans-serif;
 
-// Primary / Default button:
-$button-background-color:       $primary-color;
-$button-background-color-hover: darken( $primary-color, 20 );
-$button-text-color:             $white;
-$button-text-color-hover:       $white;
-$default-button-padding:        1.2rem 1.8rem;
-
-// Pagination elements, defined in _archive.scss
-$pager-item-margin:           0.5rem;	// space between items
-$pager-link-background-color: $default-link-color;
-$pager-link-text-color:       $inverse-link-color;
-$pager-link-padding:          0.8rem 2rem;
-$pager-current-background-color: transparent;
-$pager-current-text-color:    $primary-color;
-$pager-link-hover-background-color: $secondary-color;
-
-
-// ---------------- 02. Grid, layout & breakpoints
-
-// Layout & grid
-$max-page-width: 1150px; // use class "container" around your content for this to work.
-$page-padding:   2rem; // Sets calculated width around .container
-$gutter-width:   30px;   // used in sections
-$sticky-footer:  true;   // change to "false" to remove and footer will just follow the content size.
-
-$susy: (
-	columns: 12,
-	gutters: 0,
-	global-box-sizing: border-box
-);
-
-// Breakpoints
-// (concept borrowed from http://tapps.us/breakpoint-article )
-
-// Define breakpoints
-$breakpoint-small:    420px;  // iPhone 6s is 414px so this gets nearly all phones
-$breakpoint-medium:   900px;  // Above 900px seems like it's pretty big for a tablet, no?
-$breakpoint-large:   1024px;  // We're really pretty damn sure to be on a desktop here...
-$breakpoint-x-large: 1600px;  // This is basically hitting desktop screens, not laptops. I think.
-
-// Breakpoint groupings by devices (used by the mixins in _utilities)
-// Used by include-media, see http://include-media.com/
-$breakpoints: (phone: $breakpoint-small, tablet: $breakpoint-medium, desktop: $breakpoint-large, wide: $breakpoint-x-large );
-
-
-// Header layout
-$logo_below_utility: true; // if set to true, the stripe for the utility nav will be full-width
-$logo_above_primary: false; // if set to true, the primary nav will extend full-width below the logo instead of being adjacent
-
-
-// ---------------- 03. Decorative details
-
-$border-radius: 4px;
-$transition-speed: 300ms;
-
-
-// ---------------- 04. Form layout options
-
-$label-color: $dark;
-$label-font-size: 1.8rem;
-
-$input-padding-y: 1.2rem;
-$input-padding-x: 1.8rem;
-
-$input-border-color: $lighter-gray;
-$input-bg-color: #f6f6f6;
-$input-color: #333;
-
-$input-focus-border-color: $yellow;
-$input-focus-bg-color: #f6f6f6;
-$input-focus-color: $dark;
-
-$input-error-color: #f00;
-$input-required-color: #f00;
-$input-accent-color: #09f;
-
-$gf-input-margin-y: 2.2rem;
-$gf-input-margin-x: 2rem;
-$gf-multi-input-margin-y: 0.8rem;
-
-$gf-primary-label-margin: 0.6rem;
-$gf-secondary-label-margin: 0.4rem;
-
-$gf-input-min-width: 18rem;
-
-
-// Fonts
-$asap: 'Asap', sans-serif;
-$museo: "museo-sans", sans-serif;
-
-$primary-font: $asap;
-$secondary-font: $museo;
+$secondary-font: 'Karla', sans-serif;

@@ -2,6 +2,15 @@
  * Styles specific to the page template
 **/
 
-.btn-donate{
-	background-color:#cdcdcd;
+body{
+	background: #fff !important;
+	font-family: $secondary-font;
+}
+
+/* Potentially temporary */
+.page-header {
+    display: none;
+}
+.page-template {
+    margin: 100px 0;
 }
