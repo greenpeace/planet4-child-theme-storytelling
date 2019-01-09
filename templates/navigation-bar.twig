@@ -1,0 +1,37 @@
+{% block navigation_bar %}
+	<nav id="header" class="top-navigation navbar">
+		{% set toggle_label = __( 'Toggle navigation menu', 'planet4-master-theme' ) %}
+		{% set search_label = __( 'Search', 'planet4-master-theme' ) %}
+		<button
+				class="btn btn-navbar-toggle navbar-dropdown-toggle"
+				data-toggle="open"
+				data-target="#navbar-dropdown"
+				aria-expanded="false"
+				aria-label="{{ toggle_label }}"
+		>
+			<span>{{ __( 'Menu', 'planet4-master-theme' ) }}</span>
+		</button>
+		<ul id="navbar-dropdown" class="navbar-dropdown list-unstyled">
+			<li class="nav-item">
+				<button class="close-navbar-dropdown">
+					<span class="screen-reader-text">{{ __( 'Close Menu', 'planet4-master-theme' ) }}</span>
+				</button>
+			</li>
+			{% for key,item in navbar_menu.get_items %}
+				{% if 'wpml-ls-item' in item.class %}
+					{% if key == 0 %}
+						<li class="nav-item {{ item.class }}">
+					{% endif %}
+						<a class="nav-link" href="{{ item.get_link }}">{{ item.title|striptags|slice(0, 2) }}</a>
+					{% if key == (languages - 1) %}
+						</li>
+					{% endif %}
+				{% else %}
+					<li class="nav-item {{ item.class }} {{ item == item.current ? 'active' : '' }}">
+						<a class="nav-link" href="{{ item.get_link }}">{{ item.title }}</a>
+					</li>
+				{% endif %}
+			{% endfor %}
+		</ul>
+	</nav>
+{% endblock %}
