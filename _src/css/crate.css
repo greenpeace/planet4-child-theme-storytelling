@@ -3,6 +3,11 @@
  *# Crate Stylesheet */
 /*!
  *# Import General Stylesheets */
+/* Generates mutilevel nested comments
+level-1 is the first level comment with a margin of 50px
+level-2 is the first level comment with a margin of 100px
+and so on...
+*/
 /* 
  * Color Classes 
  */
@@ -116,6 +121,13 @@ p {
     display: inline-block;
     padding: 5px 15px; }
 
+a {
+  transition: 0.2s all ease-in-out; }
+
+button:focus,
+button:hover {
+  outline: none; }
+
 a.button,
 button.button {
   background: #a3a3a3;
@@ -136,8 +148,7 @@ button.button {
   button.button:focus {
     background: #d3d3d3;
     border-color: #d3d3d3;
-    text-decoration: none;
-    outline: none; }
+    text-decoration: none; }
   a.button.outline,
   button.button.outline {
     background: #fff;
@@ -350,6 +361,79 @@ blockquote {
 
 /*!
  *# Import Module Stylesheets */
+nav.top-navigation {
+  position: absolute;
+  top: 0 !important;
+  background: transparent;
+  height: auto; }
+  nav.top-navigation #navbar-dropdown {
+    max-width: 1140px;
+    width: 325px;
+    background: #333; }
+    @media (min-width: 992px) {
+      nav.top-navigation #navbar-dropdown {
+        display: block;
+        flex-grow: unset;
+        width: 100%;
+        margin: auto;
+        text-align: right;
+        padding: 20px;
+        background: transparent; } }
+    nav.top-navigation #navbar-dropdown::before {
+      content: none; }
+    nav.top-navigation #navbar-dropdown .nav-item {
+      display: inline-block;
+      padding-left: 40px; }
+      @media (min-width: 992px) {
+        nav.top-navigation #navbar-dropdown .nav-item {
+          padding-left: 25px; } }
+      nav.top-navigation #navbar-dropdown .nav-item .nav-link {
+        border: none;
+        font-family: "Karla", sans-serif;
+        font-weight: 700;
+        padding: 0; }
+        nav.top-navigation #navbar-dropdown .nav-item .nav-link:hover, nav.top-navigation #navbar-dropdown .nav-item .nav-link:focus {
+          color: #fff;
+          text-shadow: 0 0 2px #fff; }
+    nav.top-navigation #navbar-dropdown .close-navbar-dropdown {
+      display: block;
+      position: relative;
+      margin: 10px 10px 0 auto;
+      transition: 0.2s all ease-in-out; }
+      nav.top-navigation #navbar-dropdown .close-navbar-dropdown:hover {
+        border: none;
+        transform: scale(1.2); }
+    nav.top-navigation #navbar-dropdown .close-li {
+      height: auto; }
+      @media (min-width: 992px) {
+        nav.top-navigation #navbar-dropdown .close-li {
+          display: none; } }
+  nav.top-navigation .navbar-dropdown-toggle {
+    background: none;
+    box-shadow: none;
+    margin: 15px;
+    border: none; }
+    nav.top-navigation .navbar-dropdown-toggle:hover, nav.top-navigation .navbar-dropdown-toggle:active, nav.top-navigation .navbar-dropdown-toggle:focus {
+      outline: none; }
+      nav.top-navigation .navbar-dropdown-toggle:hover span, nav.top-navigation .navbar-dropdown-toggle:active span, nav.top-navigation .navbar-dropdown-toggle:focus span {
+        background-color: #cae8e1; }
+    nav.top-navigation .navbar-dropdown-toggle span {
+      width: 35px;
+      height: 5px;
+      background-color: #fff;
+      margin: 8px 0;
+      display: block;
+      transition: 0.2s all ease-in-out; }
+
+.carousel-header.block-wide::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #3ea3a0;
+  z-index: 9999;
+  top: 0; }
+
 /*!
  *# Import Template Stylesheets */
 /**
@@ -364,4 +448,4 @@ body {
   display: none; }
 
 .page-template {
-  margin: 100px 0; }
+  margin: 0 0 100px; }

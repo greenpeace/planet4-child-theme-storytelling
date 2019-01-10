@@ -128,6 +128,15 @@ p{
 	}
 }
 
+a{
+	transition: 0.2s all ease-in-out;
+}
+
+button:focus,
+button:hover{
+	outline: none;
+}
+
 a.button, 
 button.button {
     background: #a3a3a3;
@@ -149,7 +158,6 @@ button.button {
     	background: #d3d3d3;
 	    border-color: #d3d3d3;
 	    text-decoration: none;
-	    outline: none;
     }
 
     &.outline{
