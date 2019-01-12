@@ -138,7 +138,8 @@ button:hover{
 }
 
 a.button, 
-button.button {
+button.button,
+input[type="submit"] {
     background: #a3a3a3;
     border: 1px solid #a3a3a3;
     text-transform: uppercase;
@@ -215,18 +216,36 @@ blockquote{
 }
 
 /*
- * Page Color Schemes
+ * Base Elements Color Schemes
+ * Adjusting theme colors based on body class.
  */
 
 //Homepage Theme
-.template-blue{
+.template-blue,
+//temporary
+body.home{
+	background: $primary-blue;
 
-	h1{
+	h1,
+	h2,
+	h3,
+	h4{
 		color: $alternate-green;
 	}
 
+	a{
+		color: $secondary-blue;
+
+		&:hover,
+	    &:active,
+	    &:focus{
+	    	color: $alternate-green;
+	    }
+	}
+
 	a.button, 
-	button.button {
+	button.button,
+	input[type="submit"] {
 	    background: $secondary-blue;
 	    border: 1px solid $secondary-blue;
 	    color: $primary-blue;
@@ -240,7 +259,7 @@ blockquote{
 	    }
 
 	    &.outline{
-	    	background: #fff;
+	    	background: transparent;
 	    	color: $secondary-blue;
 	    	border-color: $secondary-blue;
 
@@ -250,6 +269,16 @@ blockquote{
 		    	background: $primary-blue;
 	    		border-color: $secondary-blue;
 		    }
+	    }
+	}
+
+	a svg{
+		fill: $alternate-green;
+
+		&:hover,
+	    &:active,
+	    &:focus{
+    		fill: $secondary-blue;
 	    }
 	}
 
@@ -264,12 +293,16 @@ blockquote{
 //About Theme
 .template-green{
 
-	h1{
+	h1,
+	h2,
+	h3,
+	h4{
 		color: $tan;
 	}
 
 	a.button, 
-	button.button {
+	button.button,
+	input[type="submit"] {
 	    background: $primary-green;
 	    border: 1px solid $primary-green;
 	    color: $tan;
@@ -309,12 +342,16 @@ blockquote{
 //Case Studies Theme
 .template-yellow{
 
-	h1{
+	h1,
+	h2,
+	h3,
+	h4{
 		color: $secondary-orange;
 	}
 
 	a.button, 
-	button.button {
+	button.button,
+	input[type="submit"] {
 	    background: $alternate-orange;
 	    border: 1px solid $alternate-orange;
 	    color: $secondary-orange;
@@ -328,7 +365,7 @@ blockquote{
 	    }
 
 	    &.outline{
-	    	background: #fff;
+	    	background: transparent;
 	    	color: $alternate-orange;
 	    	border-color: $alternate-orange;
 
@@ -352,12 +389,16 @@ blockquote{
 //Tools/Resources Theme
 .template-yellow-blue{
 
-	h1{
+	h1,
+	h2,
+	h3,
+	h4{
 		color: $primary-green;
 	}
 
 	a.button, 
-	button.button {
+	button.button,
+	input[type="submit"] {
 	    background: $secondary-blue;
 	    border: 1px solid $secondary-blue;
 	    color: $secondary-orange;
@@ -371,7 +412,7 @@ blockquote{
 	    }
 
 	    &.outline{
-	    	background: #fff;
+	    	background: transparent;
 	    	color: $secondary-blue;
 	    	border-color: $secondary-blue;
 
@@ -395,12 +436,16 @@ blockquote{
 //Blog Theme
 .template-orange{
 
-	h1{
+	h1,
+	h2,
+	h3,
+	h4{
 		color: $alternate-orange;
 	}
 
 	a.button, 
-	button.button {
+	button.button,
+	input[type="submit"] {
 	    background: $primary-orange;
 	    border: 1px solid $primary-orange;
 	    color: $secondary-orange;
@@ -414,7 +459,7 @@ blockquote{
 	    }
 
 	    &.outline{
-	    	background: #fff;
+	    	background: transparent;
 	    	color: $primary-orange;
 	    	border-color: $primary-orange;
 

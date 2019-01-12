@@ -15,7 +15,7 @@ nav.top-navigation {
     		width: 100%;
 	    	margin: auto;
 	    	text-align: right;
-	    	padding: 20px;
+	    	padding: 30px 20px 20px;
 	    	background: transparent;
 		}
 
@@ -36,6 +36,7 @@ nav.top-navigation {
     			font-family: $secondary-font;
     			font-weight: 700;
     			padding: 0;
+    			color: #fff;
 
     			&:hover,
     			&:focus{

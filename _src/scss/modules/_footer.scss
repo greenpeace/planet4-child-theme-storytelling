@@ -1,3 +1,136 @@
-footer{
+footer.site-footer{
+	background: transparent;
+	padding: 0 0 20px;
+
+	@include large-and-up {
+		padding: 0 0 60px;
+	}
+
+	p{
+		font-family: $secondary-font;
+	}
+
+	h4{
+		font-family: $secondary-font;
+		text-transform: uppercase;
+		font-weight: 700;
+		margin: 0 0 30px;
+	}
+	
+	.container{
+
+		@include large-and-up {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.footer-share{
+			width: 100%;
+			margin-bottom: 50px;
+
+			@include large-and-up {
+				width: 200px;
+				margin: 0;
+				padding: 0;
+				border-bottom: none;
+			}
+
+			ul.footer-share-icons{
+				display: flex;
+				justify-content: space-between;
+				max-width: 200px;
+				margin: auto;
+
+				svg{
+					height: 35px;
+					width: 35px;
+				}
+			}
+		}
+
+		.contact-form{
+			width: 100%;
+			margin-bottom: 35px;
+
+			@include small-and-up {
+				margin-bottom: 50px;
+			}
+
+			@include large-and-up {
+				text-align: left;
+				width: calc(100% - 500px);
+				margin: 0;
+			}
+
+			@include x-large-and-up {
+				width: calc(100% - 550px);
+				padding-left: 20px;
+			}
+
+			form{
+				font-family: $secondary-font;
+
+				input.form-input{
+					width: 100%;
+					margin-right: 4%;
+					margin: 0 25px 25px 0;
+					border: 1px solid #f7f7f7;
+					padding: 10px;
+
+					@include x-large-and-up {
+						width: 45%;
+					}
+
+					&:focus{
+						outline: none;
+					}
+				}
+
+				textarea{
+					width: 100%;
+					padding: 10px;
+					min-height: 150px;
+					margin: 0 0 20px;
+					border: 1px solid #f7f7f7;
+
+					@include x-large-and-up {
+						width: 95%;
+					}
+
+					&:focus{
+						outline: none;
+					}
+				}
+
+				.submit-row{
+					@include small-and-up {
+						text-align: right;
+					}
+
+					input[type="submit"]{
+						@include x-large-and-up {
+							margin-right: 25px;
+						}
+					}
+				}
+			}
+		}
+
+		.copyright-block{
+			width: 100%;
+
+			@include large-and-up {
+				margin: 0;
+				width: 185px;
+			}
+
+			p{
+				font-weight: 700;
+				font-size: 20px;
+				margin-top: 10px;
+			}
+		}
+	}
 	
 }

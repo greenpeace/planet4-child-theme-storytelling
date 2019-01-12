@@ -129,7 +129,8 @@ button:hover {
   outline: none; }
 
 a.button,
-button.button {
+button.button,
+input[type="submit"] {
   background: #a3a3a3;
   border: 1px solid #a3a3a3;
   text-transform: uppercase;
@@ -145,19 +146,26 @@ button.button {
   a.button:hover, a.button:active, a.button:focus,
   button.button:hover,
   button.button:active,
-  button.button:focus {
+  button.button:focus,
+  input[type="submit"]:hover,
+  input[type="submit"]:active,
+  input[type="submit"]:focus {
     background: #d3d3d3;
     border-color: #d3d3d3;
     text-decoration: none; }
   a.button.outline,
-  button.button.outline {
+  button.button.outline,
+  input[type="submit"].outline {
     background: #fff;
     color: #333;
     border-color: #333; }
     a.button.outline:hover, a.button.outline:active, a.button.outline:focus,
     button.button.outline:hover,
     button.button.outline:active,
-    button.button.outline:focus {
+    button.button.outline:focus,
+    input[type="submit"].outline:hover,
+    input[type="submit"].outline:active,
+    input[type="submit"].outline:focus {
       background: #d3d3d3;
       border-color: #333; }
 
@@ -194,62 +202,131 @@ blockquote {
     font-family: "GT Walsheim Pro", sans-serif; }
 
 /*
- * Page Color Schemes
+ * Base Elements Color Schemes
+ * Adjusting theme colors based on body class.
  */
-.template-blue h1 {
-  color: #1e3920; }
-
-.template-blue a.button,
-.template-blue button.button {
-  background: #3ea3a0;
-  border: 1px solid #3ea3a0;
-  color: #cae8e1; }
-  .template-blue a.button:hover, .template-blue a.button:active, .template-blue a.button:focus,
-  .template-blue button.button:hover,
-  .template-blue button.button:active,
-  .template-blue button.button:focus {
-    background: #cae8e1;
-    border-color: #cae8e1;
+.template-blue,
+body.home {
+  background: #cae8e1; }
+  .template-blue h1,
+  .template-blue h2,
+  .template-blue h3,
+  .template-blue h4,
+  body.home h1,
+  body.home h2,
+  body.home h3,
+  body.home h4 {
+    color: #1e3920; }
+  .template-blue a,
+  body.home a {
     color: #3ea3a0; }
-  .template-blue a.button.outline,
-  .template-blue button.button.outline {
-    background: #fff;
-    color: #3ea3a0;
-    border-color: #3ea3a0; }
-    .template-blue a.button.outline:hover, .template-blue a.button.outline:active, .template-blue a.button.outline:focus,
-    .template-blue button.button.outline:hover,
-    .template-blue button.button.outline:active,
-    .template-blue button.button.outline:focus {
+    .template-blue a:hover, .template-blue a:active, .template-blue a:focus,
+    body.home a:hover,
+    body.home a:active,
+    body.home a:focus {
+      color: #1e3920; }
+  .template-blue a.button,
+  .template-blue button.button,
+  .template-blue input[type="submit"],
+  body.home a.button,
+  body.home button.button,
+  body.home input[type="submit"] {
+    background: #3ea3a0;
+    border: 1px solid #3ea3a0;
+    color: #cae8e1; }
+    .template-blue a.button:hover, .template-blue a.button:active, .template-blue a.button:focus,
+    .template-blue button.button:hover,
+    .template-blue button.button:active,
+    .template-blue button.button:focus,
+    .template-blue input[type="submit"]:hover,
+    .template-blue input[type="submit"]:active,
+    .template-blue input[type="submit"]:focus,
+    body.home a.button:hover,
+    body.home a.button:active,
+    body.home a.button:focus,
+    body.home button.button:hover,
+    body.home button.button:active,
+    body.home button.button:focus,
+    body.home input[type="submit"]:hover,
+    body.home input[type="submit"]:active,
+    body.home input[type="submit"]:focus {
       background: #cae8e1;
+      border-color: #cae8e1;
+      color: #3ea3a0; }
+    .template-blue a.button.outline,
+    .template-blue button.button.outline,
+    .template-blue input[type="submit"].outline,
+    body.home a.button.outline,
+    body.home button.button.outline,
+    body.home input[type="submit"].outline {
+      background: transparent;
+      color: #3ea3a0;
       border-color: #3ea3a0; }
+      .template-blue a.button.outline:hover, .template-blue a.button.outline:active, .template-blue a.button.outline:focus,
+      .template-blue button.button.outline:hover,
+      .template-blue button.button.outline:active,
+      .template-blue button.button.outline:focus,
+      .template-blue input[type="submit"].outline:hover,
+      .template-blue input[type="submit"].outline:active,
+      .template-blue input[type="submit"].outline:focus,
+      body.home a.button.outline:hover,
+      body.home a.button.outline:active,
+      body.home a.button.outline:focus,
+      body.home button.button.outline:hover,
+      body.home button.button.outline:active,
+      body.home button.button.outline:focus,
+      body.home input[type="submit"].outline:hover,
+      body.home input[type="submit"].outline:active,
+      body.home input[type="submit"].outline:focus {
+        background: #cae8e1;
+        border-color: #3ea3a0; }
+  .template-blue a svg,
+  body.home a svg {
+    fill: #1e3920; }
+    .template-blue a svg:hover, .template-blue a svg:active, .template-blue a svg:focus,
+    body.home a svg:hover,
+    body.home a svg:active,
+    body.home a svg:focus {
+      fill: #3ea3a0; }
+  .template-blue blockquote::after,
+  body.home blockquote::after {
+    background-color: #3ea3a0; }
 
-.template-blue blockquote::after {
-  background-color: #3ea3a0; }
-
-.template-green h1 {
+.template-green h1,
+.template-green h2,
+.template-green h3,
+.template-green h4 {
   color: #f7dca1; }
 
 .template-green a.button,
-.template-green button.button {
+.template-green button.button,
+.template-green input[type="submit"] {
   background: #145635;
   border: 1px solid #145635;
   color: #f7dca1; }
   .template-green a.button:hover, .template-green a.button:active, .template-green a.button:focus,
   .template-green button.button:hover,
   .template-green button.button:active,
-  .template-green button.button:focus {
+  .template-green button.button:focus,
+  .template-green input[type="submit"]:hover,
+  .template-green input[type="submit"]:active,
+  .template-green input[type="submit"]:focus {
     background: #88a840;
     border-color: #88a840;
     color: #145635; }
   .template-green a.button.outline,
-  .template-green button.button.outline {
+  .template-green button.button.outline,
+  .template-green input[type="submit"].outline {
     color: #145635;
     border-color: #145635;
     background: #fff; }
     .template-green a.button.outline:hover, .template-green a.button.outline:active, .template-green a.button.outline:focus,
     .template-green button.button.outline:hover,
     .template-green button.button.outline:active,
-    .template-green button.button.outline:focus {
+    .template-green button.button.outline:focus,
+    .template-green input[type="submit"].outline:hover,
+    .template-green input[type="submit"].outline:active,
+    .template-green input[type="submit"].outline:focus {
       background: #145635;
       border-color: #f7dca1;
       color: #f7dca1; }
@@ -258,90 +335,123 @@ blockquote {
   background-color: #145635;
   color: #f7dca1; }
 
-.template-yellow h1 {
+.template-yellow h1,
+.template-yellow h2,
+.template-yellow h3,
+.template-yellow h4 {
   color: #F9BA49; }
 
 .template-yellow a.button,
-.template-yellow button.button {
+.template-yellow button.button,
+.template-yellow input[type="submit"] {
   background: #963d3a;
   border: 1px solid #963d3a;
   color: #F9BA49; }
   .template-yellow a.button:hover, .template-yellow a.button:active, .template-yellow a.button:focus,
   .template-yellow button.button:hover,
   .template-yellow button.button:active,
-  .template-yellow button.button:focus {
+  .template-yellow button.button:focus,
+  .template-yellow input[type="submit"]:hover,
+  .template-yellow input[type="submit"]:active,
+  .template-yellow input[type="submit"]:focus {
     background: #F9BA49;
     border-color: #F9BA49;
     color: #963d3a; }
   .template-yellow a.button.outline,
-  .template-yellow button.button.outline {
-    background: #fff;
+  .template-yellow button.button.outline,
+  .template-yellow input[type="submit"].outline {
+    background: transparent;
     color: #963d3a;
     border-color: #963d3a; }
     .template-yellow a.button.outline:hover, .template-yellow a.button.outline:active, .template-yellow a.button.outline:focus,
     .template-yellow button.button.outline:hover,
     .template-yellow button.button.outline:active,
-    .template-yellow button.button.outline:focus {
+    .template-yellow button.button.outline:focus,
+    .template-yellow input[type="submit"].outline:hover,
+    .template-yellow input[type="submit"].outline:active,
+    .template-yellow input[type="submit"].outline:focus {
       background: #F9BA49;
       border-color: #963d3a; }
 
 .template-yellow blockquote::after {
   background-color: #ef5e48; }
 
-.template-yellow-blue h1 {
+.template-yellow-blue h1,
+.template-yellow-blue h2,
+.template-yellow-blue h3,
+.template-yellow-blue h4 {
   color: #145635; }
 
 .template-yellow-blue a.button,
-.template-yellow-blue button.button {
+.template-yellow-blue button.button,
+.template-yellow-blue input[type="submit"] {
   background: #3ea3a0;
   border: 1px solid #3ea3a0;
   color: #F9BA49; }
   .template-yellow-blue a.button:hover, .template-yellow-blue a.button:active, .template-yellow-blue a.button:focus,
   .template-yellow-blue button.button:hover,
   .template-yellow-blue button.button:active,
-  .template-yellow-blue button.button:focus {
+  .template-yellow-blue button.button:focus,
+  .template-yellow-blue input[type="submit"]:hover,
+  .template-yellow-blue input[type="submit"]:active,
+  .template-yellow-blue input[type="submit"]:focus {
     background: #F9BA49;
     border-color: #F9BA49;
     color: #3ea3a0; }
   .template-yellow-blue a.button.outline,
-  .template-yellow-blue button.button.outline {
-    background: #fff;
+  .template-yellow-blue button.button.outline,
+  .template-yellow-blue input[type="submit"].outline {
+    background: transparent;
     color: #3ea3a0;
     border-color: #3ea3a0; }
     .template-yellow-blue a.button.outline:hover, .template-yellow-blue a.button.outline:active, .template-yellow-blue a.button.outline:focus,
     .template-yellow-blue button.button.outline:hover,
     .template-yellow-blue button.button.outline:active,
-    .template-yellow-blue button.button.outline:focus {
+    .template-yellow-blue button.button.outline:focus,
+    .template-yellow-blue input[type="submit"].outline:hover,
+    .template-yellow-blue input[type="submit"].outline:active,
+    .template-yellow-blue input[type="submit"].outline:focus {
       background: #F9BA49;
       border-color: #3ea3a0; }
 
 .template-yellow-blue blockquote::after {
   background-color: #3ea3a0; }
 
-.template-orange h1 {
+.template-orange h1,
+.template-orange h2,
+.template-orange h3,
+.template-orange h4 {
   color: #963d3a; }
 
 .template-orange a.button,
-.template-orange button.button {
+.template-orange button.button,
+.template-orange input[type="submit"] {
   background: #ef5e48;
   border: 1px solid #ef5e48;
   color: #F9BA49; }
   .template-orange a.button:hover, .template-orange a.button:active, .template-orange a.button:focus,
   .template-orange button.button:hover,
   .template-orange button.button:active,
-  .template-orange button.button:focus {
+  .template-orange button.button:focus,
+  .template-orange input[type="submit"]:hover,
+  .template-orange input[type="submit"]:active,
+  .template-orange input[type="submit"]:focus {
     background: #F9BA49;
     border-color: #F9BA49;
     color: #963d3a; }
   .template-orange a.button.outline,
-  .template-orange button.button.outline {
-    background: #fff;
+  .template-orange button.button.outline,
+  .template-orange input[type="submit"].outline {
+    background: transparent;
     color: #ef5e48;
     border-color: #ef5e48; }
     .template-orange a.button.outline:hover, .template-orange a.button.outline:active, .template-orange a.button.outline:focus,
     .template-orange button.button.outline:hover,
     .template-orange button.button.outline:active,
-    .template-orange button.button.outline:focus {
+    .template-orange button.button.outline:focus,
+    .template-orange input[type="submit"].outline:hover,
+    .template-orange input[type="submit"].outline:active,
+    .template-orange input[type="submit"].outline:focus {
       background: #F9BA49;
       border-color: #ef5e48;
       color: #ef5e48; }
@@ -377,7 +487,7 @@ nav.top-navigation {
         width: 100%;
         margin: auto;
         text-align: right;
-        padding: 20px;
+        padding: 30px 20px 20px;
         background: transparent; } }
     nav.top-navigation #navbar-dropdown::before {
       content: none; }
@@ -391,7 +501,8 @@ nav.top-navigation {
         border: none;
         font-family: "Karla", sans-serif;
         font-weight: 700;
-        padding: 0; }
+        padding: 0;
+        color: #fff; }
         nav.top-navigation #navbar-dropdown .nav-item .nav-link:hover, nav.top-navigation #navbar-dropdown .nav-item .nav-link:focus {
           color: #fff;
           text-shadow: 0 0 2px #fff; }
@@ -434,13 +545,104 @@ nav.top-navigation {
   z-index: 9999;
   top: 0; }
 
+footer.site-footer {
+  background: transparent;
+  padding: 0 0 20px; }
+  @media (min-width: 992px) {
+    footer.site-footer {
+      padding: 0 0 60px; } }
+  footer.site-footer p {
+    font-family: "Karla", sans-serif; }
+  footer.site-footer h4 {
+    font-family: "Karla", sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0 0 30px; }
+  @media (min-width: 992px) {
+    footer.site-footer .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; } }
+  footer.site-footer .container .footer-share {
+    width: 100%;
+    margin-bottom: 50px; }
+    @media (min-width: 992px) {
+      footer.site-footer .container .footer-share {
+        width: 200px;
+        margin: 0;
+        padding: 0;
+        border-bottom: none; } }
+    footer.site-footer .container .footer-share ul.footer-share-icons {
+      display: flex;
+      justify-content: space-between;
+      max-width: 200px;
+      margin: auto; }
+      footer.site-footer .container .footer-share ul.footer-share-icons svg {
+        height: 35px;
+        width: 35px; }
+  footer.site-footer .container .contact-form {
+    width: 100%;
+    margin-bottom: 35px; }
+    @media (min-width: 576px) {
+      footer.site-footer .container .contact-form {
+        margin-bottom: 50px; } }
+    @media (min-width: 992px) {
+      footer.site-footer .container .contact-form {
+        text-align: left;
+        width: calc(100% - 500px);
+        margin: 0; } }
+    @media (min-width: 1200px) {
+      footer.site-footer .container .contact-form {
+        width: calc(100% - 550px);
+        padding-left: 20px; } }
+    footer.site-footer .container .contact-form form {
+      font-family: "Karla", sans-serif; }
+      footer.site-footer .container .contact-form form input.form-input {
+        width: 100%;
+        margin-right: 4%;
+        margin: 0 25px 25px 0;
+        border: 1px solid #f7f7f7;
+        padding: 10px; }
+        @media (min-width: 1200px) {
+          footer.site-footer .container .contact-form form input.form-input {
+            width: 45%; } }
+        footer.site-footer .container .contact-form form input.form-input:focus {
+          outline: none; }
+      footer.site-footer .container .contact-form form textarea {
+        width: 100%;
+        padding: 10px;
+        min-height: 150px;
+        margin: 0 0 20px;
+        border: 1px solid #f7f7f7; }
+        @media (min-width: 1200px) {
+          footer.site-footer .container .contact-form form textarea {
+            width: 95%; } }
+        footer.site-footer .container .contact-form form textarea:focus {
+          outline: none; }
+      @media (min-width: 576px) {
+        footer.site-footer .container .contact-form form .submit-row {
+          text-align: right; } }
+      @media (min-width: 1200px) {
+        footer.site-footer .container .contact-form form .submit-row input[type="submit"] {
+          margin-right: 25px; } }
+  footer.site-footer .container .copyright-block {
+    width: 100%; }
+    @media (min-width: 992px) {
+      footer.site-footer .container .copyright-block {
+        margin: 0;
+        width: 185px; } }
+    footer.site-footer .container .copyright-block p {
+      font-weight: 700;
+      font-size: 20px;
+      margin-top: 10px; }
+
 /*!
  *# Import Template Stylesheets */
 /**
  * Styles specific to the page template
 **/
 body {
-  background: #fff !important;
+  background: #fff;
   font-family: "Karla", sans-serif; }
 
 /* Potentially temporary */
