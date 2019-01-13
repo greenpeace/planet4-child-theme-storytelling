@@ -104,7 +104,7 @@ footer.site-footer{
 				}
 
 				.submit-row{
-					@include small-and-up {
+					@include large-and-up {
 						text-align: right;
 					}
 

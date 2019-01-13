@@ -94,13 +94,18 @@ nav.top-navigation {
 	}
 }
 
-// TEMPORARY
-.carousel-header.block-wide::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: $secondary-blue;
-    z-index: 9999;
-    top: 0;
+/*
+ * Header Elements Color Schemes
+ * Adjusting theme colors based on body class.
+ */
+
+.template-blue,
+body.home{
+	.navbar-dropdown-toggle:hover span,
+	.navbar-dropdown-toggle:active span,
+	.navbar-dropdown-toggle:focus span{
+		background-color: $primary-blue;
+	}
 }
+
+
