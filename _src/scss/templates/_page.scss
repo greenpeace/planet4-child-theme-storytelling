@@ -5,6 +5,35 @@
 body{
 	background: #fff;
 	font-family: $secondary-font;
+
+	&.home .logo-container{
+		text-align: center;
+		animation: bgcolorchange 20s infinite;
+		-webkit-animation: bgcolorchange 20s infinite;
+
+		.header-logo{
+			&.home{
+				animation: homelogocycle 20s infinite;
+				-webkit-animation: homelogocycle 20s infinite;
+			}
+			&.about{
+				animation: aboutlogocycle 20s infinite;
+				-webkit-animation: aboutlogocycle 20s infinite;
+			}
+			&.case{
+				animation: caselogocycle 20s infinite;
+				-webkit-animation: caselogocycle 20s infinite;
+			}
+			&.tools{
+				animation: toolslogocycle 20s infinite;
+				-webkit-animation: toolslogocycle 20s infinite;
+			}
+			// &.blog{
+			// 	animation: bloglogocycle 20s infinite;
+			// 	-webkit-animation: bloglogocycle 20s infinite;
+			// }
+		}
+	}
 }
 
 /* Potentially temporary */
@@ -49,6 +78,14 @@ div.logo-container{
 		.header-logo{
 			max-width: 100%;
 			margin-bottom: 25px;
+			opacity: 0;
+			position: absolute;
+			top: 0;
+			left: 0;
+
+			&.home{
+				position: relative;
+			}
 		}
 		h2{
 			font-family: $secondary-font;
@@ -57,47 +94,14 @@ div.logo-container{
 			color: #fff;
 		}
 	}
-
-	&.home{
-		text-align: center;
-		animation: bgcolorchange 20s infinite;
-		-webkit-animation: bgcolorchange 20s infinite;
-
-		.header-logo{
-			position: absolute;
-			top: 0;
-			left: 0;
-			opacity: 0;
-
-			&.home{
-				animation: homelogocycle 20s infinite;
-				-webkit-animation: homelogocycle 20s infinite;
-			}
-			&.about{
-				animation: aboutlogocycle 20s infinite;
-				-webkit-animation: aboutlogocycle 20s infinite;
-			}
-			&.case{
-				animation: caselogocycle 20s infinite;
-				-webkit-animation: caselogocycle 20s infinite;
-			}
-			&.tools{
-				animation: toolslogocycle 20s infinite;
-				-webkit-animation: toolslogocycle 20s infinite;
-			}
-			// &.blog{
-			// 	animation: bloglogocycle 20s infinite;
-			// 	-webkit-animation: bloglogocycle 20s infinite;
-			// }
-		}
-	}
 }
 
 div.page-template {
 	width: 100%;
     margin: 0 0 75px;
-    padding: 0;
+    padding: 25px 0;
     position: relative;
+    background: #fff;
 
     @include medium-and-up {
 		margin: 0 0 125px;
@@ -138,40 +142,45 @@ div.page-template::after {
 
 
 /*
- * Header Elements Color Schemes
+ * Body Elements Color Schemes
  * Adjusting theme colors based on body class.
  */
+body.template-blue,
+// (template blue is currently the default color)
+body.page-template-default{
+	background: $primary-blue;
 
-/* Switch between header logos */
-.template-blue,
-body.home{
 	.header-logo.home{
-		display: block;
-		position: relative;
+		opacity: 1;
 	}
 }
 
-.template-green{
+body.template-green{
+	background: $secondary-green;
+
 	.header-logo.about{
-		display: block;
+		opacity: 1;
 	}
 }
+body.template-yellow{
+	background: $alternate-orange;
 
-.template-yellow{
 	.header-logo.case{
-		display: block;
+		opacity: 1;
 	}
 }
+body.template-yellow-blue{
+	background: $secondary-orange;
 
-.template-yellow-blue{
 	.header-logo.tools{
-		display: block;
+		opacity: 1;
 	}
 }
-
-.template-orange{
+body.template-orange{
+	background: $secondary-orange;
+	
 	.header-logo.blog{
-		display: block;
+		opacity: 1;
 	}
 }
 

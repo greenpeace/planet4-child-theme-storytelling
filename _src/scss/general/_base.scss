@@ -130,6 +130,12 @@ p{
 
 a{
 	transition: 0.2s all ease-in-out;
+
+	&:hover,
+    &:active,
+    &:focus{
+    	text-decoration: none;
+    }
 }
 
 button:focus,
@@ -215,6 +221,15 @@ blockquote{
 	}
 }
 
+.skewed-overlay {
+    display: none;
+}
+
+
+
+
+
+
 /*
  * Base Elements Color Schemes
  * Adjusting theme colors based on body class.
@@ -222,9 +237,8 @@ blockquote{
 
 //Homepage Theme
 .template-blue,
-//temporary
-body.home{
-	background: $primary-blue;
+// (template blue is currently the default color)
+body.page-template-default{
 
 	h1,
 	h2,
@@ -233,7 +247,8 @@ body.home{
 		color: $alternate-green;
 	}
 
-	a{
+	a,
+	.top-page-tags .tag-item{
 		color: $secondary-blue;
 
 		&:hover,
@@ -300,6 +315,17 @@ body.home{
 		color: $tan;
 	}
 
+	a,
+	.top-page-tags .tag-item{
+		color: $secondary-green;
+
+		&:hover,
+	    &:active,
+	    &:focus{
+	    	color: $primary-green;
+	    }
+	}
+
 	a.button, 
 	button.button,
 	input[type="submit"] {
@@ -318,7 +344,7 @@ body.home{
 	    &.outline{
 	    	color: $primary-green;
 	    	border-color: $primary-green;
-	    	background: #fff;
+	    	background: transparent;
 
 	    	&:hover,
 		    &:active,
@@ -327,6 +353,16 @@ body.home{
 	    		border-color: $tan;
 	    		color: $tan;
 		    }
+	    }
+	}
+
+	a svg{
+		fill: $primary-green;
+
+		&:hover,
+	    &:active,
+	    &:focus{
+    		fill: $tan;
 	    }
 	}
 	
@@ -347,6 +383,17 @@ body.home{
 	h3,
 	h4{
 		color: $secondary-orange;
+	}
+
+	a,
+	.top-page-tags .tag-item{
+		color: $primary-orange;
+
+		&:hover,
+	    &:active,
+	    &:focus{
+	    	color: $alternate-orange;
+	    }
 	}
 
 	a.button, 
@@ -377,6 +424,16 @@ body.home{
 		    }
 	    }
 	}
+
+	a svg{
+		fill: $secondary-orange;
+
+		&:hover,
+	    &:active,
+	    &:focus{
+    		fill: $primary-orange;
+	    }
+	}
 	
 	blockquote{
 		&::after {
@@ -394,6 +451,17 @@ body.home{
 	h3,
 	h4{
 		color: $primary-green;
+	}
+
+	a,
+	.top-page-tags .tag-item{
+		color: $secondary-blue;
+
+		&:hover,
+	    &:active,
+	    &:focus{
+	    	color: $alternate-green;
+	    }
 	}
 
 	a.button, 
@@ -424,6 +492,16 @@ body.home{
 		    }
 	    }
 	}
+
+	a svg{
+		fill: $alternate-green;
+
+		&:hover,
+	    &:active,
+	    &:focus{
+    		fill: $secondary-blue;
+	    }
+	}
 	
 	blockquote{
 		&::after {
@@ -441,6 +519,17 @@ body.home{
 	h3,
 	h4{
 		color: $alternate-orange;
+	}
+
+	a,
+	.top-page-tags .tag-item{
+		color: $primary-orange;
+
+		&:hover,
+	    &:active,
+	    &:focus{
+	    	color: $alternate-orange;
+	    }
 	}
 
 	a.button, 
@@ -470,6 +559,16 @@ body.home{
 	    		border-color: $primary-orange;
 	    		color: $primary-orange;
 		    }
+	    }
+	}
+
+	a svg{
+		fill: $alternate-orange;
+
+		&:hover,
+	    &:active,
+	    &:focus{
+    		fill: $primary-orange;
 	    }
 	}
 	

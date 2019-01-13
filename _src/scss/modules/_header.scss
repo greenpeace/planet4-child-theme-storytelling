@@ -77,10 +77,6 @@ nav.top-navigation {
 		&:active,
 		&:focus{
 			outline: none;
-
-			span{
-				background-color: $primary-blue;
-			}
 		}
 		
 		span {
@@ -94,18 +90,55 @@ nav.top-navigation {
 	}
 }
 
+
+
 /*
  * Header Elements Color Schemes
  * Adjusting theme colors based on body class.
  */
 
 .template-blue,
-body.home{
+// (template blue is currently the default color)
+.page-template-default{
 	.navbar-dropdown-toggle:hover span,
 	.navbar-dropdown-toggle:active span,
 	.navbar-dropdown-toggle:focus span{
 		background-color: $secondary-blue;
 	}
 }
+
+.template-green{
+	.navbar-dropdown-toggle:hover span,
+	.navbar-dropdown-toggle:active span,
+	.navbar-dropdown-toggle:focus span{
+		background-color: $primary-green;
+	}
+}
+
+.template-yellow{
+	.navbar-dropdown-toggle:hover span,
+	.navbar-dropdown-toggle:active span,
+	.navbar-dropdown-toggle:focus span{
+		background-color: $secondary-orange;
+	}
+}
+
+.template-yellow-blue{
+	.navbar-dropdown-toggle:hover span,
+	.navbar-dropdown-toggle:active span,
+	.navbar-dropdown-toggle:focus span{
+		background-color: $secondary-blue;
+	}
+}
+
+.template-orange{
+	.navbar-dropdown-toggle:hover span,
+	.navbar-dropdown-toggle:active span,
+	.navbar-dropdown-toggle:focus span{
+		background-color: $primary-orange;
+	}
+}
+
+
 
 

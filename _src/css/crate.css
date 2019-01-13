@@ -2858,6 +2858,8 @@ p {
 
 a {
   transition: 0.2s all ease-in-out; }
+  a:hover, a:active, a:focus {
+    text-decoration: none; }
 
 button:focus,
 button:hover {
@@ -2936,102 +2938,123 @@ blockquote {
     line-height: 1em;
     font-family: "GT Walsheim Pro", sans-serif; }
 
+.skewed-overlay {
+  display: none; }
+
 /*
  * Base Elements Color Schemes
  * Adjusting theme colors based on body class.
  */
-.template-blue,
-body.home {
-  background: #cae8e1; }
-  .template-blue h1,
-  .template-blue h2,
-  .template-blue h3,
-  .template-blue h4,
-  body.home h1,
-  body.home h2,
-  body.home h3,
-  body.home h4 {
+.template-blue h1,
+.template-blue h2,
+.template-blue h3,
+.template-blue h4,
+body.page-template-default h1,
+body.page-template-default h2,
+body.page-template-default h3,
+body.page-template-default h4 {
+  color: #1e3920; }
+
+.template-blue a,
+.template-blue .top-page-tags .tag-item,
+body.page-template-default a,
+body.page-template-default .top-page-tags .tag-item {
+  color: #3ea3a0; }
+  .template-blue a:hover, .template-blue a:active, .template-blue a:focus,
+  .template-blue .top-page-tags .tag-item:hover,
+  .template-blue .top-page-tags .tag-item:active,
+  .template-blue .top-page-tags .tag-item:focus,
+  body.page-template-default a:hover,
+  body.page-template-default a:active,
+  body.page-template-default a:focus,
+  body.page-template-default .top-page-tags .tag-item:hover,
+  body.page-template-default .top-page-tags .tag-item:active,
+  body.page-template-default .top-page-tags .tag-item:focus {
     color: #1e3920; }
-  .template-blue a,
-  body.home a {
+
+.template-blue a.button,
+.template-blue button.button,
+.template-blue input[type="submit"],
+body.page-template-default a.button,
+body.page-template-default button.button,
+body.page-template-default input[type="submit"] {
+  background: #3ea3a0;
+  border: 1px solid #3ea3a0;
+  color: #cae8e1; }
+  .template-blue a.button:hover, .template-blue a.button:active, .template-blue a.button:focus,
+  .template-blue button.button:hover,
+  .template-blue button.button:active,
+  .template-blue button.button:focus,
+  .template-blue input[type="submit"]:hover,
+  .template-blue input[type="submit"]:active,
+  .template-blue input[type="submit"]:focus,
+  body.page-template-default a.button:hover,
+  body.page-template-default a.button:active,
+  body.page-template-default a.button:focus,
+  body.page-template-default button.button:hover,
+  body.page-template-default button.button:active,
+  body.page-template-default button.button:focus,
+  body.page-template-default input[type="submit"]:hover,
+  body.page-template-default input[type="submit"]:active,
+  body.page-template-default input[type="submit"]:focus {
+    background: #cae8e1;
+    border-color: #cae8e1;
     color: #3ea3a0; }
-    .template-blue a:hover, .template-blue a:active, .template-blue a:focus,
-    body.home a:hover,
-    body.home a:active,
-    body.home a:focus {
-      color: #1e3920; }
-  .template-blue a.button,
-  .template-blue button.button,
-  .template-blue input[type="submit"],
-  body.home a.button,
-  body.home button.button,
-  body.home input[type="submit"] {
-    background: #3ea3a0;
-    border: 1px solid #3ea3a0;
-    color: #cae8e1; }
-    .template-blue a.button:hover, .template-blue a.button:active, .template-blue a.button:focus,
-    .template-blue button.button:hover,
-    .template-blue button.button:active,
-    .template-blue button.button:focus,
-    .template-blue input[type="submit"]:hover,
-    .template-blue input[type="submit"]:active,
-    .template-blue input[type="submit"]:focus,
-    body.home a.button:hover,
-    body.home a.button:active,
-    body.home a.button:focus,
-    body.home button.button:hover,
-    body.home button.button:active,
-    body.home button.button:focus,
-    body.home input[type="submit"]:hover,
-    body.home input[type="submit"]:active,
-    body.home input[type="submit"]:focus {
+  .template-blue a.button.outline,
+  .template-blue button.button.outline,
+  .template-blue input[type="submit"].outline,
+  body.page-template-default a.button.outline,
+  body.page-template-default button.button.outline,
+  body.page-template-default input[type="submit"].outline {
+    background: #fff;
+    color: #3ea3a0;
+    border-color: #3ea3a0; }
+    .template-blue a.button.outline:hover, .template-blue a.button.outline:active, .template-blue a.button.outline:focus,
+    .template-blue button.button.outline:hover,
+    .template-blue button.button.outline:active,
+    .template-blue button.button.outline:focus,
+    .template-blue input[type="submit"].outline:hover,
+    .template-blue input[type="submit"].outline:active,
+    .template-blue input[type="submit"].outline:focus,
+    body.page-template-default a.button.outline:hover,
+    body.page-template-default a.button.outline:active,
+    body.page-template-default a.button.outline:focus,
+    body.page-template-default button.button.outline:hover,
+    body.page-template-default button.button.outline:active,
+    body.page-template-default button.button.outline:focus,
+    body.page-template-default input[type="submit"].outline:hover,
+    body.page-template-default input[type="submit"].outline:active,
+    body.page-template-default input[type="submit"].outline:focus {
       background: #cae8e1;
-      border-color: #cae8e1;
-      color: #3ea3a0; }
-    .template-blue a.button.outline,
-    .template-blue button.button.outline,
-    .template-blue input[type="submit"].outline,
-    body.home a.button.outline,
-    body.home button.button.outline,
-    body.home input[type="submit"].outline {
-      background: #fff;
-      color: #3ea3a0;
       border-color: #3ea3a0; }
-      .template-blue a.button.outline:hover, .template-blue a.button.outline:active, .template-blue a.button.outline:focus,
-      .template-blue button.button.outline:hover,
-      .template-blue button.button.outline:active,
-      .template-blue button.button.outline:focus,
-      .template-blue input[type="submit"].outline:hover,
-      .template-blue input[type="submit"].outline:active,
-      .template-blue input[type="submit"].outline:focus,
-      body.home a.button.outline:hover,
-      body.home a.button.outline:active,
-      body.home a.button.outline:focus,
-      body.home button.button.outline:hover,
-      body.home button.button.outline:active,
-      body.home button.button.outline:focus,
-      body.home input[type="submit"].outline:hover,
-      body.home input[type="submit"].outline:active,
-      body.home input[type="submit"].outline:focus {
-        background: #cae8e1;
-        border-color: #3ea3a0; }
-  .template-blue a svg,
-  body.home a svg {
-    fill: #1e3920; }
-    .template-blue a svg:hover, .template-blue a svg:active, .template-blue a svg:focus,
-    body.home a svg:hover,
-    body.home a svg:active,
-    body.home a svg:focus {
-      fill: #3ea3a0; }
-  .template-blue blockquote::after,
-  body.home blockquote::after {
-    background-color: #3ea3a0; }
+
+.template-blue a svg,
+body.page-template-default a svg {
+  fill: #1e3920; }
+  .template-blue a svg:hover, .template-blue a svg:active, .template-blue a svg:focus,
+  body.page-template-default a svg:hover,
+  body.page-template-default a svg:active,
+  body.page-template-default a svg:focus {
+    fill: #3ea3a0; }
+
+.template-blue blockquote::after,
+body.page-template-default blockquote::after {
+  background-color: #3ea3a0; }
 
 .template-green h1,
 .template-green h2,
 .template-green h3,
 .template-green h4 {
   color: #f7dca1; }
+
+.template-green a,
+.template-green .top-page-tags .tag-item {
+  color: #88a840; }
+  .template-green a:hover, .template-green a:active, .template-green a:focus,
+  .template-green .top-page-tags .tag-item:hover,
+  .template-green .top-page-tags .tag-item:active,
+  .template-green .top-page-tags .tag-item:focus {
+    color: #145635; }
 
 .template-green a.button,
 .template-green button.button,
@@ -3054,7 +3077,7 @@ body.home {
   .template-green input[type="submit"].outline {
     color: #145635;
     border-color: #145635;
-    background: #fff; }
+    background: transparent; }
     .template-green a.button.outline:hover, .template-green a.button.outline:active, .template-green a.button.outline:focus,
     .template-green button.button.outline:hover,
     .template-green button.button.outline:active,
@@ -3066,6 +3089,11 @@ body.home {
       border-color: #f7dca1;
       color: #f7dca1; }
 
+.template-green a svg {
+  fill: #145635; }
+  .template-green a svg:hover, .template-green a svg:active, .template-green a svg:focus {
+    fill: #f7dca1; }
+
 .template-green blockquote::after {
   background-color: #145635;
   color: #f7dca1; }
@@ -3075,6 +3103,15 @@ body.home {
 .template-yellow h3,
 .template-yellow h4 {
   color: #F9BA49; }
+
+.template-yellow a,
+.template-yellow .top-page-tags .tag-item {
+  color: #ef5e48; }
+  .template-yellow a:hover, .template-yellow a:active, .template-yellow a:focus,
+  .template-yellow .top-page-tags .tag-item:hover,
+  .template-yellow .top-page-tags .tag-item:active,
+  .template-yellow .top-page-tags .tag-item:focus {
+    color: #963d3a; }
 
 .template-yellow a.button,
 .template-yellow button.button,
@@ -3108,6 +3145,11 @@ body.home {
       background: #F9BA49;
       border-color: #963d3a; }
 
+.template-yellow a svg {
+  fill: #F9BA49; }
+  .template-yellow a svg:hover, .template-yellow a svg:active, .template-yellow a svg:focus {
+    fill: #ef5e48; }
+
 .template-yellow blockquote::after {
   background-color: #ef5e48; }
 
@@ -3116,6 +3158,15 @@ body.home {
 .template-yellow-blue h3,
 .template-yellow-blue h4 {
   color: #145635; }
+
+.template-yellow-blue a,
+.template-yellow-blue .top-page-tags .tag-item {
+  color: #3ea3a0; }
+  .template-yellow-blue a:hover, .template-yellow-blue a:active, .template-yellow-blue a:focus,
+  .template-yellow-blue .top-page-tags .tag-item:hover,
+  .template-yellow-blue .top-page-tags .tag-item:active,
+  .template-yellow-blue .top-page-tags .tag-item:focus {
+    color: #1e3920; }
 
 .template-yellow-blue a.button,
 .template-yellow-blue button.button,
@@ -3149,6 +3200,11 @@ body.home {
       background: #F9BA49;
       border-color: #3ea3a0; }
 
+.template-yellow-blue a svg {
+  fill: #1e3920; }
+  .template-yellow-blue a svg:hover, .template-yellow-blue a svg:active, .template-yellow-blue a svg:focus {
+    fill: #3ea3a0; }
+
 .template-yellow-blue blockquote::after {
   background-color: #3ea3a0; }
 
@@ -3157,6 +3213,15 @@ body.home {
 .template-orange h3,
 .template-orange h4 {
   color: #963d3a; }
+
+.template-orange a,
+.template-orange .top-page-tags .tag-item {
+  color: #ef5e48; }
+  .template-orange a:hover, .template-orange a:active, .template-orange a:focus,
+  .template-orange .top-page-tags .tag-item:hover,
+  .template-orange .top-page-tags .tag-item:active,
+  .template-orange .top-page-tags .tag-item:focus {
+    color: #963d3a; }
 
 .template-orange a.button,
 .template-orange button.button,
@@ -3190,6 +3255,11 @@ body.home {
       background: #F9BA49;
       border-color: #ef5e48;
       color: #ef5e48; }
+
+.template-orange a svg {
+  fill: #963d3a; }
+  .template-orange a svg:hover, .template-orange a svg:active, .template-orange a svg:focus {
+    fill: #ef5e48; }
 
 .template-orange blockquote::after {
   background-color: #ef5e48; }
@@ -3261,8 +3331,6 @@ nav.top-navigation {
     border: none; }
     nav.top-navigation .navbar-dropdown-toggle:hover, nav.top-navigation .navbar-dropdown-toggle:active, nav.top-navigation .navbar-dropdown-toggle:focus {
       outline: none; }
-      nav.top-navigation .navbar-dropdown-toggle:hover span, nav.top-navigation .navbar-dropdown-toggle:active span, nav.top-navigation .navbar-dropdown-toggle:focus span {
-        background-color: #cae8e1; }
     nav.top-navigation .navbar-dropdown-toggle span {
       width: 35px;
       height: 5px;
@@ -3278,10 +3346,30 @@ nav.top-navigation {
 .template-blue .navbar-dropdown-toggle:hover span,
 .template-blue .navbar-dropdown-toggle:active span,
 .template-blue .navbar-dropdown-toggle:focus span,
-body.home .navbar-dropdown-toggle:hover span,
-body.home .navbar-dropdown-toggle:active span,
-body.home .navbar-dropdown-toggle:focus span {
+.page-template-default .navbar-dropdown-toggle:hover span,
+.page-template-default .navbar-dropdown-toggle:active span,
+.page-template-default .navbar-dropdown-toggle:focus span {
   background-color: #3ea3a0; }
+
+.template-green .navbar-dropdown-toggle:hover span,
+.template-green .navbar-dropdown-toggle:active span,
+.template-green .navbar-dropdown-toggle:focus span {
+  background-color: #145635; }
+
+.template-yellow .navbar-dropdown-toggle:hover span,
+.template-yellow .navbar-dropdown-toggle:active span,
+.template-yellow .navbar-dropdown-toggle:focus span {
+  background-color: #F9BA49; }
+
+.template-yellow-blue .navbar-dropdown-toggle:hover span,
+.template-yellow-blue .navbar-dropdown-toggle:active span,
+.template-yellow-blue .navbar-dropdown-toggle:focus span {
+  background-color: #3ea3a0; }
+
+.template-orange .navbar-dropdown-toggle:hover span,
+.template-orange .navbar-dropdown-toggle:active span,
+.template-orange .navbar-dropdown-toggle:focus span {
+  background-color: #ef5e48; }
 
 footer.site-footer {
   background: transparent;
@@ -3382,6 +3470,22 @@ footer.site-footer {
 body {
   background: #fff;
   font-family: "Karla", sans-serif; }
+  body.home .logo-container {
+    text-align: center;
+    animation: bgcolorchange 20s infinite;
+    -webkit-animation: bgcolorchange 20s infinite; }
+    body.home .logo-container .header-logo.home {
+      animation: homelogocycle 20s infinite;
+      -webkit-animation: homelogocycle 20s infinite; }
+    body.home .logo-container .header-logo.about {
+      animation: aboutlogocycle 20s infinite;
+      -webkit-animation: aboutlogocycle 20s infinite; }
+    body.home .logo-container .header-logo.case {
+      animation: caselogocycle 20s infinite;
+      -webkit-animation: caselogocycle 20s infinite; }
+    body.home .logo-container .header-logo.tools {
+      animation: toolslogocycle 20s infinite;
+      -webkit-animation: toolslogocycle 20s infinite; }
 
 /* Potentially temporary */
 .page-header {
@@ -3416,39 +3520,25 @@ div.logo-container {
       position: relative; }
     div.logo-container .content .header-logo {
       max-width: 100%;
-      margin-bottom: 25px; }
+      margin-bottom: 25px;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0; }
+      div.logo-container .content .header-logo.home {
+        position: relative; }
     div.logo-container .content h2 {
       font-family: "Karla", sans-serif;
       text-transform: uppercase;
       font-weight: 700;
       color: #fff; }
-  div.logo-container.home {
-    text-align: center;
-    animation: bgcolorchange 20s infinite;
-    -webkit-animation: bgcolorchange 20s infinite; }
-    div.logo-container.home .header-logo {
-      position: absolute;
-      top: 0;
-      left: 0;
-      opacity: 0; }
-      div.logo-container.home .header-logo.home {
-        animation: homelogocycle 20s infinite;
-        -webkit-animation: homelogocycle 20s infinite; }
-      div.logo-container.home .header-logo.about {
-        animation: aboutlogocycle 20s infinite;
-        -webkit-animation: aboutlogocycle 20s infinite; }
-      div.logo-container.home .header-logo.case {
-        animation: caselogocycle 20s infinite;
-        -webkit-animation: caselogocycle 20s infinite; }
-      div.logo-container.home .header-logo.tools {
-        animation: toolslogocycle 20s infinite;
-        -webkit-animation: toolslogocycle 20s infinite; }
 
 div.page-template {
   width: 100%;
   margin: 0 0 75px;
-  padding: 0;
-  position: relative; }
+  padding: 25px 0;
+  position: relative;
+  background: #fff; }
   @media (min-width: 768px) {
     div.page-template {
       margin: 0 0 125px; } }
@@ -3484,23 +3574,32 @@ div.page-template::after {
       border-width: 0 100vw 125px 0; } }
 
 /*
- * Header Elements Color Schemes
+ * Body Elements Color Schemes
  * Adjusting theme colors based on body class.
  */
-/* Switch between header logos */
-.template-blue .header-logo.home,
-body.home .header-logo.home {
-  display: block;
-  position: relative; }
+body.template-blue,
+body.page-template-default {
+  background: #cae8e1; }
+  body.template-blue .header-logo.home,
+  body.page-template-default .header-logo.home {
+    opacity: 1; }
 
-.template-green .header-logo.about {
-  display: block; }
+body.template-green {
+  background: #88a840; }
+  body.template-green .header-logo.about {
+    opacity: 1; }
 
-.template-yellow .header-logo.case {
-  display: block; }
+body.template-yellow {
+  background: #963d3a; }
+  body.template-yellow .header-logo.case {
+    opacity: 1; }
 
-.template-yellow-blue .header-logo.tools {
-  display: block; }
+body.template-yellow-blue {
+  background: #F9BA49; }
+  body.template-yellow-blue .header-logo.tools {
+    opacity: 1; }
 
-.template-orange .header-logo.blog {
-  display: block; }
+body.template-orange {
+  background: #F9BA49; }
+  body.template-orange .header-logo.blog {
+    opacity: 1; }
