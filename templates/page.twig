@@ -3,11 +3,13 @@
 {% block content %}
 	<div class="logo-container home">
 		<div class="content animated fadeIn">
-			{% include 'blocks/home_logo.twig' %}
-			{% include 'blocks/about_logo.twig' %}
-			{% include 'blocks/case_logo.twig' %}
-			{% include 'blocks/tools_logo.twig' %}
-			{% include 'blocks/blog_logo.twig' %}
+			<div class="logos">
+				{% include 'blocks/home_logo.twig' %}
+				{% include 'blocks/about_logo.twig' %}
+				{% include 'blocks/case_logo.twig' %}
+				{% include 'blocks/tools_logo.twig' %}
+				{% include 'blocks/blog_logo.twig' %}
+			</div>
 			<h2>{{ __( 'Write your Story. Change the World.', 'planet4-child-theme-storytelling' ) }}</h2>
 		</div>
 	</div>

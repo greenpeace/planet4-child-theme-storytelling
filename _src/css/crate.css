@@ -3281,7 +3281,7 @@ nav.top-navigation {
 body.home .navbar-dropdown-toggle:hover span,
 body.home .navbar-dropdown-toggle:active span,
 body.home .navbar-dropdown-toggle:focus span {
-  background-color: #cae8e1; }
+  background-color: #3ea3a0; }
 
 footer.site-footer {
   background: transparent;
@@ -3412,6 +3412,8 @@ div.logo-container {
         width: 700px;
         padding: 0;
         transform: translate(-50%, -55%); } }
+    div.logo-container .content .logos {
+      position: relative; }
     div.logo-container .content .header-logo {
       max-width: 100%;
       margin-bottom: 25px; }
