@@ -106,8 +106,14 @@ div.page-template {
     @include medium-and-up {
 		margin: 0 0 125px;
 	}
+
+	.container{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 }
-div.page-template::before {
+div.page-template::before,
+div.diagonal-top::before {
     position: absolute;
     content: '';
     display: block;
@@ -123,7 +129,8 @@ div.page-template::before {
 		border-width: 0 100vw 125px 0;
 	}
 }
-div.page-template::after {
+div.page-template::after,
+div.diagonal-bottom::after {
     position: absolute;
     content: '';
     display: block;
@@ -137,6 +144,40 @@ div.page-template::after {
     @include medium-and-up {
 		bottom: -124px;
 		border-width: 0 100vw 125px 0;
+	}
+}
+
+div.diagonal-top{
+	padding-top: 20px;
+}
+
+div.diagonal-bottom{
+	padding-bottom: 20px;
+}
+
+/* P4 Block Modifications */
+
+.content-two-column-block{
+	padding: 30px 0;
+
+	@include small-and-up {
+		padding: 50px 0 30px 0;
+	}
+
+	h2{
+		font-family: $secondary-font;
+		text-transform: uppercase;
+		width: 100%;
+		font-size: 22px;
+	}
+}
+
+.page-section {
+    margin-bottom: 0;
+
+    .page-section-header{
+		font-family: $primary-font;
+		margin-top: 0;
 	}
 }
 
@@ -178,7 +219,7 @@ body.template-yellow-blue{
 }
 body.template-orange{
 	background: $secondary-orange;
-	
+
 	.header-logo.blog{
 		opacity: 1;
 	}

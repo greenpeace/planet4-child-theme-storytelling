@@ -2856,6 +2856,15 @@ p {
     display: inline-block;
     padding: 5px 15px; }
 
+.align-center {
+  text-align: center; }
+
+.align-left {
+  text-align: left; }
+
+.align-right {
+  text-align: right; }
+
 a {
   transition: 0.2s all ease-in-out; }
   a:hover, a:active, a:focus {
@@ -2867,17 +2876,20 @@ button:hover {
 
 a.button,
 button.button,
-input[type="submit"] {
+input[type="submit"],
+button.load-more {
   background: #a3a3a3;
   border: 1px solid #a3a3a3;
   text-transform: uppercase;
   font-size: 18px;
   min-width: 150px;
+  width: auto;
   text-align: center;
   margin-bottom: 10px;
   padding: 10px 20px;
   display: inline-block;
   color: #fff;
+  line-height: 27px;
   cursor: pointer;
   transition: 0.3s all ease-in-out; }
   a.button:hover, a.button:active, a.button:focus,
@@ -2886,13 +2898,17 @@ input[type="submit"] {
   button.button:focus,
   input[type="submit"]:hover,
   input[type="submit"]:active,
-  input[type="submit"]:focus {
+  input[type="submit"]:focus,
+  button.load-more:hover,
+  button.load-more:active,
+  button.load-more:focus {
     background: #d3d3d3;
     border-color: #d3d3d3;
     text-decoration: none; }
   a.button.outline,
   button.button.outline,
-  input[type="submit"].outline {
+  input[type="submit"].outline,
+  button.load-more.outline {
     background: #fff;
     color: #333;
     border-color: #333; }
@@ -2902,7 +2918,10 @@ input[type="submit"] {
     button.button.outline:focus,
     input[type="submit"].outline:hover,
     input[type="submit"].outline:active,
-    input[type="submit"].outline:focus {
+    input[type="submit"].outline:focus,
+    button.load-more.outline:hover,
+    button.load-more.outline:active,
+    button.load-more.outline:focus {
       background: #d3d3d3;
       border-color: #333; }
 
@@ -2975,9 +2994,11 @@ body.page-template-default .top-page-tags .tag-item {
 .template-blue a.button,
 .template-blue button.button,
 .template-blue input[type="submit"],
+.template-blue button.load-more,
 body.page-template-default a.button,
 body.page-template-default button.button,
-body.page-template-default input[type="submit"] {
+body.page-template-default input[type="submit"],
+body.page-template-default button.load-more {
   background: #3ea3a0;
   border: 1px solid #3ea3a0;
   color: #cae8e1; }
@@ -2988,6 +3009,9 @@ body.page-template-default input[type="submit"] {
   .template-blue input[type="submit"]:hover,
   .template-blue input[type="submit"]:active,
   .template-blue input[type="submit"]:focus,
+  .template-blue button.load-more:hover,
+  .template-blue button.load-more:active,
+  .template-blue button.load-more:focus,
   body.page-template-default a.button:hover,
   body.page-template-default a.button:active,
   body.page-template-default a.button:focus,
@@ -2996,16 +3020,21 @@ body.page-template-default input[type="submit"] {
   body.page-template-default button.button:focus,
   body.page-template-default input[type="submit"]:hover,
   body.page-template-default input[type="submit"]:active,
-  body.page-template-default input[type="submit"]:focus {
+  body.page-template-default input[type="submit"]:focus,
+  body.page-template-default button.load-more:hover,
+  body.page-template-default button.load-more:active,
+  body.page-template-default button.load-more:focus {
     background: #cae8e1;
     border-color: #cae8e1;
     color: #3ea3a0; }
   .template-blue a.button.outline,
   .template-blue button.button.outline,
   .template-blue input[type="submit"].outline,
+  .template-blue button.load-more.outline,
   body.page-template-default a.button.outline,
   body.page-template-default button.button.outline,
-  body.page-template-default input[type="submit"].outline {
+  body.page-template-default input[type="submit"].outline,
+  body.page-template-default button.load-more.outline {
     background: #fff;
     color: #3ea3a0;
     border-color: #3ea3a0; }
@@ -3016,6 +3045,9 @@ body.page-template-default input[type="submit"] {
     .template-blue input[type="submit"].outline:hover,
     .template-blue input[type="submit"].outline:active,
     .template-blue input[type="submit"].outline:focus,
+    .template-blue button.load-more.outline:hover,
+    .template-blue button.load-more.outline:active,
+    .template-blue button.load-more.outline:focus,
     body.page-template-default a.button.outline:hover,
     body.page-template-default a.button.outline:active,
     body.page-template-default a.button.outline:focus,
@@ -3024,7 +3056,10 @@ body.page-template-default input[type="submit"] {
     body.page-template-default button.button.outline:focus,
     body.page-template-default input[type="submit"].outline:hover,
     body.page-template-default input[type="submit"].outline:active,
-    body.page-template-default input[type="submit"].outline:focus {
+    body.page-template-default input[type="submit"].outline:focus,
+    body.page-template-default button.load-more.outline:hover,
+    body.page-template-default button.load-more.outline:active,
+    body.page-template-default button.load-more.outline:focus {
       background: #cae8e1;
       border-color: #3ea3a0; }
 
@@ -3058,7 +3093,8 @@ body.page-template-default blockquote::after {
 
 .template-green a.button,
 .template-green button.button,
-.template-green input[type="submit"] {
+.template-green input[type="submit"],
+.template-green button.load-more {
   background: #145635;
   border: 1px solid #145635;
   color: #f7dca1; }
@@ -3068,13 +3104,17 @@ body.page-template-default blockquote::after {
   .template-green button.button:focus,
   .template-green input[type="submit"]:hover,
   .template-green input[type="submit"]:active,
-  .template-green input[type="submit"]:focus {
+  .template-green input[type="submit"]:focus,
+  .template-green button.load-more:hover,
+  .template-green button.load-more:active,
+  .template-green button.load-more:focus {
     background: #88a840;
     border-color: #88a840;
     color: #145635; }
   .template-green a.button.outline,
   .template-green button.button.outline,
-  .template-green input[type="submit"].outline {
+  .template-green input[type="submit"].outline,
+  .template-green button.load-more.outline {
     color: #145635;
     border-color: #145635;
     background: transparent; }
@@ -3084,7 +3124,10 @@ body.page-template-default blockquote::after {
     .template-green button.button.outline:focus,
     .template-green input[type="submit"].outline:hover,
     .template-green input[type="submit"].outline:active,
-    .template-green input[type="submit"].outline:focus {
+    .template-green input[type="submit"].outline:focus,
+    .template-green button.load-more.outline:hover,
+    .template-green button.load-more.outline:active,
+    .template-green button.load-more.outline:focus {
       background: #145635;
       border-color: #f7dca1;
       color: #f7dca1; }
@@ -3115,7 +3158,8 @@ body.page-template-default blockquote::after {
 
 .template-yellow a.button,
 .template-yellow button.button,
-.template-yellow input[type="submit"] {
+.template-yellow input[type="submit"],
+.template-yellow button.load-more {
   background: #963d3a;
   border: 1px solid #963d3a;
   color: #F9BA49; }
@@ -3125,13 +3169,17 @@ body.page-template-default blockquote::after {
   .template-yellow button.button:focus,
   .template-yellow input[type="submit"]:hover,
   .template-yellow input[type="submit"]:active,
-  .template-yellow input[type="submit"]:focus {
+  .template-yellow input[type="submit"]:focus,
+  .template-yellow button.load-more:hover,
+  .template-yellow button.load-more:active,
+  .template-yellow button.load-more:focus {
     background: #F9BA49;
     border-color: #F9BA49;
     color: #963d3a; }
   .template-yellow a.button.outline,
   .template-yellow button.button.outline,
-  .template-yellow input[type="submit"].outline {
+  .template-yellow input[type="submit"].outline,
+  .template-yellow button.load-more.outline {
     background: #fff;
     color: #963d3a;
     border-color: #963d3a; }
@@ -3141,7 +3189,10 @@ body.page-template-default blockquote::after {
     .template-yellow button.button.outline:focus,
     .template-yellow input[type="submit"].outline:hover,
     .template-yellow input[type="submit"].outline:active,
-    .template-yellow input[type="submit"].outline:focus {
+    .template-yellow input[type="submit"].outline:focus,
+    .template-yellow button.load-more.outline:hover,
+    .template-yellow button.load-more.outline:active,
+    .template-yellow button.load-more.outline:focus {
       background: #F9BA49;
       border-color: #963d3a; }
 
@@ -3170,7 +3221,8 @@ body.page-template-default blockquote::after {
 
 .template-yellow-blue a.button,
 .template-yellow-blue button.button,
-.template-yellow-blue input[type="submit"] {
+.template-yellow-blue input[type="submit"],
+.template-yellow-blue button.load-more {
   background: #3ea3a0;
   border: 1px solid #3ea3a0;
   color: #F9BA49; }
@@ -3180,13 +3232,17 @@ body.page-template-default blockquote::after {
   .template-yellow-blue button.button:focus,
   .template-yellow-blue input[type="submit"]:hover,
   .template-yellow-blue input[type="submit"]:active,
-  .template-yellow-blue input[type="submit"]:focus {
+  .template-yellow-blue input[type="submit"]:focus,
+  .template-yellow-blue button.load-more:hover,
+  .template-yellow-blue button.load-more:active,
+  .template-yellow-blue button.load-more:focus {
     background: #F9BA49;
     border-color: #F9BA49;
     color: #3ea3a0; }
   .template-yellow-blue a.button.outline,
   .template-yellow-blue button.button.outline,
-  .template-yellow-blue input[type="submit"].outline {
+  .template-yellow-blue input[type="submit"].outline,
+  .template-yellow-blue button.load-more.outline {
     background: #fff;
     color: #3ea3a0;
     border-color: #3ea3a0; }
@@ -3196,7 +3252,10 @@ body.page-template-default blockquote::after {
     .template-yellow-blue button.button.outline:focus,
     .template-yellow-blue input[type="submit"].outline:hover,
     .template-yellow-blue input[type="submit"].outline:active,
-    .template-yellow-blue input[type="submit"].outline:focus {
+    .template-yellow-blue input[type="submit"].outline:focus,
+    .template-yellow-blue button.load-more.outline:hover,
+    .template-yellow-blue button.load-more.outline:active,
+    .template-yellow-blue button.load-more.outline:focus {
       background: #F9BA49;
       border-color: #3ea3a0; }
 
@@ -3225,7 +3284,8 @@ body.page-template-default blockquote::after {
 
 .template-orange a.button,
 .template-orange button.button,
-.template-orange input[type="submit"] {
+.template-orange input[type="submit"],
+.template-orange button.load-more {
   background: #ef5e48;
   border: 1px solid #ef5e48;
   color: #F9BA49; }
@@ -3235,13 +3295,17 @@ body.page-template-default blockquote::after {
   .template-orange button.button:focus,
   .template-orange input[type="submit"]:hover,
   .template-orange input[type="submit"]:active,
-  .template-orange input[type="submit"]:focus {
+  .template-orange input[type="submit"]:focus,
+  .template-orange button.load-more:hover,
+  .template-orange button.load-more:active,
+  .template-orange button.load-more:focus {
     background: #F9BA49;
     border-color: #F9BA49;
     color: #963d3a; }
   .template-orange a.button.outline,
   .template-orange button.button.outline,
-  .template-orange input[type="submit"].outline {
+  .template-orange input[type="submit"].outline,
+  .template-orange button.load-more.outline {
     background: #fff;
     color: #ef5e48;
     border-color: #ef5e48; }
@@ -3251,7 +3315,10 @@ body.page-template-default blockquote::after {
     .template-orange button.button.outline:focus,
     .template-orange input[type="submit"].outline:hover,
     .template-orange input[type="submit"].outline:active,
-    .template-orange input[type="submit"].outline:focus {
+    .template-orange input[type="submit"].outline:focus,
+    .template-orange button.load-more.outline:hover,
+    .template-orange button.load-more.outline:active,
+    .template-orange button.load-more.outline:focus {
       background: #F9BA49;
       border-color: #ef5e48;
       color: #ef5e48; }
@@ -3542,8 +3609,12 @@ div.page-template {
   @media (min-width: 768px) {
     div.page-template {
       margin: 0 0 125px; } }
+  div.page-template .container {
+    padding-left: 20px;
+    padding-right: 20px; }
 
-div.page-template::before {
+div.page-template::before,
+div.diagonal-top::before {
   position: absolute;
   content: '';
   display: block;
@@ -3554,11 +3625,13 @@ div.page-template::before {
   border-width: 0 100vw 75px 0;
   border-color: transparent transparent white transparent; }
   @media (min-width: 768px) {
-    div.page-template::before {
+    div.page-template::before,
+    div.diagonal-top::before {
       top: -124px;
       border-width: 0 100vw 125px 0; } }
 
-div.page-template::after {
+div.page-template::after,
+div.diagonal-bottom::after {
   position: absolute;
   content: '';
   display: block;
@@ -3569,9 +3642,34 @@ div.page-template::after {
   border-width: 0 100vw 75px 0;
   border-color: transparent white transparent transparent; }
   @media (min-width: 768px) {
-    div.page-template::after {
+    div.page-template::after,
+    div.diagonal-bottom::after {
       bottom: -124px;
       border-width: 0 100vw 125px 0; } }
+
+div.diagonal-top {
+  padding-top: 20px; }
+
+div.diagonal-bottom {
+  padding-bottom: 20px; }
+
+/* P4 Block Modifications */
+.content-two-column-block {
+  padding: 30px 0; }
+  @media (min-width: 576px) {
+    .content-two-column-block {
+      padding: 50px 0 30px 0; } }
+  .content-two-column-block h2 {
+    font-family: "Karla", sans-serif;
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 22px; }
+
+.page-section {
+  margin-bottom: 0; }
+  .page-section .page-section-header {
+    font-family: "GT Walsheim Pro", sans-serif;
+    margin-top: 0; }
 
 /*
  * Body Elements Color Schemes
@@ -3603,3 +3701,57 @@ body.template-orange {
   background: #F9BA49; }
   body.template-orange .header-logo.blog {
     opacity: 1; }
+
+.tagline {
+  font-weight: 700;
+  font-size: 20px;
+  max-width: 675px;
+  margin: auto; }
+  .tagline span.source {
+    font-size: 12px;
+    font-style: italic;
+    display: block;
+    font-weight: 300;
+    margin-top: 20px; }
+  .tagline .button {
+    margin: 25px 0 0; }
+
+.image-block {
+  height: 500px;
+  width: 100%;
+  z-index: unset !important; }
+  .image-block.whale::before {
+    background-image: url("../../images/placeholder_image1.jpg"); }
+  .image-block.penguin::before {
+    background-image: url("../../images/placeholder_image2.jpg"); }
+  .image-block::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    background-attachment: fixed;
+    background-position: 0 60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    will-change: transform; }
+  .image-block::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #cae8e1;
+    position: absolute;
+    opacity: 0.5; }
+  .image-block .plain-quote {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    color: #fff;
+    font-weight: 700;
+    font-size: 22px;
+    width: 100%;
+    max-width: 800px;
+    padding: 0 20px;
+    text-align: center;
+    z-index: 3; }
