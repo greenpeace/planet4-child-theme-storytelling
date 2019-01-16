@@ -168,9 +168,11 @@ button.load-more {
     text-align: center;
     margin-bottom: 10px;
     padding: 10px 20px;
+    font-weight: 700;
     display: inline-block;
     color: #fff;
     line-height: 27px;
+    font-family: $secondary-font;
     cursor: pointer;
     transition: 0.3s all ease-in-out;
 
@@ -277,39 +279,40 @@ body.page-template-default{
 	button.button,
 	input[type="submit"],
 	button.load-more {
-	    background: $secondary-blue;
+	    background: $primary-blue;
 	    border: 1px solid $secondary-blue;
-	    color: $primary-blue;
+	    color: $secondary-blue;
 
 	    &:hover,
 	    &:active,
 	    &:focus{
-	    	background: $primary-blue;
-		    border-color: $primary-blue;
-		    color: $secondary-blue;
+	    	//background: transparent;
+	    	background: $secondary-blue;
+	    	border-color: $primary-blue;
+		    color: $primary-blue;
 	    }
 
-	    &.outline{
-	    	background: #fff;
-	    	color: $secondary-blue;
-	    	border-color: $secondary-blue;
+	    // &.outline{
+	    // 	background: #fff;
+	    // 	color: $secondary-blue;
+	    // 	border-color: $secondary-blue;
 
-	    	&:hover,
-		    &:active,
-		    &:focus{
-		    	background: $primary-blue;
-	    		border-color: $secondary-blue;
-		    }
-	    }
+	    // 	&:hover,
+		   //  &:active,
+		   //  &:focus{
+		   //  	background: $primary-blue;
+	    // 		border-color: $secondary-blue;
+		   //  }
+	    // }
 	}
 
 	a svg{
-		fill: $alternate-green;
+		fill: $primary-blue;
 
 		&:hover,
 	    &:active,
 	    &:focus{
-    		fill: $secondary-blue;
+    		fill: $alternate-green;
 	    }
 	}
 
@@ -347,30 +350,31 @@ body.page-template-default{
 	input[type="submit"],
 	button.load-more {
 	    background: $primary-green;
-	    border: 1px solid $primary-green;
+	    border: 1px solid $secondary-green;
 	    color: $tan;
 
 	    &:hover,
 	    &:active,
 	    &:focus{
+	    	//background: transparent;
 	    	background: $secondary-green;
-		    border-color: $secondary-green;
+		    border-color: $primary-green;
 		    color: $primary-green;
 	    }
 
-	    &.outline{
-	    	color: $primary-green;
-	    	border-color: $primary-green;
-	    	background: transparent;
+	    // &.outline{
+	    // 	color: $primary-green;
+	    // 	border-color: $primary-green;
+	    // 	background: transparent;
 
-	    	&:hover,
-		    &:active,
-		    &:focus{
-		    	background: $primary-green;
-	    		border-color: $tan;
-	    		color: $tan;
-		    }
-	    }
+	    // 	&:hover,
+		   //  &:active,
+		   //  &:focus{
+		   //  	background: $primary-green;
+	    // 		border-color: $tan;
+	    // 		color: $tan;
+		   //  }
+	    // }
 	}
 
 	a svg{
@@ -417,30 +421,31 @@ body.page-template-default{
 	button.button,
 	input[type="submit"],
 	button.load-more {
-	    background: $alternate-orange;
+	    background: $secondary-orange;
 	    border: 1px solid $alternate-orange;
-	    color: $secondary-orange;
+	    color: $alternate-orange;
 
 	    &:hover,
 	    &:active,
 	    &:focus{
-	    	background: $secondary-orange;
+	    	//background: transparent;
+	    	background: $alternate-orange;
 		    border-color: $secondary-orange;
-		    color: $alternate-orange;
+		    color: $secondary-orange;
 	    }
 
-	    &.outline{
-	    	background: #fff;
-	    	color: $alternate-orange;
-	    	border-color: $alternate-orange;
+	    // &.outline{
+	    // 	background: #fff;
+	    // 	color: $alternate-orange;
+	    // 	border-color: $alternate-orange;
 
-	    	&:hover,
-		    &:active,
-		    &:focus{
-		    	background: $secondary-orange;
-	    		border-color: $alternate-orange;
-		    }
-	    }
+	    // 	&:hover,
+		   //  &:active,
+		   //  &:focus{
+		   //  	background: $secondary-orange;
+	    // 		border-color: $alternate-orange;
+		   //  }
+	    // }
 	}
 
 	a svg{
@@ -487,38 +492,39 @@ body.page-template-default{
 	input[type="submit"],
 	button.load-more {
 	    background: $secondary-blue;
-	    border: 1px solid $secondary-blue;
+	    border: 1px solid $secondary-orange;
 	    color: $secondary-orange;
 
 	    &:hover,
 	    &:active,
 	    &:focus{
+	    	//background: transparent;
 	    	background: $secondary-orange;
-		    border-color: $secondary-orange;
+		    border-color: $secondary-blue;
 		    color: $secondary-blue;
 	    }
 
-	    &.outline{
-	    	background: #fff;
-	    	color: $secondary-blue;
-	    	border-color: $secondary-blue;
+	    // &.outline{
+	    // 	background: #fff;
+	    // 	color: $secondary-blue;
+	    // 	border-color: $secondary-blue;
 
-	    	&:hover,
-		    &:active,
-		    &:focus{
-		    	background: $secondary-orange;
-	    		border-color: $secondary-blue;
-		    }
-	    }
+	    // 	&:hover,
+		   //  &:active,
+		   //  &:focus{
+		   //  	background: $secondary-orange;
+	    // 		border-color: $secondary-blue;
+		   //  }
+	    // }
 	}
 
 	a svg{
-		fill: $alternate-green;
+		fill: $secondary-blue;
 
 		&:hover,
 	    &:active,
 	    &:focus{
-    		fill: $secondary-blue;
+    		fill: $alternate-green;
 	    }
 	}
 	
@@ -556,39 +562,40 @@ body.page-template-default{
 	input[type="submit"],
 	button.load-more {
 	    background: $primary-orange;
-	    border: 1px solid $primary-orange;
+	    border: 1px solid $secondary-orange;
 	    color: $secondary-orange;
 
 	    &:hover,
 	    &:active,
 	    &:focus{
+	    	//background: transparent;
 	    	background: $secondary-orange;
-		    border-color: $secondary-orange;
-		    color: $alternate-orange;
+		    border-color: $primary-orange;
+		    color: $primary-orange;
 	    }
 
-	    &.outline{
-	    	background: #fff;
-	    	color: $primary-orange;
-	    	border-color: $primary-orange;
+	    // &.outline{
+	    // 	background: #fff;
+	    // 	color: $primary-orange;
+	    // 	border-color: $primary-orange;
 
-	    	&:hover,
-		    &:active,
-		    &:focus{
-		    	background: $secondary-orange;
-	    		border-color: $primary-orange;
-	    		color: $primary-orange;
-		    }
-	    }
+	    // 	&:hover,
+		   //  &:active,
+		   //  &:focus{
+		   //  	background: $secondary-orange;
+	    // 		border-color: $primary-orange;
+	    // 		color: $primary-orange;
+		   //  }
+	    // }
 	}
 
 	a svg{
-		fill: $alternate-orange;
+		fill: $primary-orange;
 
 		&:hover,
 	    &:active,
 	    &:focus{
-    		fill: $primary-orange;
+    		fill: $alternate-orange;
 	    }
 	}
 	

@@ -181,6 +181,49 @@ div.diagonal-bottom{
 	}
 }
 
+.article-listing{
+
+	article.article-list-item {
+	    margin: 30px 0;
+	    padding: 5px 20px 20px;
+	    border: 2px solid;
+	    background-color: rgba(255,255,255,.8);
+    	box-shadow: 0 3px 10px rgba(0,0,0,.1);
+
+	    @include medium-and-up {
+	    	padding: 25px;
+	    }
+
+	    .article-list-item-headline {
+		    font-weight: 700;
+		}
+
+	    .article-list-item-meta {
+		    width: 100%;
+		}
+
+		.article-list-item-content {
+		    width: 100%;
+		    font-size: 16px;
+		}
+
+		.tag-item {
+		    margin-bottom: 0;
+		}
+
+		.topicwise-article-image {
+		    border: 2px solid;
+		}
+	}
+
+	//Read more button area
+	.col-lg-5 {
+	    max-width: 100% !important;
+	    text-align: center;
+	    flex: none;
+	}
+}
+
 
 /*
  * Body Elements Color Schemes
@@ -189,10 +232,18 @@ div.diagonal-bottom{
 body.template-blue,
 // (template blue is currently the default color)
 body.page-template-default{
-	background: $primary-blue;
+	background: $secondary-blue;
 
 	.header-logo.home{
 		opacity: 1;
+	}
+
+	article.article-list-item {
+		border-color: $primary-blue;
+
+		.topicwise-article-image {
+		    border-color: $primary-blue;
+		}
 	}
 }
 
@@ -202,25 +253,69 @@ body.template-green{
 	.header-logo.about{
 		opacity: 1;
 	}
+
+	article.article-list-item {
+		border-color: $secondary-green;
+
+		.topicwise-article-image {
+		    border-color: $secondary-green;
+		}
+	}
 }
+
 body.template-yellow{
 	background: $alternate-orange;
 
 	.header-logo.case{
 		opacity: 1;
 	}
+
+	article.article-list-item {
+		border-color: $secondary-orange;
+
+		.topicwise-article-image {
+		    border-color: $secondary-orange;
+		}
+	}
 }
+
 body.template-yellow-blue{
 	background: $secondary-orange;
 
 	.header-logo.tools{
 		opacity: 1;
 	}
+
+	article.article-list-item {
+		border-color: $secondary-orange;
+
+		.topicwise-article-image {
+		    border-color: $secondary-orange;
+		}
+	}
 }
+
 body.template-orange{
 	background: $secondary-orange;
 
 	.header-logo.blog{
+		opacity: 1;
+	}
+
+	article.article-list-item {
+		border-color: $secondary-orange;
+
+		.topicwise-article-image {
+		    border-color: $secondary-orange;
+		}
+	}
+}
+
+// Admin-only no color scheme pages
+body.template-blank{
+	background: #c1c1c1;
+
+	.header-logo.home{
 		opacity: 1;
 	}
 }
