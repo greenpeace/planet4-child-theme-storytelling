@@ -87,12 +87,16 @@ h4{
 }
 
 h1{
-	font-size: 48px;
+	font-size: 34px;
 	font-family: $primary-font-bold;
 	font-weight: 700;
 	margin-bottom: 0.5em;
 
-	//Style guide only tags
+	@include small-and-up {
+		font-size: 48px;
+	}
+
+	//Style guide only classes
 	&.style-guide{
 		margin-bottom: 0.25em;
 	}
@@ -104,8 +108,12 @@ h1{
 }
 
 h2{
-	font-size: 32px;
+	font-size: 30px;
 	margin-bottom: 0.5em;
+
+	@include small-and-up {
+		font-size: 32px;
+	}
 }
 
 h3{

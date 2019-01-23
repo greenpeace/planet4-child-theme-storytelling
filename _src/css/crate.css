@@ -2827,10 +2827,13 @@ h4 {
   margin-top: 1em; }
 
 h1 {
-  font-size: 48px;
+  font-size: 34px;
   font-family: "GT Walsheim Pro Bold", sans-serif;
   font-weight: 700;
   margin-bottom: 0.5em; }
+  @media (min-width: 576px) {
+    h1 {
+      font-size: 48px; } }
   h1.style-guide {
     margin-bottom: 0.25em; }
   h1.header-display {
@@ -2839,8 +2842,11 @@ h1 {
     padding: 15px 20px; }
 
 h2 {
-  font-size: 32px;
+  font-size: 30px;
   margin-bottom: 0.5em; }
+  @media (min-width: 576px) {
+    h2 {
+      font-size: 32px; } }
 
 h3 {
   font-size: 24px; }
@@ -3423,6 +3429,50 @@ footer.site-footer {
       font-size: 20px;
       margin-top: 10px; }
 
+/* P4 Block Modifications */
+.content-two-column-block {
+  padding: 30px 0; }
+  @media (min-width: 576px) {
+    .content-two-column-block {
+      padding: 50px 0 30px 0; } }
+  .content-two-column-block h2 {
+    font-family: "Karla", sans-serif;
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 22px; }
+
+.page-section {
+  margin-bottom: 0; }
+  .page-section .page-section-header {
+    font-family: "GT Walsheim Pro", sans-serif;
+    margin-top: 0; }
+
+.article-listing article.article-list-item {
+  margin: 30px 0;
+  padding: 5px 20px 20px;
+  border: 2px solid;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); }
+  @media (min-width: 768px) {
+    .article-listing article.article-list-item {
+      padding: 25px; } }
+  .article-listing article.article-list-item .article-list-item-headline {
+    font-weight: 700; }
+  .article-listing article.article-list-item .article-list-item-meta {
+    width: 100%; }
+  .article-listing article.article-list-item .article-list-item-content {
+    width: 100%;
+    font-size: 16px; }
+  .article-listing article.article-list-item .tag-item {
+    margin-bottom: 0; }
+  .article-listing article.article-list-item .topicwise-article-image {
+    border: 2px solid; }
+
+.article-listing .col-lg-5 {
+  max-width: 100% !important;
+  text-align: center;
+  flex: none; }
+
 /*!
  *# Import Template Stylesheets */
 /**
@@ -3507,6 +3557,13 @@ div.page-template {
     padding-left: 20px;
     padding-right: 20px; }
 
+p.indent {
+  margin-bottom: 30px; }
+  @media (min-width: 768px) {
+    p.indent {
+      padding-left: 50px; } }
+
+/* Diagonal div Styles */
 div.page-template::before,
 div.diagonal-top::before,
 div.diagonal-topbottom::before {
@@ -3562,6 +3619,7 @@ div.diagonal-none {
   div.diagonal-none.last {
     padding-bottom: 0; }
 
+/* Tagline Styles */
 .tagline {
   font-weight: 700;
   font-size: 20px;
@@ -3596,6 +3654,7 @@ div.diagonal-none {
           margin-right: 0;
           display: inline-block; } }
 
+/* Image Blocks Styles */
 .image-block {
   height: 400px;
   width: 100%;
@@ -3635,50 +3694,6 @@ div.diagonal-none {
     padding: 0 20px;
     text-align: center;
     z-index: 3; }
-
-/* P4 Block Modifications */
-.content-two-column-block {
-  padding: 30px 0; }
-  @media (min-width: 576px) {
-    .content-two-column-block {
-      padding: 50px 0 30px 0; } }
-  .content-two-column-block h2 {
-    font-family: "Karla", sans-serif;
-    text-transform: uppercase;
-    width: 100%;
-    font-size: 22px; }
-
-.page-section {
-  margin-bottom: 0; }
-  .page-section .page-section-header {
-    font-family: "GT Walsheim Pro", sans-serif;
-    margin-top: 0; }
-
-.article-listing article.article-list-item {
-  margin: 30px 0;
-  padding: 5px 20px 20px;
-  border: 2px solid;
-  background-color: rgba(255, 255, 255, 0.8);
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); }
-  @media (min-width: 768px) {
-    .article-listing article.article-list-item {
-      padding: 25px; } }
-  .article-listing article.article-list-item .article-list-item-headline {
-    font-weight: 700; }
-  .article-listing article.article-list-item .article-list-item-meta {
-    width: 100%; }
-  .article-listing article.article-list-item .article-list-item-content {
-    width: 100%;
-    font-size: 16px; }
-  .article-listing article.article-list-item .tag-item {
-    margin-bottom: 0; }
-  .article-listing article.article-list-item .topicwise-article-image {
-    border: 2px solid; }
-
-.article-listing .col-lg-5 {
-  max-width: 100% !important;
-  text-align: center;
-  flex: none; }
 
 /*
  * Body Elements Color Schemes
