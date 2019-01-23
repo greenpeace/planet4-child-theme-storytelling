@@ -113,7 +113,8 @@ div.page-template {
 	}
 }
 div.page-template::before,
-div.diagonal-top::before {
+div.diagonal-top::before,
+div.diagonal-topbottom::before {
     position: absolute;
     content: '';
     display: block;
@@ -130,7 +131,8 @@ div.diagonal-top::before {
 	}
 }
 div.page-template::after,
-div.diagonal-bottom::after {
+div.diagonal-bottom::after,
+div.diagonal-topbottom::after {
     position: absolute;
     content: '';
     display: block;
@@ -154,6 +156,106 @@ div.diagonal-top{
 div.diagonal-bottom{
 	padding-bottom: 20px;
 }
+div.diagonal-topbottom{
+	padding: 20px 0;
+}
+
+.tagline{
+	font-weight: 700;
+	font-size: 20px;
+	max-width: 675px;
+	margin: auto;
+
+	span.source{
+		font-size: 12px;
+		font-style: italic;
+		display: block;
+		font-weight: 300;
+		margin-top: 20px;
+	}
+
+	.button{
+		margin: 30px auto 0;
+	}
+
+	&.nowidth{
+		max-width: none;
+	}
+
+	.button-group{
+		text-align: center;
+		display: block;
+
+		@include medium-and-up {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.button{
+			max-width: 250px;
+			display: block;
+
+			@include medium-and-up {
+				min-width: 200px;
+				margin-left: 0;
+				margin-right: 0;
+				display: inline-block;
+			}
+		}
+	}
+}
+
+.image-block{
+    height: 400px;
+    width: 100%;
+    z-index: unset !important;
+
+    &.whale::before{
+    	background-image: url('../../images/placeholder_image1.jpg');
+    }
+
+    &.penguin::before{
+    	background-image: url('../../images/placeholder_image2.jpg');
+    }
+
+    &::before{
+    	content: '';
+    	width: 100%;
+    	height: 100%;
+    	top: 0;
+    	position: absolute;
+    	background-attachment: fixed;
+	    background-position: 0 60%;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    will-change: transform;
+    }
+
+    &::after{
+    	content: '';
+	    width: 100%;
+	    height: 100%;
+	    background: #ccc;
+	    position: absolute;
+	    opacity: 0.5;
+    }
+
+    .plain-quote{
+    	position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%, -30%);
+	    color: #fff;
+	    font-weight: 700;
+	    font-size: 22px;
+	    width: 100%;
+	    max-width: 800px;
+	    padding: 0 20px;
+	    text-align: center;
+	    z-index: 3;
+    }
+}
+
 
 /* P4 Block Modifications */
 
@@ -245,6 +347,10 @@ body.page-template-default{
 		    border-color: $primary-blue;
 		}
 	}
+
+	.image-block::after{
+	    background: $primary-blue;
+    }
 }
 
 body.template-green{
@@ -261,6 +367,10 @@ body.template-green{
 		    border-color: $secondary-green;
 		}
 	}
+
+	.image-block::after{
+	    background: $secondary-blue;
+    }
 }
 
 body.template-yellow{
@@ -277,6 +387,10 @@ body.template-yellow{
 		    border-color: $secondary-orange;
 		}
 	}
+
+	.image-block::after{
+	    background: $secondary-orange;
+    }
 }
 
 body.template-yellow-blue{
@@ -293,6 +407,10 @@ body.template-yellow-blue{
 		    border-color: $secondary-orange;
 		}
 	}
+
+	.image-block::after{
+	    background: $secondary-blue;
+    }
 }
 
 body.template-orange{
@@ -309,6 +427,10 @@ body.template-orange{
 		    border-color: $secondary-orange;
 		}
 	}
+
+	.image-block::after{
+	    background: $secondary-orange;
+    }
 }
 
 // Admin-only no color scheme pages
