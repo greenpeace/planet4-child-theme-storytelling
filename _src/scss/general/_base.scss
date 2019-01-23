@@ -201,6 +201,13 @@ button.load-more {
 hr {
     margin-top: 0;
     margin-bottom: 2em;
+
+    &.sep{
+	    margin-top: 0;
+	    margin-bottom: 60px;
+	    border-color: #f7f7f7;
+	    width: 80%;
+    }
 }
 
 blockquote{

@@ -160,6 +160,18 @@ div.diagonal-topbottom{
 	padding: 20px 0;
 }
 
+div.diagonal-none{
+	padding: 60px 0 30px;
+
+	@include medium-and-up {
+		padding: 90px 0 50px;
+	}
+
+	&.last{
+		padding-bottom: 0;
+	}
+}
+
 .tagline{
 	font-weight: 700;
 	font-size: 20px;
@@ -180,6 +192,10 @@ div.diagonal-topbottom{
 
 	&.nowidth{
 		max-width: none;
+	}
+
+	&.small{
+		font-size: 14px;
 	}
 
 	.button-group{
@@ -369,7 +385,7 @@ body.template-green{
 	}
 
 	.image-block::after{
-	    background: $secondary-blue;
+	    background: $secondary-green;
     }
 }
 

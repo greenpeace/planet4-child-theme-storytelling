@@ -2930,6 +2930,11 @@ button.load-more {
 hr {
   margin-top: 0;
   margin-bottom: 2em; }
+  hr.sep {
+    margin-top: 0;
+    margin-bottom: 60px;
+    border-color: #f7f7f7;
+    width: 80%; }
 
 blockquote {
   font-family: "Karla", sans-serif;
@@ -3549,6 +3554,14 @@ div.diagonal-bottom {
 div.diagonal-topbottom {
   padding: 20px 0; }
 
+div.diagonal-none {
+  padding: 60px 0 30px; }
+  @media (min-width: 768px) {
+    div.diagonal-none {
+      padding: 90px 0 50px; } }
+  div.diagonal-none.last {
+    padding-bottom: 0; }
+
 .tagline {
   font-weight: 700;
   font-size: 20px;
@@ -3564,6 +3577,8 @@ div.diagonal-topbottom {
     margin: 30px auto 0; }
   .tagline.nowidth {
     max-width: none; }
+  .tagline.small {
+    font-size: 14px; }
   .tagline .button-group {
     text-align: center;
     display: block; }
@@ -3694,7 +3709,7 @@ body.template-green {
     body.template-green article.article-list-item .topicwise-article-image {
       border-color: #88a840; }
   body.template-green .image-block::after {
-    background: #3ea3a0; }
+    background: #88a840; }
 
 body.template-yellow {
   background: #963d3a; }
@@ -3734,6 +3749,7 @@ body.template-blank {
   body.template-blank .header-logo.home {
     opacity: 1; }
 
+/* Replace with .diagonal-none class */
 .tools-container {
   padding: 60px 0 30px; }
   @media (min-width: 768px) {
@@ -3785,3 +3801,44 @@ body.template-blank {
         .tools-list .tools > * {
           flex-grow: 0;
           width: 50%; } }
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px; }
+  .team-container > div {
+    width: 100%;
+    margin-bottom: 25px;
+    text-align: center; }
+    @media (min-width: 576px) {
+      .team-container > div {
+        display: flex;
+        text-align: left;
+        padding-right: 25px; } }
+    @media (min-width: 768px) {
+      .team-container > div {
+        width: 50%; } }
+    @media (min-width: 992px) {
+      .team-container > div {
+        padding-right: 50px;
+        margin-bottom: 50px; } }
+    .team-container > div > img {
+      width: 125px;
+      height: 125px;
+      border-radius: 50%; }
+      @media (min-width: 576px) {
+        .team-container > div > img {
+          width: 100px;
+          height: 100px;
+          margin-right: 15px; } }
+      @media (min-width: 992px) {
+        .team-container > div > img {
+          margin-right: 20px;
+          width: 125px;
+          height: 125px; } }
+  .team-container h3 {
+    margin: 0 0 0.5em;
+    color: #145635;
+    font-family: "Karla", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase; }
