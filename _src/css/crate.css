@@ -3465,6 +3465,11 @@ footer.site-footer {
     font-size: 16px; }
   .article-listing article.article-list-item .tag-item {
     margin-bottom: 0; }
+    .article-listing article.article-list-item .tag-item.page-type {
+      display: none; }
+  .article-listing article.article-list-item .tag-wrap::before {
+    content: '';
+    margin: 0; }
   .article-listing article.article-list-item .topicwise-article-image {
     border: 2px solid; }
 
@@ -3472,6 +3477,45 @@ footer.site-footer {
   max-width: 100% !important;
   text-align: center;
   flex: none; }
+
+/* P4 Block Modifications (Blog Page Only) */
+.blog-tiles .article-listing {
+  margin-top: 30px; }
+  .blog-tiles .article-listing .page-section-header {
+    opacity: 0;
+    position: absolute;
+    pointer-events: none; }
+  .blog-tiles .article-listing .article-list-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 25px; }
+    .blog-tiles .article-listing .article-list-section::after {
+      display: none; }
+    .blog-tiles .article-listing .article-list-section .article-list-item {
+      margin: 25px 0;
+      flex-direction: column; }
+      @media (min-width: 768px) {
+        .blog-tiles .article-listing .article-list-section .article-list-item {
+          width: 48%; } }
+      .blog-tiles .article-listing .article-list-section .article-list-item .article-list-item-body {
+        padding-left: 0;
+        padding-right: 0; }
+        @media (min-width: 768px) {
+          .blog-tiles .article-listing .article-list-section .article-list-item .article-list-item-body {
+            padding: 0; } }
+      .blog-tiles .article-listing .article-list-section .article-list-item .article-list-item-image {
+        margin-bottom: 15px;
+        background: #F9BA49; }
+        .blog-tiles .article-listing .article-list-section .article-list-item .article-list-item-image img {
+          -webkit-transition: all 0.3s;
+          -moz-transition: all 0.3s;
+          -o-transition: all 0.3s;
+          transition: all 0.3s; }
+      .blog-tiles .article-listing .article-list-section .article-list-item a:hover img,
+      .blog-tiles .article-listing .article-list-section .article-list-item a:focus img,
+      .blog-tiles .article-listing .article-list-section .article-list-item a:active img {
+        opacity: 0.5; }
 
 /*!
  *# Import Template Stylesheets */

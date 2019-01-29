@@ -52,7 +52,16 @@
 
 		.tag-item {
 		    margin-bottom: 0;
+
+		    &.page-type{
+		    	display: none;
+		    }
 		}
+
+		.tag-wrap::before{
+	    	content: '';
+	    	margin: 0;
+	    }
 
 		.topicwise-article-image {
 		    border: 2px solid;
@@ -66,3 +75,67 @@
 	    flex: none;
 	}
 }
+
+/* P4 Block Modifications (Blog Page Only) */
+
+.blog-tiles{
+	.article-listing{
+		margin-top: 30px;
+
+		.page-section-header{
+			opacity: 0;
+			position: absolute;
+			pointer-events: none;
+		}
+
+		.article-list-section {
+		    display: flex;
+		    flex-wrap: wrap;
+		    justify-content: space-between;
+		    margin-bottom: 25px;
+
+		    &::after{
+		    	display: none;
+		    }
+
+		    .article-list-item {
+			    margin: 25px 0;
+			    flex-direction: column;
+
+			    @include medium-and-up {
+			    	width: 48%;
+			    }
+
+			    .article-list-item-body{
+			    	padding-left: 0;
+			    	padding-right: 0;
+
+			    	@include medium-and-up {
+			    		padding: 0;
+			    	}
+			    }
+
+			    .article-list-item-image {
+				    margin-bottom: 15px;
+				    background: $secondary-orange;
+
+				    img{
+				    	-webkit-transition: all 0.3s;
+						-moz-transition: all 0.3s;
+						-o-transition: all 0.3s;
+				    	transition: all 0.3s;
+				    }
+				}
+
+				a:hover,
+				a:focus,
+				a:active {
+					img {
+						opacity: 0.5;
+					}
+				}
+			}
+		}
+	}
+}
+
