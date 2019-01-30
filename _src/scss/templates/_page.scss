@@ -124,8 +124,9 @@ p.indent{
 /* Diagonal div Styles */
 
 div.page-template::before,
-div.diagonal-top::before,
-div.diagonal-topbottom::before {
+.diagonal-top::before,
+.diagonal-topbottom::before,
+article.single-post-container::before {
     position: absolute;
     content: '';
     display: block;
@@ -142,8 +143,9 @@ div.diagonal-topbottom::before {
 	}
 }
 div.page-template::after,
-div.diagonal-bottom::after,
-div.diagonal-topbottom::after {
+.diagonal-bottom::after,
+.diagonal-topbottom::after,
+article.single-post-container::after {
     position: absolute;
     content: '';
     display: block;
@@ -239,27 +241,33 @@ div.diagonal-none{
 .image-block{
     height: 400px;
     width: 100%;
+    position: relative;
     z-index: unset !important;
+    background-attachment: fixed;
+    background-position: center 60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    will-change: transform;
 
-    &.whale::before{
+    &.whale {
     	background-image: url('../../images/placeholder_image1.jpg');
     }
 
-    &.penguin::before{
+    &.penguin {
     	background-image: url('../../images/placeholder_image2.jpg');
     }
 
     &::before{
-    	content: '';
-    	width: 100%;
-    	height: 100%;
-    	top: 0;
-    	position: absolute;
-    	background-attachment: fixed;
-	    background-position: 0 60%;
-	    background-repeat: no-repeat;
-	    background-size: cover;
-	    will-change: transform;
+    	// content: '';
+    	// width: 100%;
+    	// height: 100%;
+    	// top: 0;
+    	// position: absolute;
+    	// background-attachment: fixed;
+	    // background-position: 0 60%;
+	    // background-repeat: no-repeat;
+	    // background-size: cover;
+	    // will-change: transform;
     }
 
     &::after{

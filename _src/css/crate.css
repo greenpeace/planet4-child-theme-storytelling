@@ -3609,8 +3609,9 @@ p.indent {
 
 /* Diagonal div Styles */
 div.page-template::before,
-div.diagonal-top::before,
-div.diagonal-topbottom::before {
+.diagonal-top::before,
+.diagonal-topbottom::before,
+article.single-post-container::before {
   position: absolute;
   content: '';
   display: block;
@@ -3622,14 +3623,16 @@ div.diagonal-topbottom::before {
   border-color: transparent transparent white transparent; }
   @media (min-width: 768px) {
     div.page-template::before,
-    div.diagonal-top::before,
-    div.diagonal-topbottom::before {
+    .diagonal-top::before,
+    .diagonal-topbottom::before,
+    article.single-post-container::before {
       top: -124px;
       border-width: 0 100vw 125px 0; } }
 
 div.page-template::after,
-div.diagonal-bottom::after,
-div.diagonal-topbottom::after {
+.diagonal-bottom::after,
+.diagonal-topbottom::after,
+article.single-post-container::after {
   position: absolute;
   content: '';
   display: block;
@@ -3641,8 +3644,9 @@ div.diagonal-topbottom::after {
   border-color: transparent white transparent transparent; }
   @media (min-width: 768px) {
     div.page-template::after,
-    div.diagonal-bottom::after,
-    div.diagonal-topbottom::after {
+    .diagonal-bottom::after,
+    .diagonal-topbottom::after,
+    article.single-post-container::after {
       bottom: -124px;
       border-width: 0 100vw 125px 0; } }
 
@@ -3702,22 +3706,17 @@ div.diagonal-none {
 .image-block {
   height: 400px;
   width: 100%;
-  z-index: unset !important; }
-  .image-block.whale::before {
+  position: relative;
+  z-index: unset !important;
+  background-attachment: fixed;
+  background-position: center 60%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  will-change: transform; }
+  .image-block.whale {
     background-image: url("../../images/placeholder_image1.jpg"); }
-  .image-block.penguin::before {
+  .image-block.penguin {
     background-image: url("../../images/placeholder_image2.jpg"); }
-  .image-block::before {
-    content: '';
-    width: 100%;
-    height: 100%;
-    top: 0;
-    position: absolute;
-    background-attachment: fixed;
-    background-position: 0 60%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    will-change: transform; }
   .image-block::after {
     content: '';
     width: 100%;
@@ -3901,3 +3900,60 @@ body.template-blank {
     font-family: "Karla", sans-serif;
     font-weight: 700;
     text-transform: uppercase; }
+
+article.single-post-container {
+  position: relative;
+  background: #fff;
+  margin: 0 0 75px; }
+  @media (min-width: 768px) {
+    article.single-post-container {
+      margin: 0 0 125px; } }
+  article.single-post-container header.page-header {
+    display: block;
+    padding-top: 0;
+    z-index: 1; }
+    @media (min-width: 768px) {
+      article.single-post-container header.page-header h1 {
+        margin-bottom: 20px; } }
+    @media (min-width: 992px) {
+      article.single-post-container header.page-header h1 {
+        font-size: 3rem; } }
+    article.single-post-container header.page-header .tag-item.page-type {
+      display: none; }
+    article.single-post-container header.page-header .tag-wrap::before {
+      content: '';
+      margin: 0; }
+    article.single-post-container header.page-header a svg {
+      fill: #fff; }
+  article.single-post-container .image-block {
+    height: 400px; }
+    @media (min-width: 768px) {
+      article.single-post-container .image-block {
+        height: 600px; } }
+    article.single-post-container .image-block::after {
+      content: none; }
+  article.single-post-container .diagonal-top {
+    position: relative; }
+  article.single-post-container .post-content .post-content-lead {
+    margin: auto; }
+  article.single-post-container hr {
+    height: 1px;
+    max-width: 80%;
+    padding: 0 15px;
+    margin-bottom: 40px;
+    margin-bottom: 60px; }
+    @media (min-width: 992px) {
+      article.single-post-container hr {
+        max-width: 800px; } }
+  article.single-post-container .article-listing .page-section-header {
+    opacity: 1;
+    position: relative;
+    pointer-events: initial; }
+
+/*
+ * Single Page Color Schemes
+ * Adjusting theme colors based on body class.
+ */
+body.template-orange hr {
+  background-image: #F9BA49;
+  background-image: linear-gradient(to right, rgba(249, 186, 73, 0), #f9ba49, rgba(249, 186, 73, 0)); }

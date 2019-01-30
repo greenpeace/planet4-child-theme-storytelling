@@ -1,0 +1,89 @@
+
+article.single-post-container{
+	position: relative;
+	background: #fff;
+    margin: 0 0 75px;
+
+    @include medium-and-up {
+		margin: 0 0 125px;
+	}
+
+	header.page-header{
+		display: block;
+		padding-top: 0;
+		z-index: 1;
+
+		h1{
+			@include medium-and-up {
+				margin-bottom: 20px;
+			}
+			@include large-and-up {
+				font-size: 3rem;
+			}
+		}
+
+		.tag-item.page-type{
+			display: none;
+		}
+
+		.tag-wrap::before{
+	    	content: '';
+	    	margin: 0;
+	    }
+
+	    a svg{
+	    	fill: #fff;
+	    }
+	}
+
+	.image-block {
+		height: 400px;
+
+		@include medium-and-up {
+			height: 600px;
+		}
+
+		&::after{
+			content: none;
+		}
+	}
+
+	.diagonal-top{
+		position: relative;
+	}
+
+	.post-content {
+		.post-content-lead {
+		    margin: auto;
+		}
+	}
+
+	hr{
+		height: 1px;
+		max-width: 80%;
+		padding: 0 15px;
+		margin-bottom: 40px;
+		margin-bottom: 60px;
+
+		@include large-and-up {
+			max-width: 800px;
+		}
+	}
+
+	.article-listing .page-section-header{
+		opacity: 1;
+		position: relative;
+		pointer-events: initial;
+	}
+}
+
+/*
+ * Single Page Color Schemes
+ * Adjusting theme colors based on body class.
+ */
+body.template-orange{
+	hr{
+		background-image: $secondary-orange;
+		background-image: linear-gradient(to right, rgba(249,186,73, 0), rgba(249,186,73, 1), rgba(249,186,73, 0));
+	}
+}
