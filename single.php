@@ -48,7 +48,7 @@ $context['filter_url'] = add_query_arg( [
 
 // Build the shortcode for articles block.
 if ( 'yes' === $post->include_articles ) {
-	$post->articles = "[shortcake_articles exclude_post_id='" . $post->ID . "' /]";
+	$post->articles = "[shortcake_articles article_count='2' exclude_post_id='" . $post->ID . "' /]";
 }
 
 // Build the shortcode for take action boxout block
