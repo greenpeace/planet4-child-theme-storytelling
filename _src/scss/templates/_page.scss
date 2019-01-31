@@ -254,6 +254,11 @@ div.diagonal-none{
     background-size: cover;
     will-change: transform;
 
+    &.no-parralax{
+    	background-attachment: unset;
+   		background-position: center 65%;
+    }
+
     &.whale {
     	background-image: url('../../images/placeholder_image1.jpg');
     }

@@ -3736,6 +3736,9 @@ div.diagonal-none {
   background-repeat: no-repeat;
   background-size: cover;
   will-change: transform; }
+  .image-block.no-parralax {
+    background-attachment: unset;
+    background-position: center 65%; }
   .image-block.whale {
     background-image: url("../../images/placeholder_image1.jpg"); }
   .image-block.penguin {
