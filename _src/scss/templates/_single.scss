@@ -58,32 +58,9 @@ article.single-post-container{
 		}
 	}
 
-	hr{
-		height: 1px;
-		max-width: 80%;
-		padding: 0 15px;
-		margin-bottom: 40px;
-		margin-bottom: 60px;
-
-		@include large-and-up {
-			max-width: 800px;
-		}
-	}
-
 	.article-listing .page-section-header{
 		opacity: 1;
 		position: relative;
 		pointer-events: initial;
-	}
-}
-
-/*
- * Single Page Color Schemes
- * Adjusting theme colors based on body class.
- */
-body.template-orange{
-	hr{
-		background-image: $secondary-orange;
-		background-image: linear-gradient(to right, rgba(249,186,73, 0), rgba(249,186,73, 1), rgba(249,186,73, 0));
 	}
 }

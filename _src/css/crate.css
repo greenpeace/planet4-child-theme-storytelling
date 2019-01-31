@@ -2942,6 +2942,18 @@ hr {
     border-color: #f7f7f7;
     width: 80%; }
 
+hr:not(.sep) {
+  height: 1px;
+  max-width: 80%;
+  padding: 0 15px;
+  margin-bottom: 40px;
+  margin-bottom: 60px; }
+  hr:not(.sep).nospace {
+    margin-bottom: 0; }
+  @media (min-width: 992px) {
+    hr:not(.sep) {
+      max-width: 800px; } }
+
 blockquote {
   font-family: "Karla", sans-serif;
   position: relative;
@@ -3184,6 +3196,10 @@ body.page-template-default blockquote::after {
   .template-yellow-blue a svg:hover, .template-yellow-blue a svg:active, .template-yellow-blue a svg:focus {
     fill: #1e3920; }
 
+.template-yellow-blue hr {
+  background-image: #F9BA49;
+  background-image: linear-gradient(to right, rgba(249, 186, 73, 0), #f9ba49, rgba(249, 186, 73, 0)); }
+
 .template-yellow-blue blockquote::after {
   background-color: #3ea3a0; }
 
@@ -3227,6 +3243,10 @@ body.page-template-default blockquote::after {
   fill: #ef5e48; }
   .template-orange a svg:hover, .template-orange a svg:active, .template-orange a svg:focus {
     fill: #963d3a; }
+
+.template-orange hr {
+  background-image: #F9BA49;
+  background-image: linear-gradient(to right, rgba(249, 186, 73, 0), #f9ba49, rgba(249, 186, 73, 0)); }
 
 .template-orange blockquote::after {
   background-color: #ef5e48; }
@@ -3687,11 +3707,14 @@ div.diagonal-none {
     font-size: 14px; }
   .tagline .button-group {
     text-align: center;
-    display: block; }
+    display: block;
+    flex-wrap: wrap; }
     @media (min-width: 768px) {
       .tagline .button-group {
         display: flex;
-        justify-content: space-between; } }
+        justify-content: space-between; }
+        .tagline .button-group.more {
+          justify-content: space-around; } }
     .tagline .button-group .button {
       max-width: 250px;
       display: block; }
@@ -3936,24 +3959,113 @@ article.single-post-container {
     position: relative; }
   article.single-post-container .post-content .post-content-lead {
     margin: auto; }
-  article.single-post-container hr {
-    height: 1px;
-    max-width: 80%;
-    padding: 0 15px;
-    margin-bottom: 40px;
-    margin-bottom: 60px; }
-    @media (min-width: 992px) {
-      article.single-post-container hr {
-        max-width: 800px; } }
   article.single-post-container .article-listing .page-section-header {
     opacity: 1;
     position: relative;
     pointer-events: initial; }
 
-/*
- * Single Page Color Schemes
- * Adjusting theme colors based on body class.
- */
-body.template-orange hr {
-  background-image: #F9BA49;
-  background-image: linear-gradient(to right, rgba(249, 186, 73, 0), #f9ba49, rgba(249, 186, 73, 0)); }
+.exercise {
+  margin: 40px 0;
+  position: relative; }
+  .exercise h3 {
+    font-family: "Karla", sans-serif;
+    text-transform: uppercase;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 700; }
+  .exercise .exercise-item {
+    padding: 15px 15px 0;
+    border: 1px solid #1e3920; }
+    @media (min-width: 576px) {
+      .exercise .exercise-item {
+        padding: 25px 25px 0; } }
+    .exercise .exercise-item a:not(.button) {
+      display: block;
+      text-decoration: none;
+      font-weight: bold;
+      position: relative;
+      font-size: 1rem;
+      margin-bottom: 30px;
+      padding-left: 50px; }
+      @media (min-width: 576px) {
+        .exercise .exercise-item a:not(.button) {
+          font-size: 1.125rem;
+          padding-left: 55px; } }
+      @media (min-width: 768px) {
+        .exercise .exercise-item a:not(.button) {
+          padding-left: 85px; } }
+      @media (min-width: 992px) {
+        .exercise .exercise-item a:not(.button) {
+          font-size: 1.25rem; } }
+      .exercise .exercise-item a:not(.button) span {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        left: 0;
+        top: 0;
+        background-color: transparent;
+        margin: 8px 0 0 5px; }
+        @media (min-width: 576px) {
+          .exercise .exercise-item a:not(.button) span {
+            font-size: 1.125rem;
+            margin: 10px; } }
+        @media (min-width: 768px) {
+          .exercise .exercise-item a:not(.button) span {
+            width: 50px;
+            height: 50px; } }
+        html[dir="rtl"] .exercise .exercise-item a:not(.button) span {
+          right: auto;
+          left: 0; }
+        .exercise .exercise-item a:not(.button) span:before, .exercise .exercise-item a:not(.button) span:after {
+          content: "";
+          position: absolute;
+          background-color: #3ea3a0;
+          transition: all 0.25s ease-out; }
+        .exercise .exercise-item a:not(.button) span:before {
+          top: 0;
+          left: 50%;
+          width: 4px;
+          height: 100%;
+          margin-left: -2px;
+          transform: rotate(90deg); }
+          @media (min-width: 768px) {
+            .exercise .exercise-item a:not(.button) span:before {
+              width: 6px; } }
+        .exercise .exercise-item a:not(.button) span:after {
+          top: 50%;
+          left: 0;
+          width: 100%;
+          height: 4px;
+          margin-top: -2px; }
+          @media (min-width: 768px) {
+            .exercise .exercise-item a:not(.button) span:after {
+              top: 48%;
+              height: 6px; } }
+      .exercise .exercise-item a:not(.button):hover span:before,
+      .exercise .exercise-item a:not(.button):hover span:after, .exercise .exercise-item a:not(.button):active span:before,
+      .exercise .exercise-item a:not(.button):active span:after, .exercise .exercise-item a:not(.button):focus span:before,
+      .exercise .exercise-item a:not(.button):focus span:after {
+        background-color: #1e3920; }
+      .exercise .exercise-item a:not(.button).collapsed span:before {
+        transform: rotate(180deg); }
+      .exercise .exercise-item a:not(.button).collapsed span:after {
+        transform: rotate(180deg); }
+    .exercise .exercise-item .collapse, .exercise .exercise-item .collapsing {
+      height: 0;
+      opacity: 0;
+      visibility: hidden;
+      -webkit-transition: 0.3s all ease-in-out;
+      -moz-transition: 0.3s all ease-in-out;
+      -o-transition: 0.3s all ease-in-out;
+      transition: 0.3s all ease-in-out; }
+    .exercise .exercise-item .collapse.show {
+      height: auto;
+      visibility: visible;
+      opacity: 1; }
+    .exercise .exercise-item .item-text {
+      border-top: 1px solid #1e3920; }
+      .exercise .exercise-item .item-text::before {
+        content: '';
+        height: 25px;
+        width: 1px;
+        display: block; }

@@ -216,10 +216,15 @@ div.diagonal-none{
 	.button-group{
 		text-align: center;
 		display: block;
+		flex-wrap: wrap;
 
 		@include medium-and-up {
 			display: flex;
 			justify-content: space-between;
+
+			&.more{
+				justify-content: space-around;
+			}
 		}
 
 		.button{
