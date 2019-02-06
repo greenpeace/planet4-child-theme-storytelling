@@ -3416,6 +3416,7 @@ nav.top-navigation {
     .icons.mobile .header-icon {
       width: 50px;
       float: right;
+      right: 0;
       margin: 15px 20px 0; }
 
 /*
