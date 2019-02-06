@@ -218,7 +218,8 @@ hr {
     }
 }
 
-hr:not(.sep) {
+hr:not(.sep),
+hr:not(.clear) {
 	height: 1px;
 	max-width: 80%;
 	padding: 0 15px;
@@ -232,6 +233,13 @@ hr:not(.sep) {
 	@include large-and-up {
 		max-width: 800px;
 	}
+}
+
+hr.clear{
+	background-image: none;
+	border-color: transparent;
+	margin: 0;
+	padding: 0;
 }
 
 blockquote{
