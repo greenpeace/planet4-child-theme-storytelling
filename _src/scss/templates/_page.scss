@@ -156,6 +156,37 @@ div.icon-intro {
     }
 }
 
+ul.checklist {
+    max-width: 800px;
+    margin: auto;
+
+    li{
+    	margin: 0 0 20px;
+	    list-style-type: none;
+	    padding-left: 50px;
+	    position: relative;
+
+	    &::before{
+	    	content: '';
+	    	position: absolute;
+	    	background-image: url('../../images/checkbox_background.png');
+	    	width: 35px;
+		    left: 0;
+		    transform: translateY(-50%);
+		    top: 50%;
+		    height: 35px;
+		    background-size: 100%;
+		    background-position: top;
+	    }
+
+	    &:hover{
+	    	&::before{
+	    		background-position: bottom;
+	    	}
+	    }
+    }
+}
+
 /* Diagonal div Styles */
 
 div.page-template::before,

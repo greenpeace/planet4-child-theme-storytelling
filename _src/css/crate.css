@@ -2871,19 +2871,19 @@ p {
 .align-right {
   text-align: right; }
 
-.alignleft {
+div.page-template .alignleft {
   display: block;
   margin: 10px auto; }
   @media (min-width: 576px) {
-    .alignleft {
+    div.page-template .alignleft {
       display: inline;
       margin: 0 15px 10px 0; } }
 
-.alignright {
+div.page-template .alignright {
   display: block;
   margin: 10px auto; }
   @media (min-width: 576px) {
-    .alignright {
+    div.page-template .alignright {
       display: inline;
       margin: 0 0 10px 15px; } }
 
@@ -3731,6 +3731,28 @@ div.icon-intro {
       div.icon-intro img {
         position: absolute;
         margin-bottom: 0; } }
+
+ul.checklist {
+  max-width: 800px;
+  margin: auto; }
+  ul.checklist li {
+    margin: 0 0 20px;
+    list-style-type: none;
+    padding-left: 50px;
+    position: relative; }
+    ul.checklist li::before {
+      content: '';
+      position: absolute;
+      background-image: url("../../images/checkbox_background.png");
+      width: 35px;
+      left: 0;
+      transform: translateY(-50%);
+      top: 50%;
+      height: 35px;
+      background-size: 100%;
+      background-position: top; }
+    ul.checklist li:hover::before {
+      background-position: bottom; }
 
 /* Diagonal div Styles */
 div.page-template::before,
