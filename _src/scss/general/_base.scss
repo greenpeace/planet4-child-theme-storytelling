@@ -148,6 +148,26 @@ p{
 	text-align: right;
 }
 
+.alignleft{
+	display: block;
+	margin: 10px auto;
+
+	@include small-and-up {
+		display: inline;
+		margin: 0 15px 10px 0;
+	}
+}
+
+.alignright{
+	display: block;
+	margin: 10px auto;
+
+	@include small-and-up {
+		display: inline;
+		margin: 0 0 10px 15px;
+	}
+}
+
 a{
 	transition: 0.2s all ease-in-out;
 
@@ -166,7 +186,8 @@ button:hover{
 a.button, 
 button.button,
 input[type="submit"],
-button.load-more {
+button.load-more,
+.four-column-information p + a {
     background: #a3a3a3;
     border: 1px solid #a3a3a3;
     text-transform: uppercase;
@@ -236,10 +257,11 @@ hr:not(.clear) {
 }
 
 hr.clear{
-	background-image: none;
+	background: none !important;
 	border-color: transparent;
 	margin: 0;
 	padding: 0;
+	clear: both;
 }
 
 blockquote{
@@ -317,7 +339,8 @@ body.page-template-default{
 	a.button, 
 	button.button,
 	input[type="submit"],
-	button.load-more {
+	button.load-more,
+	.four-column-information p + a {
 	    background: $primary-blue;
 	    border: 1px solid $secondary-blue;
 	    color: $secondary-blue;
@@ -355,6 +378,11 @@ body.page-template-default{
 	    }
 	}
 
+	hr{
+		background-image: $primary-blue;
+		background-image: linear-gradient(to right, rgba(202,232,225, 0), rgba(202,232,225, 1), rgba(202,232,225, 0));
+	}
+
 	blockquote{
 		&::after {
 		    background-color: $secondary-blue;
@@ -387,7 +415,8 @@ body.page-template-default{
 	a.button, 
 	button.button,
 	input[type="submit"],
-	button.load-more {
+	button.load-more,
+	.four-column-information p + a {
 	    background: $primary-green;
 	    border: 1px solid $secondary-green;
 	    color: $tan;
@@ -459,7 +488,8 @@ body.page-template-default{
 	a.button, 
 	button.button,
 	input[type="submit"],
-	button.load-more {
+	button.load-more,
+	.four-column-information p + a {
 	    background: $secondary-orange;
 	    border: 1px solid $alternate-orange;
 	    color: $alternate-orange;
@@ -529,7 +559,8 @@ body.page-template-default{
 	a.button, 
 	button.button,
 	input[type="submit"],
-	button.load-more {
+	button.load-more,
+	.four-column-information p + a {
 	    background: $secondary-blue;
 	    border: 1px solid $secondary-orange;
 	    color: $secondary-orange;
@@ -604,7 +635,8 @@ body.page-template-default{
 	a.button, 
 	button.button,
 	input[type="submit"],
-	button.load-more {
+	button.load-more,
+	.four-column-information p + a {
 	    background: $primary-orange;
 	    border: 1px solid $secondary-orange;
 	    color: $secondary-orange;

@@ -2871,6 +2871,22 @@ p {
 .align-right {
   text-align: right; }
 
+.alignleft {
+  display: block;
+  margin: 10px auto; }
+  @media (min-width: 576px) {
+    .alignleft {
+      display: inline;
+      margin: 0 15px 10px 0; } }
+
+.alignright {
+  display: block;
+  margin: 10px auto; }
+  @media (min-width: 576px) {
+    .alignright {
+      display: inline;
+      margin: 0 0 10px 15px; } }
+
 a {
   transition: 0.2s all ease-in-out; }
   a:hover, a:active, a:focus {
@@ -2883,7 +2899,8 @@ button:hover {
 a.button,
 button.button,
 input[type="submit"],
-button.load-more {
+button.load-more,
+.four-column-information p + a {
   background: #a3a3a3;
   border: 1px solid #a3a3a3;
   text-transform: uppercase;
@@ -2909,14 +2926,18 @@ button.load-more {
   input[type="submit"]:focus,
   button.load-more:hover,
   button.load-more:active,
-  button.load-more:focus {
+  button.load-more:focus,
+  .four-column-information p + a:hover,
+  .four-column-information p + a:active,
+  .four-column-information p + a:focus {
     background: #d3d3d3;
     border-color: #d3d3d3;
     text-decoration: none; }
   a.button.outline,
   button.button.outline,
   input[type="submit"].outline,
-  button.load-more.outline {
+  button.load-more.outline,
+  .four-column-information p + a.outline {
     background: #fff;
     color: #333;
     border-color: #333; }
@@ -2929,7 +2950,10 @@ button.load-more {
     input[type="submit"].outline:focus,
     button.load-more.outline:hover,
     button.load-more.outline:active,
-    button.load-more.outline:focus {
+    button.load-more.outline:focus,
+    .four-column-information p + a.outline:hover,
+    .four-column-information p + a.outline:active,
+    .four-column-information p + a.outline:focus {
       background: #d3d3d3;
       border-color: #333; }
 
@@ -2958,10 +2982,11 @@ hr:not(.clear) {
       max-width: 800px; } }
 
 hr.clear {
-  background-image: none;
+  background: none !important;
   border-color: transparent;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  clear: both; }
 
 blockquote {
   font-family: "Karla", sans-serif;
@@ -3029,10 +3054,12 @@ body.page-template-default .top-page-tags .tag-item {
 .template-blue button.button,
 .template-blue input[type="submit"],
 .template-blue button.load-more,
+.template-blue .four-column-information p + a,
 body.page-template-default a.button,
 body.page-template-default button.button,
 body.page-template-default input[type="submit"],
-body.page-template-default button.load-more {
+body.page-template-default button.load-more,
+body.page-template-default .four-column-information p + a {
   background: #cae8e1;
   border: 1px solid #3ea3a0;
   color: #3ea3a0; }
@@ -3046,6 +3073,9 @@ body.page-template-default button.load-more {
   .template-blue button.load-more:hover,
   .template-blue button.load-more:active,
   .template-blue button.load-more:focus,
+  .template-blue .four-column-information p + a:hover,
+  .template-blue .four-column-information p + a:active,
+  .template-blue .four-column-information p + a:focus,
   body.page-template-default a.button:hover,
   body.page-template-default a.button:active,
   body.page-template-default a.button:focus,
@@ -3057,7 +3087,10 @@ body.page-template-default button.load-more {
   body.page-template-default input[type="submit"]:focus,
   body.page-template-default button.load-more:hover,
   body.page-template-default button.load-more:active,
-  body.page-template-default button.load-more:focus {
+  body.page-template-default button.load-more:focus,
+  body.page-template-default .four-column-information p + a:hover,
+  body.page-template-default .four-column-information p + a:active,
+  body.page-template-default .four-column-information p + a:focus {
     background: #3ea3a0;
     border-color: #cae8e1;
     color: #cae8e1; }
@@ -3070,6 +3103,11 @@ body.page-template-default a svg {
   body.page-template-default a svg:active,
   body.page-template-default a svg:focus {
     fill: #1e3920; }
+
+.template-blue hr,
+body.page-template-default hr {
+  background-image: #cae8e1;
+  background-image: linear-gradient(to right, rgba(202, 232, 225, 0), #cae8e1, rgba(202, 232, 225, 0)); }
 
 .template-blue blockquote::after,
 body.page-template-default blockquote::after {
@@ -3093,7 +3131,8 @@ body.page-template-default blockquote::after {
 .template-green a.button,
 .template-green button.button,
 .template-green input[type="submit"],
-.template-green button.load-more {
+.template-green button.load-more,
+.template-green .four-column-information p + a {
   background: #145635;
   border: 1px solid #88a840;
   color: #f7dca1; }
@@ -3106,7 +3145,10 @@ body.page-template-default blockquote::after {
   .template-green input[type="submit"]:focus,
   .template-green button.load-more:hover,
   .template-green button.load-more:active,
-  .template-green button.load-more:focus {
+  .template-green button.load-more:focus,
+  .template-green .four-column-information p + a:hover,
+  .template-green .four-column-information p + a:active,
+  .template-green .four-column-information p + a:focus {
     background: #88a840;
     border-color: #145635;
     color: #145635; }
@@ -3138,7 +3180,8 @@ body.page-template-default blockquote::after {
 .template-yellow a.button,
 .template-yellow button.button,
 .template-yellow input[type="submit"],
-.template-yellow button.load-more {
+.template-yellow button.load-more,
+.template-yellow .four-column-information p + a {
   background: #F9BA49;
   border: 1px solid #963d3a;
   color: #963d3a; }
@@ -3151,7 +3194,10 @@ body.page-template-default blockquote::after {
   .template-yellow input[type="submit"]:focus,
   .template-yellow button.load-more:hover,
   .template-yellow button.load-more:active,
-  .template-yellow button.load-more:focus {
+  .template-yellow button.load-more:focus,
+  .template-yellow .four-column-information p + a:hover,
+  .template-yellow .four-column-information p + a:active,
+  .template-yellow .four-column-information p + a:focus {
     background: #963d3a;
     border-color: #F9BA49;
     color: #F9BA49; }
@@ -3182,7 +3228,8 @@ body.page-template-default blockquote::after {
 .template-yellow-blue a.button,
 .template-yellow-blue button.button,
 .template-yellow-blue input[type="submit"],
-.template-yellow-blue button.load-more {
+.template-yellow-blue button.load-more,
+.template-yellow-blue .four-column-information p + a {
   background: #3ea3a0;
   border: 1px solid #F9BA49;
   color: #F9BA49; }
@@ -3195,7 +3242,10 @@ body.page-template-default blockquote::after {
   .template-yellow-blue input[type="submit"]:focus,
   .template-yellow-blue button.load-more:hover,
   .template-yellow-blue button.load-more:active,
-  .template-yellow-blue button.load-more:focus {
+  .template-yellow-blue button.load-more:focus,
+  .template-yellow-blue .four-column-information p + a:hover,
+  .template-yellow-blue .four-column-information p + a:active,
+  .template-yellow-blue .four-column-information p + a:focus {
     background: #F9BA49;
     border-color: #3ea3a0;
     color: #3ea3a0; }
@@ -3230,7 +3280,8 @@ body.page-template-default blockquote::after {
 .template-orange a.button,
 .template-orange button.button,
 .template-orange input[type="submit"],
-.template-orange button.load-more {
+.template-orange button.load-more,
+.template-orange .four-column-information p + a {
   background: #ef5e48;
   border: 1px solid #F9BA49;
   color: #F9BA49; }
@@ -3243,7 +3294,10 @@ body.page-template-default blockquote::after {
   .template-orange input[type="submit"]:focus,
   .template-orange button.load-more:hover,
   .template-orange button.load-more:active,
-  .template-orange button.load-more:focus {
+  .template-orange button.load-more:focus,
+  .template-orange .four-column-information p + a:hover,
+  .template-orange .four-column-information p + a:active,
+  .template-orange .four-column-information p + a:focus {
     background: #F9BA49;
     border-color: #ef5e48;
     color: #ef5e48; }
@@ -3546,6 +3600,21 @@ footer.site-footer {
       .blog-tiles .article-listing .article-list-section .article-list-item a:active img {
         opacity: 0.5; }
 
+section.four-column {
+  margin-bottom: 0;
+  text-align: center; }
+  section.four-column .four-column-wrap {
+    margin-left: auto;
+    margin-right: auto; }
+  section.four-column .four-column-symbol-container {
+    margin-left: auto;
+    margin-right: auto;
+    pointer-events: none; }
+  section.four-column .four-column-information h5 {
+    text-align: center;
+    pointer-events: none;
+    text-transform: uppercase; }
+
 /*!
  *# Import Template Stylesheets */
 /**
@@ -3635,6 +3704,33 @@ p.indent {
   @media (min-width: 768px) {
     p.indent {
       padding-left: 50px; } }
+
+div.icon-intro {
+  padding-left: 0;
+  position: relative;
+  font-weight: bold; }
+  @media (min-width: 768px) {
+    div.icon-intro {
+      padding-left: 140px; } }
+  div.icon-intro h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Karla", sans-serif;
+    font-weight: bold; }
+    @media (min-width: 768px) {
+      div.icon-intro h2 {
+        text-align: left; } }
+  div.icon-intro img {
+    position: relative;
+    left: 0;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    width: 115px;
+    display: block; }
+    @media (min-width: 768px) {
+      div.icon-intro img {
+        position: absolute;
+        margin-bottom: 0; } }
 
 /* Diagonal div Styles */
 div.page-template::before,
