@@ -6,7 +6,8 @@ nav.top-navigation {
 
 	#navbar-dropdown {
 		max-width: 1140px;
-		width: 325px;
+		width: 35%;
+		min-width: 235px;
 		background: #333;
 
     	@include large-and-up {
@@ -25,7 +26,7 @@ nav.top-navigation {
 
 		.nav-item {
 			display: inline-block;
-			padding-left: 40px;
+			padding-left: 30px;
 
     		@include large-and-up {
 				padding-left: 25px;
@@ -90,7 +91,46 @@ nav.top-navigation {
 	}
 }
 
+.icons {
+	display: none;
 
+	@include large-and-up {
+		display: block;
+	}
+
+	a {
+		display: block;
+	}
+
+	.header-icon{
+		width: 60px;
+		height: auto;
+	    position: absolute;
+	    display: block;
+	    float: left;
+	    opacity: 0;
+
+	    &.whale{
+	    	position: relative;
+	    }
+	}
+
+	&.mobile{
+		display: block;
+		position: absolute;
+		width: 100%;
+
+		@include large-and-up {
+			display: none;
+		}
+
+		.header-icon{
+			width: 50px;
+		    float: right;
+		    margin: 15px 20px 0;
+		}
+	}
+}
 
 /*
  * Header Elements Color Schemes
@@ -99,11 +139,16 @@ nav.top-navigation {
 
 .template-blue,
 // (template blue is currently the default color)
-.page-template-default{
+.page-template-default,
+.template-blank{
 	.navbar-dropdown-toggle:hover span,
 	.navbar-dropdown-toggle:active span,
 	.navbar-dropdown-toggle:focus span{
 		background-color: $secondary-blue;
+	}
+
+	.icons .whale{
+		opacity: 1;
 	}
 }
 
@@ -113,6 +158,10 @@ nav.top-navigation {
 	.navbar-dropdown-toggle:focus span{
 		background-color: $primary-green;
 	}
+
+	.icons .leaf{
+		opacity: 1;
+	}
 }
 
 .template-yellow{
@@ -120,6 +169,10 @@ nav.top-navigation {
 	.navbar-dropdown-toggle:active span,
 	.navbar-dropdown-toggle:focus span{
 		background-color: $secondary-orange;
+	}
+
+	.icons .gecko{
+		opacity: 1;
 	}
 }
 
@@ -129,6 +182,10 @@ nav.top-navigation {
 	.navbar-dropdown-toggle:focus span{
 		background-color: $secondary-blue;
 	}
+
+	.icons .cloud{
+		opacity: 1;
+	}
 }
 
 .template-orange{
@@ -137,8 +194,11 @@ nav.top-navigation {
 	.navbar-dropdown-toggle:focus span{
 		background-color: $primary-orange;
 	}
-}
 
+	.icons .fish{
+		opacity: 1;
+	}
+}
 
 
 

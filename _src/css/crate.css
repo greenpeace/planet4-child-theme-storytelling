@@ -52,7 +52,7 @@ and so on...
   100% {
     background: transparent; } }
 
-@keyframes homelogocycle {
+@keyframes whalelogocycle {
   0% {
     opacity: 1; }
   23% {
@@ -64,7 +64,7 @@ and so on...
   100% {
     opacity: 1; } }
 
-@-webkit-keyframes homelogocycle {
+@-webkit-keyframes whalelogocycle {
   0% {
     opacity: 1; }
   23% {
@@ -76,7 +76,7 @@ and so on...
   100% {
     opacity: 1; } }
 
-@keyframes aboutlogocycle {
+@keyframes leaflogocycle {
   0% {
     opacity: 0; }
   23% {
@@ -90,7 +90,7 @@ and so on...
   100% {
     opacity: 0; } }
 
-@-webkit-keyframes aboutlogocycle {
+@-webkit-keyframes leaflogocycle {
   0% {
     opacity: 0; }
   23% {
@@ -104,7 +104,7 @@ and so on...
   100% {
     opacity: 0; } }
 
-@keyframes caselogocycle {
+@keyframes geckologocycle {
   0% {
     opacity: 0; }
   48% {
@@ -118,7 +118,7 @@ and so on...
   100% {
     opacity: 0; } }
 
-@-webkit-keyframes caselogocycle {
+@-webkit-keyframes geckologocycle {
   0% {
     opacity: 0; }
   48% {
@@ -132,7 +132,7 @@ and so on...
   100% {
     opacity: 0; } }
 
-@keyframes toolslogocycle {
+@keyframes cloudlogocycle {
   0% {
     opacity: 0; }
   73% {
@@ -144,7 +144,7 @@ and so on...
   100% {
     opacity: 0; } }
 
-@-webkit-keyframes toolslogocycle {
+@-webkit-keyframes cloudlogocycle {
   0% {
     opacity: 0; }
   73% {
@@ -3333,7 +3333,8 @@ nav.top-navigation {
   height: auto; }
   nav.top-navigation #navbar-dropdown {
     max-width: 1140px;
-    width: 325px;
+    width: 35%;
+    min-width: 235px;
     background: #333; }
     @media (min-width: 992px) {
       nav.top-navigation #navbar-dropdown {
@@ -3348,7 +3349,7 @@ nav.top-navigation {
       content: none; }
     nav.top-navigation #navbar-dropdown .nav-item {
       display: inline-block;
-      padding-left: 40px; }
+      padding-left: 30px; }
       @media (min-width: 992px) {
         nav.top-navigation #navbar-dropdown .nav-item {
           padding-left: 25px; } }
@@ -3389,6 +3390,34 @@ nav.top-navigation {
       display: block;
       transition: 0.2s all ease-in-out; }
 
+.icons {
+  display: none; }
+  @media (min-width: 992px) {
+    .icons {
+      display: block; } }
+  .icons a {
+    display: block; }
+  .icons .header-icon {
+    width: 60px;
+    height: auto;
+    position: absolute;
+    display: block;
+    float: left;
+    opacity: 0; }
+    .icons .header-icon.whale {
+      position: relative; }
+  .icons.mobile {
+    display: block;
+    position: absolute;
+    width: 100%; }
+    @media (min-width: 992px) {
+      .icons.mobile {
+        display: none; } }
+    .icons.mobile .header-icon {
+      width: 50px;
+      float: right;
+      margin: 15px 20px 0; }
+
 /*
  * Header Elements Color Schemes
  * Adjusting theme colors based on body class.
@@ -3398,28 +3427,48 @@ nav.top-navigation {
 .template-blue .navbar-dropdown-toggle:focus span,
 .page-template-default .navbar-dropdown-toggle:hover span,
 .page-template-default .navbar-dropdown-toggle:active span,
-.page-template-default .navbar-dropdown-toggle:focus span {
+.page-template-default .navbar-dropdown-toggle:focus span,
+.template-blank .navbar-dropdown-toggle:hover span,
+.template-blank .navbar-dropdown-toggle:active span,
+.template-blank .navbar-dropdown-toggle:focus span {
   background-color: #3ea3a0; }
+
+.template-blue .icons .whale,
+.page-template-default .icons .whale,
+.template-blank .icons .whale {
+  opacity: 1; }
 
 .template-green .navbar-dropdown-toggle:hover span,
 .template-green .navbar-dropdown-toggle:active span,
 .template-green .navbar-dropdown-toggle:focus span {
   background-color: #145635; }
 
+.template-green .icons .leaf {
+  opacity: 1; }
+
 .template-yellow .navbar-dropdown-toggle:hover span,
 .template-yellow .navbar-dropdown-toggle:active span,
 .template-yellow .navbar-dropdown-toggle:focus span {
   background-color: #F9BA49; }
+
+.template-yellow .icons .gecko {
+  opacity: 1; }
 
 .template-yellow-blue .navbar-dropdown-toggle:hover span,
 .template-yellow-blue .navbar-dropdown-toggle:active span,
 .template-yellow-blue .navbar-dropdown-toggle:focus span {
   background-color: #3ea3a0; }
 
+.template-yellow-blue .icons .cloud {
+  opacity: 1; }
+
 .template-orange .navbar-dropdown-toggle:hover span,
 .template-orange .navbar-dropdown-toggle:active span,
 .template-orange .navbar-dropdown-toggle:focus span {
   background-color: #ef5e48; }
+
+.template-orange .icons .fish {
+  opacity: 1; }
 
 footer.site-footer {
   background: transparent;
@@ -3627,18 +3676,18 @@ body {
     text-align: center;
     animation: bgcolorchange 20s infinite;
     -webkit-animation: bgcolorchange 20s infinite; }
-    body.home .logo-container .header-logo.home {
-      animation: homelogocycle 20s infinite;
-      -webkit-animation: homelogocycle 20s infinite; }
-    body.home .logo-container .header-logo.about {
-      animation: aboutlogocycle 20s infinite;
-      -webkit-animation: aboutlogocycle 20s infinite; }
-    body.home .logo-container .header-logo.case {
-      animation: caselogocycle 20s infinite;
-      -webkit-animation: caselogocycle 20s infinite; }
-    body.home .logo-container .header-logo.tools {
-      animation: toolslogocycle 20s infinite;
-      -webkit-animation: toolslogocycle 20s infinite; }
+    body.home .logo-container .header-logo.whale {
+      animation: whalelogocycle 20s infinite;
+      -webkit-animation: whalelogocycle 20s infinite; }
+    body.home .logo-container .header-logo.leaf {
+      animation: leaflogocycle 20s infinite;
+      -webkit-animation: leaflogocycle 20s infinite; }
+    body.home .logo-container .header-logo.gecko {
+      animation: geckologocycle 20s infinite;
+      -webkit-animation: geckologocycle 20s infinite; }
+    body.home .logo-container .header-logo.cloud {
+      animation: cloudlogocycle 20s infinite;
+      -webkit-animation: cloudlogocycle 20s infinite; }
 
 /* Potentially temporary */
 .page-header {
@@ -3678,7 +3727,7 @@ div.logo-container {
       position: absolute;
       top: 0;
       left: 0; }
-      div.logo-container .content .header-logo.home {
+      div.logo-container .content .header-logo.whale {
         position: relative; }
     div.logo-container .content h2 {
       font-family: "Karla", sans-serif;
@@ -3898,8 +3947,8 @@ div.diagonal-none {
 body.template-blue,
 body.page-template-default {
   background: #3ea3a0; }
-  body.template-blue .header-logo.home,
-  body.page-template-default .header-logo.home {
+  body.template-blue .header-logo.whale,
+  body.page-template-default .header-logo.whale {
     opacity: 1; }
   body.template-blue article.article-list-item,
   body.page-template-default article.article-list-item {
@@ -3913,7 +3962,7 @@ body.page-template-default {
 
 body.template-green {
   background: #88a840; }
-  body.template-green .header-logo.about {
+  body.template-green .header-logo.leaf {
     opacity: 1; }
   body.template-green article.article-list-item {
     border-color: #88a840; }
@@ -3924,7 +3973,7 @@ body.template-green {
 
 body.template-yellow {
   background: #963d3a; }
-  body.template-yellow .header-logo.case {
+  body.template-yellow .header-logo.gecko {
     opacity: 1; }
   body.template-yellow article.article-list-item {
     border-color: #F9BA49; }
@@ -3935,7 +3984,7 @@ body.template-yellow {
 
 body.template-yellow-blue {
   background: #F9BA49; }
-  body.template-yellow-blue .header-logo.tools {
+  body.template-yellow-blue .header-logo.cloud {
     opacity: 1; }
   body.template-yellow-blue article.article-list-item {
     border-color: #F9BA49; }
@@ -3946,7 +3995,7 @@ body.template-yellow-blue {
 
 body.template-orange {
   background: #F9BA49; }
-  body.template-orange .header-logo.blog {
+  body.template-orange .header-logo.fish {
     opacity: 1; }
   body.template-orange article.article-list-item {
     border-color: #F9BA49; }
@@ -3957,7 +4006,7 @@ body.template-orange {
 
 body.template-blank {
   background: #c1c1c1; }
-  body.template-blank .header-logo.home {
+  body.template-blank .header-logo.whale {
     opacity: 1; }
 
 /* Replace with .diagonal-none class */

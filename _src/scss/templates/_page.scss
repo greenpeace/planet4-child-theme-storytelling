@@ -12,25 +12,25 @@ body{
 		-webkit-animation: bgcolorchange 20s infinite;
 
 		.header-logo{
-			&.home{
-				animation: homelogocycle 20s infinite;
-				-webkit-animation: homelogocycle 20s infinite;
+			&.whale{
+				animation: whalelogocycle 20s infinite;
+				-webkit-animation: whalelogocycle 20s infinite;
 			}
-			&.about{
-				animation: aboutlogocycle 20s infinite;
-				-webkit-animation: aboutlogocycle 20s infinite;
+			&.leaf{
+				animation: leaflogocycle 20s infinite;
+				-webkit-animation: leaflogocycle 20s infinite;
 			}
-			&.case{
-				animation: caselogocycle 20s infinite;
-				-webkit-animation: caselogocycle 20s infinite;
+			&.gecko{
+				animation: geckologocycle 20s infinite;
+				-webkit-animation: geckologocycle 20s infinite;
 			}
-			&.tools{
-				animation: toolslogocycle 20s infinite;
-				-webkit-animation: toolslogocycle 20s infinite;
+			&.cloud{
+				animation: cloudlogocycle 20s infinite;
+				-webkit-animation: cloudlogocycle 20s infinite;
 			}
-			// &.blog{
-			// 	animation: bloglogocycle 20s infinite;
-			// 	-webkit-animation: bloglogocycle 20s infinite;
+			// &.fish{
+			// 	animation: fishlogocycle 20s infinite;
+			// 	-webkit-animation: fishlogocycle 20s infinite;
 			// }
 		}
 	}
@@ -83,7 +83,7 @@ div.logo-container{
 			top: 0;
 			left: 0;
 
-			&.home{
+			&.whale{
 				position: relative;
 			}
 		}
@@ -382,7 +382,7 @@ body.template-blue,
 body.page-template-default{
 	background: $secondary-blue;
 
-	.header-logo.home{
+	.header-logo.whale{
 		opacity: 1;
 	}
 
@@ -402,7 +402,7 @@ body.page-template-default{
 body.template-green{
 	background: $secondary-green;
 
-	.header-logo.about{
+	.header-logo.leaf{
 		opacity: 1;
 	}
 
@@ -422,7 +422,7 @@ body.template-green{
 body.template-yellow{
 	background: $alternate-orange;
 
-	.header-logo.case{
+	.header-logo.gecko{
 		opacity: 1;
 	}
 
@@ -442,7 +442,7 @@ body.template-yellow{
 body.template-yellow-blue{
 	background: $secondary-orange;
 
-	.header-logo.tools{
+	.header-logo.cloud{
 		opacity: 1;
 	}
 
@@ -462,7 +462,7 @@ body.template-yellow-blue{
 body.template-orange{
 	background: $secondary-orange;
 
-	.header-logo.blog{
+	.header-logo.fish{
 		opacity: 1;
 	}
 
@@ -483,7 +483,7 @@ body.template-orange{
 body.template-blank{
 	background: #c1c1c1;
 
-	.header-logo.home{
+	.header-logo.whale{
 		opacity: 1;
 	}
 }
