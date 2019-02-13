@@ -21,14 +21,7 @@
 		</div><!-- .footer-share -->
 		<div class="contact-form">
 			<h4>{{ __( 'Get In Touch With Us', 'planet4-child-theme-storytelling' ) }}</h4>
-			<form action="">
-				<input class="form-input" type="text" name="name" placeholder="Name" />
-				<input class="form-input" type="email" name="email" placeholder="Email" />
-				<textarea name="message" placeholder="Enter your message here..."></textarea>
-				<div class="submit-row">
-					<input type="submit" value="Send Message"name="">
-				</div>
-			</form>
+			{{ function('do_shortcode', '[gravityform id=1 title=false description=false ajax=true]')|shortcodes|raw }}
 		</div><!-- .contact-form -->
 		<div class="copyright-block">
 			{% include 'blocks/site_logo.twig' %}

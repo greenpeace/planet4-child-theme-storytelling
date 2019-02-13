@@ -70,42 +70,87 @@ footer.site-footer{
 				padding-left: 20px;
 			}
 
+			.gform_wrapper{
+				margin: 0;
+			}
+
 			form{
 				font-family: $secondary-font;
 
-				input.form-input{
+				label{
+					display: none;
+				}
+
+				.ginput_container{
+					margin: 0;
+				}
+
+				li.gfield{
 					width: 100%;
-					margin-right: 4%;
 					margin: 0 25px 25px 0;
-					border: 1px solid #f7f7f7;
-					padding: 10px;
+					position: relative;
 
 					@include x-large-and-up {
 						width: 45%;
+						display: inline-block;
+						padding: 0;
 					}
 
-					&:focus{
-						outline: none;
+					input{
+						border: 2px solid #f7f7f7;
+						padding: 10px;
+
+						&:focus{
+							outline: none;
+						}
+					}
+
+					&.full-width{
+						width: 100%;
+					}
+
+					textarea{
+						width: 100%;
+						padding: 10px;
+						max-height: 200px;
+						margin: 0;
+						border: 2px solid #f7f7f7;
+
+						@include x-large-and-up {
+							width: 95%;
+						}
+
+						&:focus{
+							outline: none;
+						}
+					}
+
+					&.gfield_error{
+						padding-top: 25px;
+					    background: transparent;
+					    border: none;
+
+						div.ginput_container{
+							margin: 0;
+						}
+
+						div.ginput_container_textarea{
+							margin-bottom: 25px;
+						}
+
+						div.validation_message{
+							position: absolute;
+						    color: #fff;
+						    top: 3px;
+						    padding: 0;
+						}
 					}
 				}
 
-				textarea{
-					width: 100%;
-					padding: 10px;
-					min-height: 150px;
-					margin: 0 0 20px;
-					border: 1px solid #f7f7f7;
+				.gform_footer{
+					padding: 0;
+					margin: 0;
 
-					@include x-large-and-up {
-						width: 95%;
-					}
-
-					&:focus{
-						outline: none;
-					}
-				}
-
-				.submit-row{
 					@include large-and-up {
 						text-align: right;
 					}
@@ -115,6 +160,10 @@ footer.site-footer{
 							margin-right: 25px;
 						}
 					}
+				}
+
+				div.validation_error{
+					display: none;
 				}
 			}
 		}
@@ -133,6 +182,34 @@ footer.site-footer{
 				margin-top: 10px;
 			}
 		}
+	}
+
+	.gform_confirmation_wrapper {
+	    min-height: 200px;
+	    position: relative;
+
+	    .gform_confirmation_message {
+		    text-align: center;
+		    color: #fff;
+		    position: absolute;
+		    left: 50%;
+		    top: 40%;
+		    transform: translate(-50%,-50%);
+		}
+	}
+
+	/* Overwriting important Gravity Forms style */
+	.gform_wrapper.gform_validation_error .gform_body ul li.gfield.gfield_error:not(.gf_left_half):not(.gf_right_half){
+		max-width: 100% !important;
+
+		input, textarea{
+			border: 2px solid #790000;
+		}
+	}
+
+	/* Hide Gravity Forms iFrame */
+	iframe{
+		display: none;
 	}
 	
 }
