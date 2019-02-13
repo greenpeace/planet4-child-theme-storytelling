@@ -28,10 +28,14 @@ body{
 				animation: cloudlogocycle 20s infinite;
 				-webkit-animation: cloudlogocycle 20s infinite;
 			}
-			// &.fish{
-			// 	animation: fishlogocycle 20s infinite;
-			// 	-webkit-animation: fishlogocycle 20s infinite;
-			// }
+			&.fish{
+				animation: fishlogocycle 20s infinite;
+				-webkit-animation: fishlogocycle 20s infinite;
+			}
+			&.girl{
+				animation: girllogocycle 20s infinite;
+				-webkit-animation: girllogocycle 20s infinite;
+			}
 		}
 	}
 }
@@ -377,8 +381,11 @@ div.diagonal-none{
  * Body Elements Color Schemes
  * Adjusting theme colors based on body class.
  */
-body.template-blue,
-// (template blue is currently the default color)
+
+
+//Template Whale Colors
+body.template-whale,
+// (template whale is currently the default color scheme)
 body.page-template-default{
 	background: $secondary-blue;
 
@@ -399,8 +406,9 @@ body.page-template-default{
     }
 }
 
-body.template-green{
-	background: $secondary-green;
+//Template Leaf Colors
+body.template-leaf{
+	background: $alternate-green;
 
 	.header-logo.leaf{
 		opacity: 1;
@@ -419,7 +427,8 @@ body.template-green{
     }
 }
 
-body.template-yellow{
+//Template Gecko Colors
+body.template-gecko{
 	background: $alternate-orange;
 
 	.header-logo.gecko{
@@ -439,10 +448,32 @@ body.template-yellow{
     }
 }
 
-body.template-yellow-blue{
-	background: $secondary-orange;
+//Template Cloud Colors
+body.template-cloud{
+	background: $secondary-green;
 
 	.header-logo.cloud{
+		opacity: 1;
+	}
+
+	article.article-list-item {
+		border-color: $secondary-green;
+
+		.topicwise-article-image {
+		    border-color: $secondary-green;
+		}
+	}
+
+	.image-block::after{
+	    background: $secondary-green;
+    }
+}
+
+//Template Fish Colors
+body.template-fish{
+	background: $primary-orange;
+
+	.header-logo.fish{
 		opacity: 1;
 	}
 
@@ -455,14 +486,15 @@ body.template-yellow-blue{
 	}
 
 	.image-block::after{
-	    background: $secondary-blue;
+	    background: $secondary-orange;
     }
 }
 
-body.template-orange{
+//Template Girl Colors
+body.template-girl{
 	background: $secondary-orange;
 
-	.header-logo.fish{
+	.header-logo.girl{
 		opacity: 1;
 	}
 
@@ -487,4 +519,3 @@ body.template-blank{
 		opacity: 1;
 	}
 }
-

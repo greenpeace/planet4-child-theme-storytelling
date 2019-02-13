@@ -313,9 +313,9 @@ blockquote{
  * Adjusting theme colors based on body class.
  */
 
-//Homepage Theme
-.template-blue,
-// (template blue is currently the default color)
+//Template Whale Colors
+.template-whale,
+// (template whale is currently the default color scheme)
 body.page-template-default{
 
 	h1,
@@ -341,8 +341,8 @@ body.page-template-default{
 	input[type="submit"],
 	button.load-more,
 	.four-column-information p + a {
-	    background: $primary-blue;
-	    border: 1px solid $secondary-blue;
+	    background: $light-tan;
+	    border: 1px solid $light-tan;
 	    color: $secondary-blue;
 
 	    &:hover,
@@ -350,8 +350,8 @@ body.page-template-default{
 	    &:focus{
 	    	//background: transparent;
 	    	background: $secondary-blue;
-	    	border-color: $primary-blue;
-		    color: $primary-blue;
+	    	border-color: $light-tan;
+		    color: $light-tan;
 	    }
 
 	    // &.outline{
@@ -369,7 +369,7 @@ body.page-template-default{
 	}
 
 	a svg{
-		fill: $primary-blue;
+		fill: $light-tan;
 
 		&:hover,
 	    &:active,
@@ -389,10 +389,10 @@ body.page-template-default{
 		}
 	}
 
-}//.template-blue
+}//.template-whale
 
-//About Theme
-.template-green{
+//Template Leaf Colors
+.template-leaf{
 
 	h1,
 	h2,
@@ -417,17 +417,17 @@ body.page-template-default{
 	input[type="submit"],
 	button.load-more,
 	.four-column-information p + a {
-	    background: $primary-green;
-	    border: 1px solid $secondary-green;
-	    color: $tan;
+	    background: $tan;
+	    border: 1px solid $tan;
+	    color: $primary-green;
 
 	    &:hover,
 	    &:active,
 	    &:focus{
 	    	//background: transparent;
-	    	background: $secondary-green;
-		    border-color: $primary-green;
-		    color: $primary-green;
+	    	background: $primary-green;
+		    border-color: $tan;
+		    color: $tan;
 	    }
 
 	    // &.outline{
@@ -446,12 +446,12 @@ body.page-template-default{
 	}
 
 	a svg{
-		fill: $primary-green;
+		fill: $tan;
 
 		&:hover,
 	    &:active,
 	    &:focus{
-    		fill: $tan;
+    		fill: $secondary-green
 	    }
 	}
 	
@@ -462,10 +462,10 @@ body.page-template-default{
 		}
 	}
 
-}//.template-green
+}//.template-leaf
 
-//Case Studies Theme
-.template-yellow{
+//Template Gecko Colors
+.template-gecko{
 
 	h1,
 	h2,
@@ -491,7 +491,7 @@ body.page-template-default{
 	button.load-more,
 	.four-column-information p + a {
 	    background: $secondary-orange;
-	    border: 1px solid $alternate-orange;
+	    border: 1px solid $secondary-orange;
 	    color: $alternate-orange;
 
 	    &:hover,
@@ -533,26 +533,26 @@ body.page-template-default{
 		}
 	}
 
-}//.template-yellow
+}//.template-gecko
 
-//Tools/Resources Theme
-.template-yellow-blue{
+//Template Cloud Colors
+.template-cloud{
 
 	h1,
 	h2,
 	h3,
 	h4{
-		color: $primary-green;
+		color: $secondary-orange;
 	}
 
 	a,
 	.top-page-tags .tag-item{
-		color: $secondary-blue;
+		color: $secondary-green;
 
 		&:hover,
 	    &:active,
 	    &:focus{
-	    	color: $alternate-green;
+	    	color: $secondary-orange;
 	    }
 	}
 
@@ -561,17 +561,17 @@ body.page-template-default{
 	input[type="submit"],
 	button.load-more,
 	.four-column-information p + a {
-	    background: $secondary-blue;
-	    border: 1px solid $secondary-orange;
-	    color: $secondary-orange;
+	    background: $light-tan;
+	    border: 1px solid $light-tan;
+	    color: $secondary-green;
 
 	    &:hover,
 	    &:active,
 	    &:focus{
 	    	//background: transparent;
-	    	background: $secondary-orange;
-		    border-color: $secondary-blue;
-		    color: $secondary-blue;
+	    	background: $secondary-green;
+		    border-color: $light-tan;
+		    color: $light-tan;
 	    }
 
 	    // &.outline{
@@ -589,12 +589,12 @@ body.page-template-default{
 	}
 
 	a svg{
-		fill: $secondary-blue;
+		fill: $light-tan;
 
 		&:hover,
 	    &:active,
 	    &:focus{
-    		fill: $alternate-green;
+    		fill: $secondary-orange;
 	    }
 	}
 
@@ -605,14 +605,14 @@ body.page-template-default{
 	
 	blockquote{
 		&::after {
-		    background-color: $secondary-blue;
+		    background-color: $secondary-green;
 		}
 	}
 
-}//.template-yellow-blue
+}//.template-cloud
 
-//Blog Theme
-.template-orange{
+//Template Fish Colors
+.template-fish{
 
 	h1,
 	h2,
@@ -637,17 +637,94 @@ body.page-template-default{
 	input[type="submit"],
 	button.load-more,
 	.four-column-information p + a {
-	    background: $primary-orange;
+	    background: $secondary-orange;
 	    border: 1px solid $secondary-orange;
+	    color: $primary-orange;
+
+	    &:hover,
+	    &:active,
+	    &:focus{
+	    	//background: transparent;
+	    	background: $primary-orange;
+		    border-color: $secondary-orange;
+		    color: $secondary-orange;
+	    }
+
+	    // &.outline{
+	    // 	background: #fff;
+	    // 	color: $primary-orange;
+	    // 	border-color: $primary-orange;
+
+	    // 	&:hover,
+		   //  &:active,
+		   //  &:focus{
+		   //  	background: $secondary-orange;
+	    // 		border-color: $primary-orange;
+	    // 		color: $primary-orange;
+		   //  }
+	    // }
+	}
+
+	a svg{
+		fill: $secondary-orange;
+
+		&:hover,
+	    &:active,
+	    &:focus{
+    		fill: $alternate-orange;
+	    }
+	}
+
+	hr{
+		background-image: $secondary-orange;
+		background-image: linear-gradient(to right, rgba(249,186,73, 0), rgba(249,186,73, 1), rgba(249,186,73, 0));
+	}
+	
+	blockquote{
+		&::after {
+		    background-color: $primary-orange;
+		}
+	}
+
+}//.template-fish
+
+//Template Girl Colors
+.template-girl{
+
+	h1,
+	h2,
+	h3,
+	h4{
+		color: $alternate-orange;
+	}
+
+	a,
+	.top-page-tags .tag-item{
+		color: $primary-orange;
+
+		&:hover,
+	    &:active,
+	    &:focus{
+	    	color: $alternate-orange;
+	    }
+	}
+
+	a.button, 
+	button.button,
+	input[type="submit"],
+	button.load-more,
+	.four-column-information p + a {
+	    background: $alternate-orange;
+	    border: 1px solid $alternate-orange;
 	    color: $secondary-orange;
 
 	    &:hover,
 	    &:active,
 	    &:focus{
 	    	//background: transparent;
-	    	background: $secondary-orange;
-		    border-color: $primary-orange;
-		    color: $primary-orange;
+	    	background: $primary-orange;
+		    border-color: $secondary-orange;
+		    color: $secondary-orange;
 	    }
 
 	    // &.outline{
@@ -686,6 +763,6 @@ body.page-template-default{
 		}
 	}
 
-}//.template-orange
+}//.template-girl
 
 

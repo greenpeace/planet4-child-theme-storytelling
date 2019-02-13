@@ -1,6 +1,6 @@
-<?php /* Template Name: Orange Color Scheme */
+<?php /* Template Name: Whale Scheme */
 /**
- * The template for displaying pages with the orange color scheme.
+ * The template for displaying pages with the whale color scheme.
  *
  *
  * @package  WordPress
@@ -15,6 +15,6 @@ $post           = new P4_Post();
 $page_meta_data = get_post_meta( $post->ID );
 
 $context['post']                = $post;
-$context['custom_body_classes'] = 'template-orange';
+$context['custom_body_classes'] = 'template-whale';
 
 Timber::render( array( 'page.twig' ), $context );

@@ -7,8 +7,8 @@
 @keyframes bgcolorchange{
   0%   {background: transparent;}
   23%   {background: transparent;}
-  25%  {background: $secondary-green;}
-  48%  {background: $secondary-green;}
+  25%  {background: $alternate-green;}
+  48%  {background: $alternate-green;}
   50%  {background: $alternate-orange;}
   73%  {background: $alternate-orange;}
   75%  {background: $secondary-orange;}
@@ -19,8 +19,8 @@
 @-webkit-keyframes bgcolorchange{
   0%   {background: transparent;}
   23%   {background: transparent;}
-  25%  {background: $secondary-green;}
-  48%  {background: $secondary-green;}
+  25%  {background: $alternate-green;}
+  48%  {background: $alternate-green;}
   50%  {background: $alternate-orange;}
   73%  {background: $alternate-orange;}
   75%  {background: $secondary-orange;}

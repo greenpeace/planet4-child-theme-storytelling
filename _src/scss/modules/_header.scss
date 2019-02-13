@@ -138,8 +138,9 @@ nav.top-navigation {
  * Adjusting theme colors based on body class.
  */
 
-.template-blue,
-// (template blue is currently the default color)
+//Template Whale Colors
+.template-whale,
+// (template whale is currently the default color scheme)
 .page-template-default,
 .template-blank{
 	.navbar-dropdown-toggle:hover span,
@@ -153,7 +154,8 @@ nav.top-navigation {
 	}
 }
 
-.template-green{
+//Template Leaf Colors
+.template-leaf{
 	.navbar-dropdown-toggle:hover span,
 	.navbar-dropdown-toggle:active span,
 	.navbar-dropdown-toggle:focus span{
@@ -165,7 +167,8 @@ nav.top-navigation {
 	}
 }
 
-.template-yellow{
+//Template Gecko Colors
+.template-gecko{
 	.navbar-dropdown-toggle:hover span,
 	.navbar-dropdown-toggle:active span,
 	.navbar-dropdown-toggle:focus span{
@@ -177,7 +180,8 @@ nav.top-navigation {
 	}
 }
 
-.template-yellow-blue{
+//Template Cloud Colors
+.template-cloud{
 	.navbar-dropdown-toggle:hover span,
 	.navbar-dropdown-toggle:active span,
 	.navbar-dropdown-toggle:focus span{
@@ -189,7 +193,8 @@ nav.top-navigation {
 	}
 }
 
-.template-orange{
+//Template Fish Colors
+.template-fish{
 	.navbar-dropdown-toggle:hover span,
 	.navbar-dropdown-toggle:active span,
 	.navbar-dropdown-toggle:focus span{
@@ -197,6 +202,19 @@ nav.top-navigation {
 	}
 
 	.icons .fish{
+		opacity: 1;
+	}
+}
+
+//Template Girl Colors
+.template-girl{
+	.navbar-dropdown-toggle:hover span,
+	.navbar-dropdown-toggle:active span,
+	.navbar-dropdown-toggle:focus span{
+		background-color: $primary-orange;
+	}
+
+	.icons .girl{
 		opacity: 1;
 	}
 }

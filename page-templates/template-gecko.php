@@ -1,6 +1,6 @@
-<?php /* Template Name: Green Color Scheme */
+<?php /* Template Name: Gecko Scheme */
 /**
- * The template for displaying pages with the green (homepage) color scheme.
+ * The template for displaying pages with the gecko color scheme.
  *
  *
  * @package  WordPress
@@ -15,6 +15,6 @@ $post           = new P4_Post();
 $page_meta_data = get_post_meta( $post->ID );
 
 $context['post']                = $post;
-$context['custom_body_classes'] = 'template-green';
+$context['custom_body_classes'] = 'template-gecko';
 
 Timber::render( array( 'page.twig' ), $context );

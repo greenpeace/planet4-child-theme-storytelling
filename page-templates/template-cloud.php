@@ -1,6 +1,6 @@
-<?php /* Template Name: Blue Color Scheme */
+<?php /* Template Name: Cloud Scheme */
 /**
- * The template for displaying pages with the blue color scheme.
+ * The template for displaying pages with the cloud color scheme.
  *
  *
  * @package  WordPress
@@ -15,6 +15,6 @@ $post           = new P4_Post();
 $page_meta_data = get_post_meta( $post->ID );
 
 $context['post']                = $post;
-$context['custom_body_classes'] = 'template-blue';
+$context['custom_body_classes'] = 'template-cloud';
 
 Timber::render( array( 'page.twig' ), $context );

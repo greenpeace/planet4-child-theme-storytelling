@@ -1,6 +1,6 @@
-<?php /* Template Name: Yellow Color Scheme */
+<?php /* Template Name: Girl Scheme */
 /**
- * The template for displaying pages with the yellow color scheme.
+ * The template for displaying pages with the girl color scheme.
  *
  *
  * @package  WordPress
@@ -15,6 +15,6 @@ $post           = new P4_Post();
 $page_meta_data = get_post_meta( $post->ID );
 
 $context['post']                = $post;
-$context['custom_body_classes'] = 'template-yellow';
+$context['custom_body_classes'] = 'template-girl';
 
 Timber::render( array( 'page.twig' ), $context );

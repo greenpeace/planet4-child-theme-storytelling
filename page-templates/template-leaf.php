@@ -1,6 +1,6 @@
-<?php /* Template Name: Yellow Blue Color Scheme */
+<?php /* Template Name: Leaf Scheme */
 /**
- * The template for displaying pages with the yellow-blue color scheme.
+ * The template for displaying pages with the leaf color scheme.
  *
  *
  * @package  WordPress
@@ -15,6 +15,6 @@ $post           = new P4_Post();
 $page_meta_data = get_post_meta( $post->ID );
 
 $context['post']                = $post;
-$context['custom_body_classes'] = 'template-yellow-blue';
+$context['custom_body_classes'] = 'template-leaf';
 
 Timber::render( array( 'page.twig' ), $context );
