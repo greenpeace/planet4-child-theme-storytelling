@@ -267,19 +267,23 @@ hr.clear{
 blockquote{
 	font-family: $secondary-font;
 	position: relative;
-	font-size: 22px;
-	padding-left: 120px;
-	margin-left: 50px;
+	padding: 0 15px 0 120px;
+	margin: 0 0 0 50px;
 	max-width: 1000px;
 
 	p {
 		font-size: 22px;
+		margin: 0;
+	    padding: 0;
+	    font-style: normal;
+	    max-width: none;
 	}
 
 	cite {
 	    display: block;
 	    font-size: 20px;
 	    margin-top: 10px;
+	    font-style: italic;
 	}
 
 	&::after {
@@ -296,6 +300,34 @@ blockquote{
 	    left: 0;
 	    line-height: 1em;
 	    font-family: "GT Walsheim Pro", sans-serif;
+	}
+}
+
+div.page-template ul:not(.checklist),
+.single-post-container ul:not(.checklist),
+div.page-template ol,
+.single-post-container ol {
+	/* Remove default bullets */
+	list-style: none;
+	padding: 0 0 0 20px;
+
+	li{
+		margin: 0 0 10px;
+		padding: 0 0 0 20px !important;
+		position: relative;
+	}
+}
+
+div.page-template ul:not(.checklist),
+.single-post-container ul:not(.checklist) {
+	li{
+
+		&::before{
+			content: "\2022";
+			font-weight: bold;
+			position: absolute;
+			left: 0;
+		}
 	}
 }
 
@@ -378,6 +410,14 @@ body.page-template-default{
 	    }
 	}
 
+	ul:not(.checklist) {
+		li{
+			&::before{
+				color: $secondary-blue;
+			}
+		}
+	}
+
 	hr{
 		background-image: $primary-blue;
 		background-image: linear-gradient(to right, rgba(202,232,225, 0), rgba(202,232,225, 1), rgba(202,232,225, 0));
@@ -454,6 +494,14 @@ body.page-template-default{
     		fill: $secondary-green
 	    }
 	}
+
+	ul:not(.checklist) {
+		li{
+			&::before{
+				color: $primary-orange;
+			}
+		}
+	}
 	
 	blockquote{
 		&::after {
@@ -526,6 +574,14 @@ body.page-template-default{
     		fill: $primary-orange;
 	    }
 	}
+
+	ul:not(.checklist) {
+		li{
+			&::before{
+				color: $secondary-orange;
+			}
+		}
+	}
 	
 	blockquote{
 		&::after {
@@ -596,6 +652,14 @@ body.page-template-default{
 	    &:focus{
     		fill: $secondary-orange;
 	    }
+	}
+
+	ul:not(.checklist) {
+		li{
+			&::before{
+				color: $secondary-orange;
+			}
+		}
 	}
 
 	hr{
@@ -675,6 +739,14 @@ body.page-template-default{
 	    }
 	}
 
+	ul:not(.checklist) {
+		li{
+			&::before{
+				color: $primary-orange;
+			}
+		}
+	}
+
 	hr{
 		background-image: $secondary-orange;
 		background-image: linear-gradient(to right, rgba(249,186,73, 0), rgba(249,186,73, 1), rgba(249,186,73, 0));
@@ -750,6 +822,14 @@ body.page-template-default{
 	    &:focus{
     		fill: $alternate-orange;
 	    }
+	}
+
+	ul:not(.checklist) {
+		li{
+			&::before{
+				color: $primary-orange;
+			}
+		}
 	}
 
 	hr{
