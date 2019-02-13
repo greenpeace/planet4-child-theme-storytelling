@@ -6,94 +6,144 @@
 
 @keyframes bgcolorchange{
   0%   {background: transparent;}
-  23%   {background: transparent;}
-  25%  {background: $alternate-green;}
-  48%  {background: $alternate-green;}
-  50%  {background: $alternate-orange;}
-  73%  {background: $alternate-orange;}
-  75%  {background: $secondary-orange;}
-  98%  {background: $secondary-orange;}
+  13%   {background: transparent;}
+  15%  {background: $alternate-green;}
+  28%  {background: $alternate-green;}
+  30%  {background: $secondary-orange;}
+  43%  {background: $secondary-orange;}
+  45%  {background: $alternate-orange;}
+  58%  {background: $alternate-orange;}
+  60%  {background: $secondary-green;}
+  73%  {background: $secondary-green;}
+  75%  {background: $primary-orange;}
+  90%  {background: $primary-orange;}
+  92%  {background: transparent;}
   100%  {background: transparent;}
 }
 
 @-webkit-keyframes bgcolorchange{
   0%   {background: transparent;}
-  23%   {background: transparent;}
-  25%  {background: $alternate-green;}
-  48%  {background: $alternate-green;}
-  50%  {background: $alternate-orange;}
-  73%  {background: $alternate-orange;}
-  75%  {background: $secondary-orange;}
-  98%  {background: $secondary-orange;}
+  13%   {background: transparent;}
+  15%  {background: $alternate-green;}
+  28%  {background: $alternate-green;}
+  30%  {background: $secondary-orange;}
+  43%  {background: $secondary-orange;}
+  45%  {background: $alternate-orange;}
+  58%  {background: $alternate-orange;}
+  60%  {background: $secondary-green;}
+  73%  {background: $secondary-green;}
+  75%  {background: $primary-orange;}
+  90%  {background: $primary-orange;}
+  92%  {background: transparent;}
   100%  {background: transparent;}
 }
 
 @keyframes whalelogocycle{
   0%   {opacity:1;}
-  23%   {opacity: 1;}
-  25%  {opacity:0;}
-  98%  {opacity:0;}
+  13%   {opacity: 1;}
+  15%  {opacity:0;}
+  90%  {opacity:0;}
+  92%  {opacity: 1;}
   100%  {opacity: 1;}
 }
 
 @-webkit-keyframes whalelogocycle{
   0%   {opacity:1;}
-  23%   {opacity: 1;}
-  25%  {opacity:0;}
-  98%  {opacity:0;}
+  13%   {opacity: 1;}
+  15%  {opacity:0;}
+  90%  {opacity:0;}
+  92%  {opacity: 1;}
   100%  {opacity: 1;}
 }
 
 @keyframes leaflogocycle{
   0%   {opacity: 0;}
-  23%   {opacity: 0;}
-  25%  {opacity: 1;}
-  48%  {opacity: 1;}
-  50%  {opacity: 0;}
+  13%   {opacity: 0;}
+  15%  {opacity: 1;}
+  28%  {opacity: 1;}
+  30%  {opacity: 0;}
   100%  {opacity: 0;}
 }
 
 @-webkit-keyframes leaflogocycle{
   0%   {opacity: 0;}
-  23%   {opacity: 0;}
-  25%  {opacity: 1;}
-  48%  {opacity: 1;}
-  50%  {opacity: 0;}
+  13%   {opacity: 0;}
+  15%  {opacity: 1;}
+  28%  {opacity: 1;}
+  30%  {opacity: 0;}
+  100%  {opacity: 0;}
+}
+
+@keyframes girllogocycle{
+  0%   {opacity:0;}
+  28%   {opacity: 0;}
+  30%  {opacity:1;}
+  43%  {opacity:1;}
+  45%  {opacity:0;}
+  100%  {opacity: 0;}
+}
+
+@-webkit-keyframes girllogocycle{
+  0%   {opacity:0;}
+  28%   {opacity: 0;}
+  30%  {opacity:1;}
+  43%  {opacity:1;}
+  45%  {opacity:0;}
   100%  {opacity: 0;}
 }
 
 @keyframes geckologocycle{
   0%   {opacity:0;}
-  48%  {opacity:0;}
-  50%  {opacity:1;}
-  73%  {opacity:1;}
-  75%  {opacity:0;}
+  43%  {opacity:0;}
+  45%  {opacity:1;}
+  58%  {opacity:1;}
+  60%  {opacity:0;}
   100%  {opacity:0;}
 }
 
 @-webkit-keyframes geckologocycle{
   0%   {opacity:0;}
-  48%  {opacity:0;}
-  50%  {opacity:1;}
-  73%  {opacity:1;}
-  75%  {opacity:0;}
+  43%  {opacity:0;}
+  45%  {opacity:1;}
+  58%  {opacity:1;}
+  60%  {opacity:0;}
   100%  {opacity:0;}
 }
 
 @keyframes cloudlogocycle{
   0%   {opacity:0;}
-  73%  {opacity:0;}
-  75%  {opacity:1;}
-  98%  {opacity:1;}
+  58%  {opacity:0;}
+  60%  {opacity:1;}
+  73%  {opacity:1;}
+  75%  {opacity:0;}
   100%  {opacity:0;}
 }
 
 @-webkit-keyframes cloudlogocycle{
   0%   {opacity:0;}
-  73%  {opacity:0;}
-  75%  {opacity:1;}
-  98%  {opacity:1;}
+  58%  {opacity:0;}
+  60%  {opacity:1;}
+  73%  {opacity:1;}
+  75%  {opacity:0;}
   100%  {opacity:0;}
+}
+
+@keyframes fishlogocycle{
+  0%   {opacity:0;}
+  73%  {opacity: 0;}
+  75%  {opacity:1;}
+  90%  {opacity:1;}
+  92%  {opacity:0;}
+  100%  {opacity: 0;}
+}
+
+@-webkit-keyframes fishlogocycle{
+  0%   {opacity:0;}
+  73%  {opacity: 0;}
+  75%  {opacity:1;}
+  90%  {opacity:1;}
+  92%  {opacity:0;}
+  100%  {opacity: 0;}
 }
 
 /* * * * *

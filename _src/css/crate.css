@@ -15,77 +15,101 @@ and so on...
 @keyframes bgcolorchange {
   0% {
     background: transparent; }
-  23% {
+  13% {
     background: transparent; }
-  25% {
+  15% {
     background: #1e3920; }
-  48% {
+  28% {
     background: #1e3920; }
-  50% {
+  30% {
+    background: #f7b848; }
+  43% {
+    background: #f7b848; }
+  45% {
     background: #943d3a; }
+  58% {
+    background: #943d3a; }
+  60% {
+    background: #86a640; }
   73% {
-    background: #943d3a; }
+    background: #86a640; }
   75% {
-    background: #f7b848; }
-  98% {
-    background: #f7b848; }
+    background: #ed5e48; }
+  90% {
+    background: #ed5e48; }
+  92% {
+    background: transparent; }
   100% {
     background: transparent; } }
 
 @-webkit-keyframes bgcolorchange {
   0% {
     background: transparent; }
-  23% {
+  13% {
     background: transparent; }
-  25% {
+  15% {
     background: #1e3920; }
-  48% {
+  28% {
     background: #1e3920; }
-  50% {
+  30% {
+    background: #f7b848; }
+  43% {
+    background: #f7b848; }
+  45% {
     background: #943d3a; }
+  58% {
+    background: #943d3a; }
+  60% {
+    background: #86a640; }
   73% {
-    background: #943d3a; }
+    background: #86a640; }
   75% {
-    background: #f7b848; }
-  98% {
-    background: #f7b848; }
+    background: #ed5e48; }
+  90% {
+    background: #ed5e48; }
+  92% {
+    background: transparent; }
   100% {
     background: transparent; } }
 
 @keyframes whalelogocycle {
   0% {
     opacity: 1; }
-  23% {
+  13% {
     opacity: 1; }
-  25% {
+  15% {
     opacity: 0; }
-  98% {
+  90% {
     opacity: 0; }
+  92% {
+    opacity: 1; }
   100% {
     opacity: 1; } }
 
 @-webkit-keyframes whalelogocycle {
   0% {
     opacity: 1; }
-  23% {
+  13% {
     opacity: 1; }
-  25% {
+  15% {
     opacity: 0; }
-  98% {
+  90% {
     opacity: 0; }
+  92% {
+    opacity: 1; }
   100% {
     opacity: 1; } }
 
 @keyframes leaflogocycle {
   0% {
     opacity: 0; }
-  23% {
+  13% {
     opacity: 0; }
-  25% {
+  15% {
     opacity: 1; }
-  48% {
+  28% {
     opacity: 1; }
-  50% {
+  30% {
     opacity: 0; }
   100% {
     opacity: 0; } }
@@ -93,13 +117,41 @@ and so on...
 @-webkit-keyframes leaflogocycle {
   0% {
     opacity: 0; }
-  23% {
+  13% {
     opacity: 0; }
-  25% {
+  15% {
     opacity: 1; }
-  48% {
+  28% {
     opacity: 1; }
-  50% {
+  30% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@keyframes girllogocycle {
+  0% {
+    opacity: 0; }
+  28% {
+    opacity: 0; }
+  30% {
+    opacity: 1; }
+  43% {
+    opacity: 1; }
+  45% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@-webkit-keyframes girllogocycle {
+  0% {
+    opacity: 0; }
+  28% {
+    opacity: 0; }
+  30% {
+    opacity: 1; }
+  43% {
+    opacity: 1; }
+  45% {
     opacity: 0; }
   100% {
     opacity: 0; } }
@@ -107,13 +159,13 @@ and so on...
 @keyframes geckologocycle {
   0% {
     opacity: 0; }
-  48% {
+  43% {
     opacity: 0; }
-  50% {
+  45% {
     opacity: 1; }
-  73% {
+  58% {
     opacity: 1; }
-  75% {
+  60% {
     opacity: 0; }
   100% {
     opacity: 0; } }
@@ -121,13 +173,13 @@ and so on...
 @-webkit-keyframes geckologocycle {
   0% {
     opacity: 0; }
-  48% {
+  43% {
     opacity: 0; }
-  50% {
+  45% {
     opacity: 1; }
-  73% {
+  58% {
     opacity: 1; }
-  75% {
+  60% {
     opacity: 0; }
   100% {
     opacity: 0; } }
@@ -135,24 +187,56 @@ and so on...
 @keyframes cloudlogocycle {
   0% {
     opacity: 0; }
-  73% {
+  58% {
     opacity: 0; }
+  60% {
+    opacity: 1; }
+  73% {
+    opacity: 1; }
   75% {
-    opacity: 1; }
-  98% {
-    opacity: 1; }
+    opacity: 0; }
   100% {
     opacity: 0; } }
 
 @-webkit-keyframes cloudlogocycle {
   0% {
     opacity: 0; }
+  58% {
+    opacity: 0; }
+  60% {
+    opacity: 1; }
+  73% {
+    opacity: 1; }
+  75% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@keyframes fishlogocycle {
+  0% {
+    opacity: 0; }
   73% {
     opacity: 0; }
   75% {
     opacity: 1; }
-  98% {
+  90% {
     opacity: 1; }
+  92% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@-webkit-keyframes fishlogocycle {
+  0% {
+    opacity: 0; }
+  73% {
+    opacity: 0; }
+  75% {
+    opacity: 1; }
+  90% {
+    opacity: 1; }
+  92% {
+    opacity: 0; }
   100% {
     opacity: 0; } }
 
@@ -3024,7 +3108,6 @@ div.page-template ul:not(.checklist),
 .single-post-container ul:not(.checklist),
 div.page-template ol,
 .single-post-container ol {
-  /* Remove default bullets */
   list-style: none;
   padding: 0 0 0 20px; }
   div.page-template ul:not(.checklist) li,
