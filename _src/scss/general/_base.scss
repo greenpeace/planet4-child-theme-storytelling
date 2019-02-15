@@ -1,0 +1,847 @@
+/* 
+ * Color Classes 
+ */
+
+.primary-green{
+	color: $primary-green;
+}
+.secondary-green{
+	color: $secondary-green;
+}
+.alternate-green{
+	color: $alternate-green;
+}
+.primary-blue{
+	color: $primary-blue;
+}
+.secondary-blue{
+	color: $secondary-blue;
+}
+.gold{
+	color: $gold;
+}
+.primary-orange{
+	color: $primary-orange;
+}
+.secondary-orange{
+	color: $secondary-orange;
+}
+.alternate-orange{
+	color: $alternate-orange;
+}
+
+.bg_primary-green{
+	background-color: $primary-green;
+	color: #fff;
+}
+.bg_secondary-green{
+	background-color: $secondary-green;
+}
+.bg_alternate-green{
+	background-color: $alternate-green;
+	color: #fff;
+}
+.bg_primary-blue{
+	background-color: $primary-blue;
+}
+.bg_secondary-blue{
+	background-color: $secondary-blue;
+}
+.bg_gold{
+	background-color: $gold;
+}
+.bg_primary-orange{
+	background-color: $primary-orange;
+}
+.bg_secondary-orange{
+	background-color: $secondary-orange;
+}
+.bg_alternate-orange{
+	background-color: $alternate-orange;
+	color: #fff;
+}
+.bg_tan{
+	background-color: $tan;
+}
+.bg_light-tan{
+	background-color: $light-tan;
+}
+
+/* 
+ * Typography Styles
+ */
+
+h1,
+h2,
+h3,
+h4{
+	line-height: 1em;
+	margin-bottom: 1em;
+	font-weight: 300;
+	font-family: $primary-font;
+}
+
+h3,
+h4{
+	margin-top: 1em;
+}
+
+h1{
+	font-size: 34px;
+	font-family: $primary-font-bold;
+	font-weight: 700;
+	margin-bottom: 0.5em;
+
+	@include small-and-up {
+		font-size: 48px;
+	}
+
+	//Style guide only classes
+	&.style-guide{
+		margin-bottom: 0.25em;
+	}
+	&.header-display{
+		margin-bottom: 0.25em;
+		display: inline-block;
+    	padding: 15px 20px;
+	}
+}
+
+h2{
+	font-size: 30px;
+	margin-bottom: 0.5em;
+
+	@include small-and-up {
+		font-size: 32px;
+	}
+}
+
+h3{
+	font-size: 24px;
+}
+
+h4{
+	font-size: 18px;
+}
+
+p{
+	font-family: $secondary-font;
+	font-size: 14px;
+
+	//Style guide only tag
+	&.color-sample{
+		margin: 0 0.5em 1em 0;
+	    display: inline-block;
+	    padding: 5px 15px;
+	}
+}
+
+.align-center{
+	text-align: center;
+}
+
+.align-left{
+	text-align: left;
+}
+
+.align-right{
+	text-align: right;
+}
+
+div.page-template .alignleft{
+	display: block;
+	margin: 10px auto;
+
+	@include small-and-up {
+		display: inline;
+		margin: 0 15px 10px 0;
+	}
+}
+
+div.page-template .alignright{
+	display: block;
+	margin: 10px auto;
+
+	@include small-and-up {
+		display: inline;
+		margin: 0 0 10px 15px;
+	}
+}
+
+a{
+	transition: 0.2s all ease-in-out;
+
+	&:hover,
+    &:active,
+    &:focus{
+    	text-decoration: none;
+    }
+}
+
+button:focus,
+button:hover{
+	outline: none;
+}
+
+a.button, 
+button.button,
+input[type="submit"],
+button.load-more,
+.four-column-information p + a {
+    background: #a3a3a3;
+    border: 1px solid #a3a3a3;
+    text-transform: uppercase;
+    font-size: 18px;
+    min-width: 150px;
+    width: auto;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    font-weight: 700;
+    display: inline-block;
+    color: #fff;
+    line-height: 27px;
+    font-family: $secondary-font;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+
+    &:hover,
+    &:active,
+    &:focus{
+    	background: #d3d3d3;
+	    border-color: #d3d3d3;
+	    text-decoration: none;
+    }
+
+    &.outline{
+    	background: #fff;
+    	color: #333;
+    	border-color: #333;
+
+    	&:hover,
+	    &:active,
+	    &:focus{
+	    	background: #d3d3d3;
+    		border-color: #333;
+	    }
+    }
+}
+
+hr {
+    margin-top: 0;
+    margin-bottom: 2em;
+
+    &.sep{
+	    margin-top: 0;
+	    margin-bottom: 60px;
+	    border-color: #f7f7f7;
+	    width: 80%;
+    }
+}
+
+hr:not(.sep),
+hr:not(.clear) {
+	height: 1px;
+	max-width: 80%;
+	padding: 0 15px;
+	margin-bottom: 40px;
+	margin-bottom: 60px;
+
+	&.nospace{
+		margin-bottom: 0;
+	}
+
+	@include large-and-up {
+		max-width: 800px;
+	}
+}
+
+hr.clear{
+	background: none !important;
+	border-color: transparent;
+	margin: 0;
+	padding: 0;
+	clear: both;
+}
+
+blockquote{
+	font-family: $secondary-font;
+	position: relative;
+	padding: 0 15px 0 120px;
+	margin: 0 0 0 50px;
+	max-width: 1000px;
+
+	p {
+		font-size: 22px;
+		margin: 0;
+	    padding: 0;
+	    font-style: normal;
+	    max-width: none;
+	}
+
+	cite {
+	    display: block;
+	    font-size: 20px;
+	    margin-top: 10px;
+	    font-style: italic;
+	}
+
+	&::after {
+	    content: "“";
+	    font-size: 200px;
+	    position: absolute;
+	    height: 100px;
+	    background-color: #ccc;
+	    border-radius: 100%;
+	    width: 100px;
+	    padding-top: 12px;
+	    padding-left: 7px;
+	    top: 0;
+	    left: 0;
+	    line-height: 1em;
+	    font-family: "GT Walsheim Pro", sans-serif;
+	}
+}
+
+div.page-template ul:not(.checklist),
+.single-post-container ul:not(.checklist),
+div.page-template ol,
+.single-post-container ol {
+	list-style: none;
+	padding: 0 0 0 20px;
+
+	li{
+		margin: 0 0 10px;
+		padding: 0 0 0 20px !important;
+		position: relative;
+	}
+}
+
+div.page-template ul:not(.checklist),
+.single-post-container ul:not(.checklist) {
+	li{
+
+		&::before{
+			content: "\2022";
+			font-weight: bold;
+			position: absolute;
+			left: 0;
+		}
+	}
+}
+
+.skewed-overlay {
+    display: none;
+}
+
+
+
+
+
+
+/*
+ * Base Elements Color Schemes
+ * Adjusting theme colors based on body class.
+ */
+
+//Template Whale Colors
+.template-whale,
+// (template whale is currently the default color scheme)
+body.page-template-default{
+
+	h1,
+	h2,
+	h3,
+	h4{
+		color: $alternate-green;
+	}
+
+	a,
+	.top-page-tags .tag-item{
+		color: $secondary-blue;
+
+		&:hover,
+	    &:active,
+	    &:focus{
+	    	color: $alternate-green;
+	    }
+	}
+
+	a.button, 
+	button.button,
+	input[type="submit"],
+	button.load-more,
+	.four-column-information p + a {
+	    background: $light-tan;
+	    border: 1px solid $light-tan;
+	    color: $secondary-blue;
+
+	    &:hover,
+	    &:active,
+	    &:focus{
+	    	//background: transparent;
+	    	background: $secondary-blue;
+	    	border-color: $light-tan;
+		    color: $light-tan;
+	    }
+
+	    // &.outline{
+	    // 	background: #fff;
+	    // 	color: $secondary-blue;
+	    // 	border-color: $secondary-blue;
+
+	    // 	&:hover,
+		   //  &:active,
+		   //  &:focus{
+		   //  	background: $primary-blue;
+	    // 		border-color: $secondary-blue;
+		   //  }
+	    // }
+	}
+
+	a svg{
+		fill: $light-tan;
+
+		&:hover,
+	    &:active,
+	    &:focus{
+    		fill: $alternate-green;
+	    }
+	}
+
+	ul:not(.checklist) {
+		li{
+			&::before{
+				color: $secondary-blue;
+			}
+		}
+	}
+
+	hr{
+		background-image: $primary-blue;
+		background-image: linear-gradient(to right, rgba(202,232,225, 0), rgba(202,232,225, 1), rgba(202,232,225, 0));
+	}
+
+	blockquote{
+		&::after {
+		    background-color: $secondary-blue;
+		}
+	}
+
+}//.template-whale
+
+//Template Leaf Colors
+.template-leaf{
+
+	h1,
+	h2,
+	h3,
+	h4{
+		color: $tan;
+	}
+
+	a,
+	.top-page-tags .tag-item{
+		color: $secondary-green;
+
+		&:hover,
+	    &:active,
+	    &:focus{
+	    	color: $primary-green;
+	    }
+	}
+
+	a.button, 
+	button.button,
+	input[type="submit"],
+	button.load-more,
+	.four-column-information p + a {
+	    background: $tan;
+	    border: 1px solid $tan;
+	    color: $primary-green;
+
+	    &:hover,
+	    &:active,
+	    &:focus{
+	    	//background: transparent;
+	    	background: $primary-green;
+		    border-color: $tan;
+		    color: $tan;
+	    }
+
+	    // &.outline{
+	    // 	color: $primary-green;
+	    // 	border-color: $primary-green;
+	    // 	background: transparent;
+
+	    // 	&:hover,
+		   //  &:active,
+		   //  &:focus{
+		   //  	background: $primary-green;
+	    // 		border-color: $tan;
+	    // 		color: $tan;
+		   //  }
+	    // }
+	}
+
+	a svg{
+		fill: $tan;
+
+		&:hover,
+	    &:active,
+	    &:focus{
+    		fill: $secondary-green
+	    }
+	}
+
+	ul:not(.checklist) {
+		li{
+			&::before{
+				color: $primary-orange;
+			}
+		}
+	}
+	
+	blockquote{
+		&::after {
+		    background-color: $primary-green;
+		    color: $tan;
+		}
+	}
+
+}//.template-leaf
+
+//Template Gecko Colors
+.template-gecko{
+
+	h1,
+	h2,
+	h3,
+	h4{
+		color: $secondary-orange;
+	}
+
+	a,
+	.top-page-tags .tag-item{
+		color: $primary-orange;
+
+		&:hover,
+	    &:active,
+	    &:focus{
+	    	color: $alternate-orange;
+	    }
+	}
+
+	a.button, 
+	button.button,
+	input[type="submit"],
+	button.load-more,
+	.four-column-information p + a {
+	    background: $secondary-orange;
+	    border: 1px solid $secondary-orange;
+	    color: $alternate-orange;
+
+	    &:hover,
+	    &:active,
+	    &:focus{
+	    	//background: transparent;
+	    	background: $alternate-orange;
+		    border-color: $secondary-orange;
+		    color: $secondary-orange;
+	    }
+
+	    // &.outline{
+	    // 	background: #fff;
+	    // 	color: $alternate-orange;
+	    // 	border-color: $alternate-orange;
+
+	    // 	&:hover,
+		   //  &:active,
+		   //  &:focus{
+		   //  	background: $secondary-orange;
+	    // 		border-color: $alternate-orange;
+		   //  }
+	    // }
+	}
+
+	a svg{
+		fill: $secondary-orange;
+
+		&:hover,
+	    &:active,
+	    &:focus{
+    		fill: $primary-orange;
+	    }
+	}
+
+	ul:not(.checklist) {
+		li{
+			&::before{
+				color: $secondary-orange;
+			}
+		}
+	}
+	
+	blockquote{
+		&::after {
+		    background-color: $primary-orange;
+		}
+	}
+
+}//.template-gecko
+
+//Template Cloud Colors
+.template-cloud{
+
+	h1,
+	h2,
+	h3,
+	h4{
+		color: $secondary-orange;
+	}
+
+	a,
+	.top-page-tags .tag-item{
+		color: $secondary-green;
+
+		&:hover,
+	    &:active,
+	    &:focus{
+	    	color: $secondary-orange;
+	    }
+	}
+
+	a.button, 
+	button.button,
+	input[type="submit"],
+	button.load-more,
+	.four-column-information p + a {
+	    background: $light-tan;
+	    border: 1px solid $light-tan;
+	    color: $secondary-green;
+
+	    &:hover,
+	    &:active,
+	    &:focus{
+	    	//background: transparent;
+	    	background: $secondary-green;
+		    border-color: $light-tan;
+		    color: $light-tan;
+	    }
+
+	    // &.outline{
+	    // 	background: #fff;
+	    // 	color: $secondary-blue;
+	    // 	border-color: $secondary-blue;
+
+	    // 	&:hover,
+		   //  &:active,
+		   //  &:focus{
+		   //  	background: $secondary-orange;
+	    // 		border-color: $secondary-blue;
+		   //  }
+	    // }
+	}
+
+	a svg{
+		fill: $light-tan;
+
+		&:hover,
+	    &:active,
+	    &:focus{
+    		fill: $secondary-orange;
+	    }
+	}
+
+	ul:not(.checklist) {
+		li{
+			&::before{
+				color: $secondary-orange;
+			}
+		}
+	}
+
+	hr{
+		background-image: $secondary-orange;
+		background-image: linear-gradient(to right, rgba(249,186,73, 0), rgba(249,186,73, 1), rgba(249,186,73, 0));
+	}
+	
+	blockquote{
+		&::after {
+		    background-color: $secondary-green;
+		}
+	}
+
+}//.template-cloud
+
+//Template Fish Colors
+.template-fish{
+
+	h1,
+	h2,
+	h3,
+	h4{
+		color: $alternate-orange;
+	}
+
+	a,
+	.top-page-tags .tag-item{
+		color: $primary-orange;
+
+		&:hover,
+	    &:active,
+	    &:focus{
+	    	color: $alternate-orange;
+	    }
+	}
+
+	a.button, 
+	button.button,
+	input[type="submit"],
+	button.load-more,
+	.four-column-information p + a {
+	    background: $secondary-orange;
+	    border: 1px solid $secondary-orange;
+	    color: $primary-orange;
+
+	    &:hover,
+	    &:active,
+	    &:focus{
+	    	//background: transparent;
+	    	background: $primary-orange;
+		    border-color: $secondary-orange;
+		    color: $secondary-orange;
+	    }
+
+	    // &.outline{
+	    // 	background: #fff;
+	    // 	color: $primary-orange;
+	    // 	border-color: $primary-orange;
+
+	    // 	&:hover,
+		   //  &:active,
+		   //  &:focus{
+		   //  	background: $secondary-orange;
+	    // 		border-color: $primary-orange;
+	    // 		color: $primary-orange;
+		   //  }
+	    // }
+	}
+
+	a svg{
+		fill: $secondary-orange;
+
+		&:hover,
+	    &:active,
+	    &:focus{
+    		fill: $alternate-orange;
+	    }
+	}
+
+	ul:not(.checklist) {
+		li{
+			&::before{
+				color: $primary-orange;
+			}
+		}
+	}
+
+	hr{
+		background-image: $secondary-orange;
+		background-image: linear-gradient(to right, rgba(249,186,73, 0), rgba(249,186,73, 1), rgba(249,186,73, 0));
+	}
+	
+	blockquote{
+		&::after {
+		    background-color: $primary-orange;
+		}
+	}
+
+}//.template-fish
+
+//Template Girl Colors
+.template-girl{
+
+	h1,
+	h2,
+	h3,
+	h4{
+		color: $alternate-orange;
+	}
+
+	a,
+	.top-page-tags .tag-item{
+		color: $primary-orange;
+
+		&:hover,
+	    &:active,
+	    &:focus{
+	    	color: $alternate-orange;
+	    }
+	}
+
+	a.button, 
+	button.button,
+	input[type="submit"],
+	button.load-more,
+	.four-column-information p + a {
+	    background: $alternate-orange;
+	    border: 1px solid $alternate-orange;
+	    color: $secondary-orange;
+
+	    &:hover,
+	    &:active,
+	    &:focus{
+	    	//background: transparent;
+	    	background: $primary-orange;
+		    border-color: $secondary-orange;
+		    color: $secondary-orange;
+	    }
+
+	    // &.outline{
+	    // 	background: #fff;
+	    // 	color: $primary-orange;
+	    // 	border-color: $primary-orange;
+
+	    // 	&:hover,
+		   //  &:active,
+		   //  &:focus{
+		   //  	background: $secondary-orange;
+	    // 		border-color: $primary-orange;
+	    // 		color: $primary-orange;
+		   //  }
+	    // }
+	}
+
+	a svg{
+		fill: $primary-orange;
+
+		&:hover,
+	    &:active,
+	    &:focus{
+    		fill: $alternate-orange;
+	    }
+	}
+
+	ul:not(.checklist) {
+		li{
+			&::before{
+				color: $primary-orange;
+			}
+		}
+	}
+
+	hr{
+		background-image: $secondary-orange;
+		background-image: linear-gradient(to right, rgba(249,186,73, 0), rgba(249,186,73, 1), rgba(249,186,73, 0));
+	}
+	
+	blockquote{
+		&::after {
+		    background-color: $primary-orange;
+		}
+	}
+
+}//.template-girl
+
+

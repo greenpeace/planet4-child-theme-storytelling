@@ -1,0 +1,521 @@
+/**
+ * Styles specific to the page template
+**/
+
+body{
+	background: #fff;
+	font-family: $secondary-font;
+
+	&.home .logo-container{
+		text-align: center;
+		animation: bgcolorchange 20s infinite;
+		-webkit-animation: bgcolorchange 20s infinite;
+
+		.header-logo{
+			&.whale{
+				animation: whalelogocycle 20s infinite;
+				-webkit-animation: whalelogocycle 20s infinite;
+			}
+			&.leaf{
+				animation: leaflogocycle 20s infinite;
+				-webkit-animation: leaflogocycle 20s infinite;
+			}
+			&.gecko{
+				animation: geckologocycle 20s infinite;
+				-webkit-animation: geckologocycle 20s infinite;
+			}
+			&.cloud{
+				animation: cloudlogocycle 20s infinite;
+				-webkit-animation: cloudlogocycle 20s infinite;
+			}
+			&.fish{
+				animation: fishlogocycle 20s infinite;
+				-webkit-animation: fishlogocycle 20s infinite;
+			}
+			&.girl{
+				animation: girllogocycle 20s infinite;
+				-webkit-animation: girllogocycle 20s infinite;
+			}
+		}
+	}
+}
+
+/* Potentially temporary */
+.page-header {
+    display: none;
+}
+/* * */
+
+div.logo-container{
+	height: 400px;
+	text-align: center;
+	padding-top: 110px;
+	position: relative;
+	text-align: left;
+
+	@include medium-and-up {
+		height: 475px;
+	}
+
+	.content{
+		position: absolute;
+	    left: 50%;
+	    top: 50%;
+	    padding: 0 20px;
+	    width: 100%;
+	    transform: translate(-50%, -50%);
+
+	    @include small-and-up {
+			padding: 0 40px;
+		}
+
+	    @include medium-and-up {
+			width: 700px;
+			padding: 0;
+			transform: translate(-50%, -55%);
+		}
+
+		.logos{
+			position:relative;
+		}
+
+		.header-logo{
+			max-width: 100%;
+			margin-bottom: 25px;
+			opacity: 0;
+			position: absolute;
+			top: 0;
+			left: 0;
+
+			&.whale{
+				position: relative;
+			}
+		}
+		h2{
+			font-family: $secondary-font;
+			text-transform: uppercase;
+			font-weight: 700;
+			color: #fff;
+		}
+	}
+}
+
+div.page-template {
+	width: 100%;
+    margin: 0 0 75px;
+    padding: 25px 0;
+    position: relative;
+    background: #fff;
+
+    @include medium-and-up {
+		margin: 0 0 125px;
+	}
+
+	.container{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+p.indent{
+	margin-bottom: 30px;
+
+	@include medium-and-up {
+		padding-left: 50px;
+	}
+}
+
+div.icon-intro {
+    padding-left: 0;
+    position: relative;
+    font-weight: bold;
+
+    @include medium-and-up {
+    	padding-left: 140px;
+    }
+
+    h2{
+    	text-align: center;
+    	text-transform: uppercase;
+    	font-family: $secondary-font;
+    	font-weight: bold;
+
+    	@include medium-and-up {
+	    	text-align: left;
+	    }
+    }
+
+    img{
+    	position: relative;
+	    left: 0;
+	    margin: 0 auto 15px;
+	    border-radius: 50%;
+	    width: 115px;
+	    display: block;
+
+	    @include medium-and-up {
+	    	position: absolute;
+	    	margin-bottom: 0;
+	    }
+    }
+}
+
+ul.checklist {
+    max-width: 800px;
+    margin: auto;
+
+    li{
+    	margin: 0 0 20px;
+	    list-style-type: none;
+	    padding-left: 50px;
+	    position: relative;
+
+	    &::before{
+	    	content: '';
+	    	position: absolute;
+	    	background-image: url('../../images/checkbox_background.png');
+	    	width: 35px;
+		    left: 0;
+		    transform: translateY(-50%);
+		    top: 50%;
+		    height: 35px;
+		    background-size: 100%;
+		    background-position: top;
+	    }
+
+	    &:hover{
+	    	&::before{
+	    		background-position: bottom;
+	    	}
+	    }
+    }
+}
+
+/* Diagonal div Styles */
+
+div.page-template::before,
+.diagonal-top::before,
+.diagonal-topbottom::before,
+article.single-post-container::before {
+    position: absolute;
+    content: '';
+    display: block;
+    left: 0;
+    top: -74px;
+    width: 100%;
+    border-style: solid;
+    border-width: 0 100vw 75px 0;
+    border-color: transparent transparent rgba(255,255,255,1) transparent;
+
+    @include medium-and-up {
+		top: -124px;
+		border-width: 0 100vw 125px 0;
+	}
+}
+div.page-template::after,
+.diagonal-bottom::after,
+.diagonal-topbottom::after,
+article.single-post-container::after {
+    position: absolute;
+    content: '';
+    display: block;
+    left: 0;
+    bottom: -74px;
+    width: 100%;
+    border-style: solid;
+    border-width: 0 100vw 75px 0;
+    border-color: transparent rgba(255,255,255,1) transparent transparent;
+
+    @include medium-and-up {
+		bottom: -124px;
+		border-width: 0 100vw 125px 0;
+	}
+}
+
+div.diagonal-top{
+	padding-top: 20px;
+}
+
+div.diagonal-bottom{
+	padding-bottom: 20px;
+}
+div.diagonal-topbottom{
+	padding: 20px 0;
+}
+
+div.diagonal-none{
+	padding: 60px 0 30px;
+
+	@include medium-and-up {
+		padding: 90px 0 50px;
+	}
+
+	&.last{
+		padding-bottom: 0;
+	}
+}
+
+/* Tagline Styles */
+
+.tagline{
+	font-weight: 700;
+	font-size: 20px;
+	max-width: 675px;
+	margin: auto;
+
+	span.source{
+		font-size: 12px;
+		font-style: italic;
+		display: block;
+		font-weight: 300;
+		margin-top: 20px;
+	}
+
+	.button{
+		margin: 30px auto 0;
+	}
+
+	&.nowidth{
+		max-width: none;
+	}
+
+	&.small{
+		font-size: 14px;
+	}
+
+	.button-group{
+		text-align: center;
+		display: block;
+		flex-wrap: wrap;
+
+		@include medium-and-up {
+			display: flex;
+			justify-content: space-between;
+
+			&.more{
+				justify-content: space-around;
+			}
+		}
+
+		.button{
+			max-width: 250px;
+			display: block;
+
+			@include medium-and-up {
+				min-width: 215px;
+				margin-left: 0;
+				margin-right: 0;
+				display: inline-block;
+			}
+		}
+	}
+}
+
+/* Image Blocks Styles */
+
+.image-block{
+    height: 400px;
+    width: 100%;
+    position: relative;
+    z-index: unset !important;
+    background-attachment: fixed;
+    background-position: center 60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    will-change: transform;
+
+    &.no-parralax{
+    	background-attachment: unset;
+   		background-position: center 65%;
+    }
+
+    &.whale {
+    	background-image: url('../../images/placeholder_image1.jpg');
+    }
+
+    &.penguin {
+    	background-image: url('../../images/placeholder_image2.jpg');
+    }
+
+    &::before{
+    	// content: '';
+    	// width: 100%;
+    	// height: 100%;
+    	// top: 0;
+    	// position: absolute;
+    	// background-attachment: fixed;
+	    // background-position: 0 60%;
+	    // background-repeat: no-repeat;
+	    // background-size: cover;
+	    // will-change: transform;
+    }
+
+    &::after{
+    	content: '';
+	    width: 100%;
+	    height: 100%;
+	    background: #ccc;
+	    position: absolute;
+	    opacity: 0.5;
+    }
+
+    .plain-quote{
+    	position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%, -30%);
+	    color: #fff;
+	    font-weight: 700;
+	    font-size: 22px;
+	    width: 100%;
+	    max-width: 800px;
+	    padding: 0 20px;
+	    text-align: center;
+	    z-index: 3;
+    }
+}
+
+
+
+/*
+ * Body Elements Color Schemes
+ * Adjusting theme colors based on body class.
+ */
+
+
+//Template Whale Colors
+body.template-whale,
+// (template whale is currently the default color scheme)
+body.page-template-default{
+	background: $secondary-blue;
+
+	.header-logo.whale{
+		opacity: 1;
+	}
+
+	article.article-list-item {
+		border-color: $primary-blue;
+
+		.topicwise-article-image {
+		    border-color: $primary-blue;
+		}
+	}
+
+	.image-block::after{
+	    background: $primary-blue;
+    }
+}
+
+//Template Leaf Colors
+body.template-leaf{
+	background: $alternate-green;
+
+	.header-logo.leaf{
+		opacity: 1;
+	}
+
+	article.article-list-item {
+		border-color: $secondary-green;
+
+		.topicwise-article-image {
+		    border-color: $secondary-green;
+		}
+	}
+
+	.image-block::after{
+	    background: $secondary-green;
+    }
+}
+
+//Template Gecko Colors
+body.template-gecko{
+	background: $alternate-orange;
+
+	.header-logo.gecko{
+		opacity: 1;
+	}
+
+	article.article-list-item {
+		border-color: $secondary-orange;
+
+		.topicwise-article-image {
+		    border-color: $secondary-orange;
+		}
+	}
+
+	.image-block::after{
+	    background: $secondary-orange;
+    }
+}
+
+//Template Cloud Colors
+body.template-cloud{
+	background: $secondary-green;
+
+	.header-logo.cloud{
+		opacity: 1;
+	}
+
+	article.article-list-item {
+		border-color: $secondary-green;
+
+		.topicwise-article-image {
+		    border-color: $secondary-green;
+		}
+	}
+
+	.image-block::after{
+	    background: $secondary-green;
+    }
+}
+
+//Template Fish Colors
+body.template-fish{
+	background: $primary-orange;
+
+	.header-logo.fish{
+		opacity: 1;
+	}
+
+	article.article-list-item {
+		border-color: $secondary-orange;
+
+		.topicwise-article-image {
+		    border-color: $secondary-orange;
+		}
+	}
+
+	.image-block::after{
+	    background: $secondary-orange;
+    }
+}
+
+//Template Girl Colors
+body.template-girl{
+	background: $secondary-orange;
+
+	.header-logo.girl{
+		opacity: 1;
+	}
+
+	article.article-list-item {
+		border-color: $secondary-orange;
+
+		.topicwise-article-image {
+		    border-color: $secondary-orange;
+		}
+	}
+
+	.image-block::after{
+	    background: $secondary-orange;
+    }
+}
+
+// Admin-only no color scheme pages
+body.template-blank{
+	background: #c1c1c1;
+
+	.header-logo.whale{
+		opacity: 1;
+	}
+}

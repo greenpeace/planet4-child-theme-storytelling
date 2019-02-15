@@ -1,0 +1,23 @@
+/*!
+ *# Font Stacks */
+
+//GT Walsheim Pro Light
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  src: url('../fonts/gt-walsheim-light.woff2') format('woff2'),
+       url('../fonts/gt-walsheim-light.woff') format('woff'),
+       url('../fonts/gt-walsheim-light.ttf')  format('truetype');
+}
+
+//GT Walsheim Pro Bold
+@font-face {
+  font-family: 'GT Walsheim Pro Bold';
+  src: url('../fonts/gt-walsheim-medium.woff2') format('woff2'),
+       url('../fonts/gt-walsheim-medium.woff') format('woff'),
+       url('../fonts/gt-walsheim-medium.ttf')  format('truetype');
+}
+
+//Karla 
+@import url('https://fonts.googleapis.com/css?family=Karla:400,400i,700');
+
+

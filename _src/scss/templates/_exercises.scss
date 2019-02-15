@@ -1,0 +1,156 @@
+
+.exercise{
+	margin: 40px 0;
+	position: relative;
+
+	h3{
+		font-family: $secondary-font;
+		text-transform: uppercase;
+		color: #333;
+		margin-bottom: 15px;
+		font-weight: 700;
+	}
+
+	.exercise-item {
+		padding: 15px 15px 0;
+		border: 1px solid $alternate-green;
+
+		@include small-and-up {
+			padding: 25px 25px 0;
+		}
+
+		a:not(.button) {
+			display: block;
+			text-decoration: none;
+			font-weight: bold;
+			position: relative;
+			font-size: 1rem;
+			margin-bottom: 30px;
+			padding-left: 50px;
+
+			@include small-and-up {
+				font-size: 1.125rem;
+				padding-left: 55px;
+			}
+
+			@include medium-and-up {
+				padding-left: 85px;
+			}
+
+			@include large-and-up {
+				font-size: 1.25rem;
+			}
+
+			span {
+				position: absolute;
+				width: 25px;
+    			height: 25px;
+				left: 0;
+				top: 0;
+				background-color: transparent;
+				margin: 8px 0 0 5px;
+
+				@include small-and-up {
+					font-size: 1.125rem;
+					margin: 10px;
+				}
+
+				@include medium-and-up {
+					width: 50px;
+    				height: 50px;
+				}
+
+				html[dir="rtl"] & {
+					right: auto;
+					left: 0;
+				}
+
+				&:before,
+				&:after {
+					content: "";
+					position: absolute;
+					background-color: $secondary-blue;
+					transition: all 0.25s ease-out;
+				}
+
+				&:before {
+					top: 0;
+					left: 50%;
+					width: 4px;
+					height: 100%;
+					margin-left: -2px;
+					transform: rotate(90deg);
+
+					@include medium-and-up {
+						width: 6px;
+					}
+				}
+
+				&:after {
+					top: 50%;
+					left: 0;
+					width: 100%;
+					height: 4px;
+					margin-top: -2px;
+
+					@include medium-and-up {
+						top: 48%;
+						height: 6px;
+					}
+				}
+			}
+
+			&:hover,
+			&:active,
+			&:focus{
+				span:before,
+				span:after {
+					background-color: $alternate-green;
+				}
+			}
+
+			&.collapsed {
+				span {
+					&:before {
+						transform: rotate(180deg);
+					}
+
+					&:after {
+						transform: rotate(180deg);
+					}
+				}
+			}
+		}
+
+		.collapse, .collapsing{
+			height: 0;
+		    opacity: 0;
+		    visibility: hidden;
+		    -webkit-transition: 0.3s all ease-in-out;
+			-moz-transition: 0.3s all ease-in-out;
+			-o-transition: 0.3s all ease-in-out;
+			transition: 0.3s all ease-in-out;
+		}
+
+		.collapse.show{
+			height: auto;
+		    visibility: visible;
+		    opacity: 1;
+		}
+
+		.item-text{
+			border-top: 1px solid $alternate-green;
+
+		    &::before{
+				content: '';
+			    height: 25px;
+			    width: 1px;
+			    display: block;
+			}
+
+			&.collapse.show{
+
+			}
+		}
+	}
+}
