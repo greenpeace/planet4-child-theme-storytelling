@@ -77,8 +77,10 @@ h3,
 h4{
 	line-height: 1em;
 	margin-bottom: 1em;
-	font-weight: 300;
+	font-weight: 700;
 	font-family: $primary-font;
+	text-transform: uppercase;
+	letter-spacing: 1px;
 }
 
 h3,
@@ -89,7 +91,6 @@ h4{
 h1{
 	font-size: 34px;
 	font-family: $primary-font-bold;
-	font-weight: 700;
 	margin-bottom: 0.5em;
 
 	@include small-and-up {
@@ -126,7 +127,7 @@ h4{
 
 p{
 	font-family: $secondary-font;
-	font-size: 14px;
+	font-size: 16px;
 
 	//Style guide only tag
 	&.color-sample{
@@ -156,6 +157,18 @@ div.page-template .alignleft{
 		display: inline;
 		margin: 0 15px 10px 0;
 	}
+
+	&.size-medium{
+		display: block;
+		margin: 10px auto 20px;
+		float: none;
+
+		@include medium-and-up {
+			float: left;
+			display: inline;
+			margin: 0 15px 10px 0;
+		}
+	}
 }
 
 div.page-template .alignright{
@@ -165,6 +178,18 @@ div.page-template .alignright{
 	@include small-and-up {
 		display: inline;
 		margin: 0 0 10px 15px;
+	}
+
+	&.size-medium{
+		display: block;
+		margin: 10px auto 20px;
+		float: none;
+
+		@include medium-and-up {
+			float: right;
+			display: inline;
+			margin: 0 0 10px 15px;
+		}
 	}
 }
 

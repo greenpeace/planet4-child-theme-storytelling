@@ -9,6 +9,7 @@ nav.top-navigation {
 		width: 35%;
 		min-width: 235px;
 		background: #333;
+		padding-bottom: 50px;
 
     	@include large-and-up {
 			display: block;
@@ -44,6 +45,62 @@ nav.top-navigation {
     				color: #fff;
 	    			text-shadow: 0 0 2px #fff;
 	    		}
+    		}
+
+    		ul.nav-drop {
+    			transition: 0.3s all ease-in-out;
+    			padding-left: 15px;
+
+    			@include large-and-up {
+    				pointer-events: none;
+    				opacity: 0;
+				    position: absolute;
+				    list-style-type: none;
+				    text-align: center;
+				}
+
+				li {
+    				line-height: 3em;
+				    margin-bottom: 10px;
+				    font-size: 16px;
+				    background-color: rgba(255,255,255,0.3);
+
+				    @include large-and-up {
+				    	border: 3px solid #fff;
+				    	padding: 0px 25px;
+					}
+
+				    a{
+				    	color: #fff;
+				    	font-weight: 700;
+				    }
+
+				    &:hover,
+				    &:focus,
+				    &:active{
+				    	text-shadow: 0 0 2px #fff;
+
+				    	@include large-and-up {
+					    	background: #fff;
+					    	text-shadow: none;
+						}
+
+				    	a{
+				    		color: #fff;
+
+				    		@include large-and-up {
+						    	color: #333;
+							}
+				    	}
+				    }
+				}
+			}
+
+			&:hover{
+    			ul.nav-drop{
+    				opacity: 1;
+    				pointer-events: all;
+    			}
     		}
 		}
 

@@ -2903,8 +2903,10 @@ h3,
 h4 {
   line-height: 1em;
   margin-bottom: 1em;
-  font-weight: 300;
-  font-family: "GT Walsheim Pro", sans-serif; }
+  font-weight: 700;
+  font-family: "GT Walsheim Pro", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
 
 h3,
 h4 {
@@ -2913,7 +2915,6 @@ h4 {
 h1 {
   font-size: 34px;
   font-family: "GT Walsheim Pro Bold", sans-serif;
-  font-weight: 700;
   margin-bottom: 0.5em; }
   @media (min-width: 576px) {
     h1 {
@@ -2940,7 +2941,7 @@ h4 {
 
 p {
   font-family: "Karla", sans-serif;
-  font-size: 14px; }
+  font-size: 16px; }
   p.color-sample {
     margin: 0 0.5em 1em 0;
     display: inline-block;
@@ -2962,6 +2963,15 @@ div.page-template .alignleft {
     div.page-template .alignleft {
       display: inline;
       margin: 0 15px 10px 0; } }
+  div.page-template .alignleft.size-medium {
+    display: block;
+    margin: 10px auto 20px;
+    float: none; }
+    @media (min-width: 768px) {
+      div.page-template .alignleft.size-medium {
+        float: left;
+        display: inline;
+        margin: 0 15px 10px 0; } }
 
 div.page-template .alignright {
   display: block;
@@ -2970,6 +2980,15 @@ div.page-template .alignright {
     div.page-template .alignright {
       display: inline;
       margin: 0 0 10px 15px; } }
+  div.page-template .alignright.size-medium {
+    display: block;
+    margin: 10px auto 20px;
+    float: none; }
+    @media (min-width: 768px) {
+      div.page-template .alignright.size-medium {
+        float: right;
+        display: inline;
+        margin: 0 0 10px 15px; } }
 
 a {
   transition: 0.2s all ease-in-out; }
@@ -3515,7 +3534,8 @@ nav.top-navigation {
     max-width: 1140px;
     width: 35%;
     min-width: 235px;
-    background: #333; }
+    background: #333;
+    padding-bottom: 50px; }
     @media (min-width: 992px) {
       nav.top-navigation #navbar-dropdown {
         display: block;
@@ -3542,6 +3562,42 @@ nav.top-navigation {
         nav.top-navigation #navbar-dropdown .nav-item .nav-link:hover, nav.top-navigation #navbar-dropdown .nav-item .nav-link:focus {
           color: #fff;
           text-shadow: 0 0 2px #fff; }
+      nav.top-navigation #navbar-dropdown .nav-item ul.nav-drop {
+        transition: 0.3s all ease-in-out;
+        padding-left: 15px; }
+        @media (min-width: 992px) {
+          nav.top-navigation #navbar-dropdown .nav-item ul.nav-drop {
+            pointer-events: none;
+            opacity: 0;
+            position: absolute;
+            list-style-type: none;
+            text-align: center; } }
+        nav.top-navigation #navbar-dropdown .nav-item ul.nav-drop li {
+          line-height: 3em;
+          margin-bottom: 10px;
+          font-size: 16px;
+          background-color: rgba(255, 255, 255, 0.3); }
+          @media (min-width: 992px) {
+            nav.top-navigation #navbar-dropdown .nav-item ul.nav-drop li {
+              border: 3px solid #fff;
+              padding: 0px 25px; } }
+          nav.top-navigation #navbar-dropdown .nav-item ul.nav-drop li a {
+            color: #fff;
+            font-weight: 700; }
+          nav.top-navigation #navbar-dropdown .nav-item ul.nav-drop li:hover, nav.top-navigation #navbar-dropdown .nav-item ul.nav-drop li:focus, nav.top-navigation #navbar-dropdown .nav-item ul.nav-drop li:active {
+            text-shadow: 0 0 2px #fff; }
+            @media (min-width: 992px) {
+              nav.top-navigation #navbar-dropdown .nav-item ul.nav-drop li:hover, nav.top-navigation #navbar-dropdown .nav-item ul.nav-drop li:focus, nav.top-navigation #navbar-dropdown .nav-item ul.nav-drop li:active {
+                background: #fff;
+                text-shadow: none; } }
+            nav.top-navigation #navbar-dropdown .nav-item ul.nav-drop li:hover a, nav.top-navigation #navbar-dropdown .nav-item ul.nav-drop li:focus a, nav.top-navigation #navbar-dropdown .nav-item ul.nav-drop li:active a {
+              color: #fff; }
+              @media (min-width: 992px) {
+                nav.top-navigation #navbar-dropdown .nav-item ul.nav-drop li:hover a, nav.top-navigation #navbar-dropdown .nav-item ul.nav-drop li:focus a, nav.top-navigation #navbar-dropdown .nav-item ul.nav-drop li:active a {
+                  color: #333; } }
+      nav.top-navigation #navbar-dropdown .nav-item:hover ul.nav-drop {
+        opacity: 1;
+        pointer-events: all; }
     nav.top-navigation #navbar-dropdown .close-navbar-dropdown {
       display: block;
       position: relative;
@@ -3811,14 +3867,21 @@ footer.site-footer {
   .content-two-column-block h2 {
     font-family: "Karla", sans-serif;
     text-transform: uppercase;
+    letter-spacing: 0px;
     width: 100%;
     font-size: 22px; }
+  .content-two-column-block p {
+    font-size: 16px; }
 
 .page-section {
   margin-bottom: 0; }
   .page-section .page-section-header {
-    font-family: "GT Walsheim Pro", sans-serif;
-    margin-top: 0; }
+    margin-top: 0;
+    font-size: 34px;
+    font-family: "GT Walsheim Pro Bold", sans-serif; }
+    @media (min-width: 576px) {
+      .page-section .page-section-header {
+        font-size: 48px; } }
 
 .article-listing article.article-list-item {
   margin: 30px 0;
@@ -3830,7 +3893,9 @@ footer.site-footer {
     .article-listing article.article-list-item {
       padding: 25px; } }
   .article-listing article.article-list-item .article-list-item-headline {
-    font-weight: 700; }
+    font-weight: 700;
+    text-transform: none;
+    letter-spacing: 0px; }
   .article-listing article.article-list-item .article-list-item-meta {
     width: 100%; }
   .article-listing article.article-list-item .article-list-item-content {
@@ -3993,7 +4058,8 @@ div.page-template {
       margin: 0 0 125px; } }
   div.page-template .container {
     padding-left: 20px;
-    padding-right: 20px; }
+    padding-right: 20px;
+    overflow: auto; }
 
 p.indent {
   margin-bottom: 30px; }
@@ -4100,7 +4166,7 @@ div.diagonal-bottom {
   padding-bottom: 20px; }
 
 div.diagonal-topbottom {
-  padding: 20px 0; }
+  padding: 30px 0; }
 
 div.diagonal-none {
   padding: 60px 0 30px; }
@@ -4113,7 +4179,7 @@ div.diagonal-none {
 /* Tagline Styles */
 .tagline {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 16px;
   max-width: 675px;
   margin: auto; }
   .tagline span.source {
@@ -4340,17 +4406,17 @@ body.template-blank {
       .team-container > div {
         padding-right: 50px;
         margin-bottom: 50px; } }
-    .team-container > div > img {
+    .team-container > div img {
       width: 125px;
       height: 125px;
       border-radius: 50%; }
       @media (min-width: 576px) {
-        .team-container > div > img {
+        .team-container > div img {
           width: 100px;
           height: 100px;
           margin-right: 15px; } }
       @media (min-width: 992px) {
-        .team-container > div > img {
+        .team-container > div img {
           margin-right: 20px;
           width: 125px;
           height: 125px; } }
@@ -4372,12 +4438,15 @@ article.single-post-container {
     display: block;
     padding-top: 0;
     z-index: 1; }
-    @media (min-width: 768px) {
-      article.single-post-container header.page-header h1 {
-        margin-bottom: 20px; } }
-    @media (min-width: 992px) {
-      article.single-post-container header.page-header h1 {
-        font-size: 3rem; } }
+    article.single-post-container header.page-header h1 {
+      text-transform: none;
+      letter-spacing: 0px; }
+      @media (min-width: 768px) {
+        article.single-post-container header.page-header h1 {
+          margin-bottom: 20px; } }
+      @media (min-width: 992px) {
+        article.single-post-container header.page-header h1 {
+          font-size: 3rem; } }
     article.single-post-container header.page-header .tag-item.page-type {
       display: none; }
     article.single-post-container header.page-header .tag-wrap::before {
