@@ -376,7 +376,102 @@ div.diagonal-none{
     }
 }
 
+/* Original Video / Images with Diagonal Sections Block Styles */
 
+article.study{
+	position: relative;
+	margin: 90px 0;
+	color: #fff;
+	padding-top: 20px;
+
+	@include medium-and-up {
+		margin: 140px 0 160px;
+	}
+
+	h2{
+		font-weight: 700;
+	}
+
+	&::before {
+	    position: absolute;
+	    content: '';
+	    display: block;
+	    left: 0;
+	    top: -74px;
+	    width: 100%;
+	    border-style: solid;
+	    border-width: 0 100vw 75px 0;
+
+	    @include medium-and-up {
+			top: -124px;
+			border-width: 0 100vw 125px 0;
+		}
+	}
+
+	&::after {
+	    position: absolute;
+	    content: '';
+	    display: block;
+	    left: 0;
+	    bottom: -74px;
+	    width: 100%;
+	    border-style: solid;
+	    border-width: 0 100vw 75px 0;
+
+	    @include medium-and-up {
+			bottom: -124px;
+			border-width: 0 100vw 125px 0;
+		}
+	}
+
+	.container{
+		overflow: visible;
+
+		@include medium-and-up {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		section{
+			width: 100%;
+
+			@include medium-and-up {
+				width: 60%;
+			}
+		}
+
+		aside{
+			width: 100%;
+
+			@include medium-and-up {
+				width: 33%;
+				margin-bottom: -100px;
+			}
+
+			@include x-large-and-up {
+				width: 30%;
+			}
+
+			img{
+				margin-bottom: 20px;
+				border: 1px solid #fff;
+
+				&:last-of-type{
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		.video iframe{
+			max-width: 100%;
+			margin-bottom: 20px;
+
+			@include medium-and-up {
+    			margin-bottom: -100px;
+			}
+		}
+	}
+}
 
 /*
  * Body Elements Color Schemes
@@ -405,6 +500,34 @@ body.page-template-default{
 	.image-block::after{
 	    background: $primary-blue;
     }
+
+    article.study{
+		background-color: $secondary-blue;
+
+		&::before {
+		    border-color: transparent transparent $secondary-blue transparent;
+		}
+
+		&::after {
+		    border-color: transparent $secondary-blue transparent transparent;
+		}
+
+		.container{
+			.video iframe{
+				border: 2px solid $tan;
+			}
+		}
+
+		a{
+			color: $tan;
+
+			&:focus,
+			&:hover,
+			&:active{
+				color: $alternate-green;
+			}
+		}
+	}
 }
 
 //Template Leaf Colors
@@ -426,6 +549,34 @@ body.template-leaf{
 	.image-block::after{
 	    background: $secondary-green;
     }
+
+    article.study{
+		background-color: $alternate-green;
+
+		&::before {
+		    border-color: transparent transparent $alternate-green transparent;
+		}
+
+		&::after {
+		    border-color: transparent $alternate-green transparent transparent;
+		}
+
+		.container{
+			.video iframe{
+				border: 2px solid $secondary-green;
+			}
+		}
+
+		a{
+			color: $tan;
+
+			&:focus,
+			&:hover,
+			&:active{
+				color: $secondary-green;
+			}
+		}
+	}
 }
 
 //Template Gecko Colors
@@ -447,6 +598,34 @@ body.template-gecko{
 	.image-block::after{
 	    background: $secondary-orange;
     }
+
+    article.study{
+		background-color: $alternate-orange;
+
+		&::before {
+		    border-color: transparent transparent $alternate-orange transparent;
+		}
+
+		&::after {
+		    border-color: transparent $alternate-orange transparent transparent;
+		}
+
+		.container{
+			.video iframe{
+				border: 2px solid $secondary-orange;
+			}
+		}
+
+		a{
+			color: $secondary-orange;
+
+			&:focus,
+			&:hover,
+			&:active{
+				color: $primary-orange;
+			}
+		}
+	}
 }
 
 //Template Cloud Colors
@@ -468,6 +647,35 @@ body.template-cloud{
 	.image-block::after{
 	    background: $secondary-green;
     }
+
+    article.study{
+		background-color: $secondary-green;
+
+		&::before {
+		    border-color: transparent transparent $secondary-green transparent;
+		}
+
+		&::after {
+		    border-color: transparent $secondary-green transparent transparent;
+		}
+
+		.container{
+			.video iframe{
+				border: 2px solid $light-tan;
+			}
+		}
+
+		a{
+			color: $light-tan;
+			text-decoration: underline;
+
+			&:focus,
+			&:hover,
+			&:active{
+				color: $secondary-orange;
+			}
+		}
+	}
 }
 
 //Template Fish Colors
@@ -489,6 +697,34 @@ body.template-fish{
 	.image-block::after{
 	    background: $secondary-orange;
     }
+
+    article.study{
+		background-color: $primary-orange;
+
+		&::before {
+		    border-color: transparent transparent $primary-orange transparent;
+		}
+
+		&::after {
+		    border-color: transparent $primary-orange transparent transparent;
+		}
+
+		.container{
+			.video iframe{
+				border: 2px solid $secondary-orange;
+			}
+		}
+
+		a{
+			color: $secondary-orange;
+
+			&:focus,
+			&:hover,
+			&:active{
+				color: $alternate-orange;
+			}
+		}
+	}
 }
 
 //Template Girl Colors
@@ -510,6 +746,34 @@ body.template-girl{
 	.image-block::after{
 	    background: $secondary-orange;
     }
+
+    article.study{
+		background-color: $secondary-orange;
+
+		&::before {
+		    border-color: transparent transparent $secondary-orange transparent;
+		}
+
+		&::after {
+		    border-color: transparent $secondary-orange transparent transparent;
+		}
+
+		.container{
+			.video iframe{
+				border: 2px solid $primary-orange;
+			}
+		}
+
+		a{
+			color: $primary-orange;
+
+			&:focus,
+			&:hover,
+			&:active{
+				color: $alternate-orange;
+			}
+		}
+	}
 }
 
 // Admin-only no color scheme pages
