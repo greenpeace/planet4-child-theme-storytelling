@@ -3113,6 +3113,7 @@ blockquote {
     font-size: 200px;
     position: absolute;
     height: 100px;
+    font-style: normal;
     background-color: #ccc;
     border-radius: 100%;
     width: 100px;
@@ -3564,23 +3565,26 @@ nav.top-navigation {
           text-shadow: 0 0 2px #fff; }
       nav.top-navigation #navbar-dropdown .nav-item ul.nav-drop {
         transition: 0.3s all ease-in-out;
-        padding-left: 15px; }
+        padding: 0 25px;
+        color: #fff; }
         @media (min-width: 992px) {
           nav.top-navigation #navbar-dropdown .nav-item ul.nav-drop {
             pointer-events: none;
             opacity: 0;
+            padding: 0 0 0 15px;
             position: absolute;
             list-style-type: none;
             text-align: center; } }
         nav.top-navigation #navbar-dropdown .nav-item ul.nav-drop li {
-          line-height: 3em;
-          margin-bottom: 10px;
-          font-size: 16px;
-          background-color: rgba(255, 255, 255, 0.3); }
+          line-height: 2em;
+          margin-bottom: 15px;
+          font-size: 16px; }
           @media (min-width: 992px) {
             nav.top-navigation #navbar-dropdown .nav-item ul.nav-drop li {
               border: 3px solid #fff;
-              padding: 0px 25px; } }
+              padding: 5px 25px;
+              margin-bottom: 10px;
+              background-color: rgba(255, 255, 255, 0.3); } }
           nav.top-navigation #navbar-dropdown .nav-item ul.nav-drop li a {
             color: #fff;
             font-weight: 700; }
@@ -3841,6 +3845,8 @@ footer.site-footer {
       font-weight: 700;
       font-size: 20px;
       margin-top: 10px; }
+    footer.site-footer .container .copyright-block img {
+      max-width: 100%; }
   footer.site-footer .gform_confirmation_wrapper {
     min-height: 200px;
     position: relative; }
@@ -3882,6 +3888,11 @@ footer.site-footer {
     @media (min-width: 576px) {
       .page-section .page-section-header {
         font-size: 48px; } }
+
+.article-listing .article-list-section {
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap; }
 
 .article-listing article.article-list-item {
   margin: 30px 0;
@@ -4223,8 +4234,7 @@ div.diagonal-none {
   background-attachment: fixed;
   background-position: center 60%;
   background-repeat: no-repeat;
-  background-size: cover;
-  will-change: transform; }
+  background-size: cover; }
   .image-block.no-parralax {
     background-attachment: unset;
     background-position: center 65%; }
