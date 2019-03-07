@@ -319,12 +319,15 @@ div.diagonal-none{
     width: 100%;
     position: relative;
     z-index: unset !important;
-    background-attachment: fixed;
     background-position: center 60%;
     background-repeat: no-repeat;
     background-size: cover;
 
-    &.no-parralax{
+    @include small-and-up {
+    	background-attachment: fixed;
+    }
+
+    &.no-parralax {
     	background-attachment: unset;
    		background-position: center 65%;
     }

@@ -4231,10 +4231,12 @@ div.diagonal-none {
   width: 100%;
   position: relative;
   z-index: unset !important;
-  background-attachment: fixed;
   background-position: center 60%;
   background-repeat: no-repeat;
   background-size: cover; }
+  @media (min-width: 576px) {
+    .image-block {
+      background-attachment: fixed; } }
   .image-block.no-parralax {
     background-attachment: unset;
     background-position: center 65%; }
