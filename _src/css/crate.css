@@ -12,67 +12,7 @@ and so on...
  * *  Homepage Header Background animations 
  * * * * */
 @import url("https://fonts.googleapis.com/css?family=Karla:400,400i,700");
-@keyframes bgcolorchange {
-  0% {
-    background: transparent; }
-  13% {
-    background: transparent; }
-  15% {
-    background: #1e3920; }
-  28% {
-    background: #1e3920; }
-  30% {
-    background: #f7b848; }
-  43% {
-    background: #f7b848; }
-  45% {
-    background: #943d3a; }
-  58% {
-    background: #943d3a; }
-  60% {
-    background: #86a640; }
-  73% {
-    background: #86a640; }
-  75% {
-    background: #ed5e48; }
-  90% {
-    background: #ed5e48; }
-  92% {
-    background: transparent; }
-  100% {
-    background: transparent; } }
-
-@-webkit-keyframes bgcolorchange {
-  0% {
-    background: transparent; }
-  13% {
-    background: transparent; }
-  15% {
-    background: #1e3920; }
-  28% {
-    background: #1e3920; }
-  30% {
-    background: #f7b848; }
-  43% {
-    background: #f7b848; }
-  45% {
-    background: #943d3a; }
-  58% {
-    background: #943d3a; }
-  60% {
-    background: #86a640; }
-  73% {
-    background: #86a640; }
-  75% {
-    background: #ed5e48; }
-  90% {
-    background: #ed5e48; }
-  92% {
-    background: transparent; }
-  100% {
-    background: transparent; } }
-
-@keyframes whalelogocycle {
+@keyframes logocycle {
   0% {
     opacity: 1; }
   13% {
@@ -86,7 +26,7 @@ and so on...
   100% {
     opacity: 1; } }
 
-@-webkit-keyframes whalelogocycle {
+@-webkit-keyframes logocycle {
   0% {
     opacity: 1; }
   13% {
@@ -100,7 +40,7 @@ and so on...
   100% {
     opacity: 1; } }
 
-@keyframes leaflogocycle {
+@keyframes anim1cycle {
   0% {
     opacity: 0; }
   13% {
@@ -114,7 +54,7 @@ and so on...
   100% {
     opacity: 0; } }
 
-@-webkit-keyframes leaflogocycle {
+@-webkit-keyframes anim1cycle {
   0% {
     opacity: 0; }
   13% {
@@ -128,7 +68,7 @@ and so on...
   100% {
     opacity: 0; } }
 
-@keyframes girllogocycle {
+@keyframes anim2cycle {
   0% {
     opacity: 0; }
   28% {
@@ -142,7 +82,7 @@ and so on...
   100% {
     opacity: 0; } }
 
-@-webkit-keyframes girllogocycle {
+@-webkit-keyframes anim2cycle {
   0% {
     opacity: 0; }
   28% {
@@ -156,7 +96,7 @@ and so on...
   100% {
     opacity: 0; } }
 
-@keyframes geckologocycle {
+@keyframes anim3cycle {
   0% {
     opacity: 0; }
   43% {
@@ -170,7 +110,7 @@ and so on...
   100% {
     opacity: 0; } }
 
-@-webkit-keyframes geckologocycle {
+@-webkit-keyframes anim3cycle {
   0% {
     opacity: 0; }
   43% {
@@ -184,7 +124,7 @@ and so on...
   100% {
     opacity: 0; } }
 
-@keyframes cloudlogocycle {
+@keyframes anim4cycle {
   0% {
     opacity: 0; }
   58% {
@@ -198,7 +138,7 @@ and so on...
   100% {
     opacity: 0; } }
 
-@-webkit-keyframes cloudlogocycle {
+@-webkit-keyframes anim4cycle {
   0% {
     opacity: 0; }
   58% {
@@ -208,34 +148,6 @@ and so on...
   73% {
     opacity: 1; }
   75% {
-    opacity: 0; }
-  100% {
-    opacity: 0; } }
-
-@keyframes fishlogocycle {
-  0% {
-    opacity: 0; }
-  73% {
-    opacity: 0; }
-  75% {
-    opacity: 1; }
-  90% {
-    opacity: 1; }
-  92% {
-    opacity: 0; }
-  100% {
-    opacity: 0; } }
-
-@-webkit-keyframes fishlogocycle {
-  0% {
-    opacity: 0; }
-  73% {
-    opacity: 0; }
-  75% {
-    opacity: 1; }
-  90% {
-    opacity: 1; }
-  92% {
     opacity: 0; }
   100% {
     opacity: 0; } }
@@ -3990,27 +3902,22 @@ body {
   background: #fff;
   font-family: "Karla", sans-serif; }
   body.home .logo-container {
-    text-align: center;
-    animation: bgcolorchange 20s infinite;
-    -webkit-animation: bgcolorchange 20s infinite; }
-    body.home .logo-container .header-logo.whale {
-      animation: whalelogocycle 20s infinite;
-      -webkit-animation: whalelogocycle 20s infinite; }
-    body.home .logo-container .header-logo.leaf {
-      animation: leaflogocycle 20s infinite;
-      -webkit-animation: leaflogocycle 20s infinite; }
-    body.home .logo-container .header-logo.gecko {
-      animation: geckologocycle 20s infinite;
-      -webkit-animation: geckologocycle 20s infinite; }
-    body.home .logo-container .header-logo.cloud {
-      animation: cloudlogocycle 20s infinite;
-      -webkit-animation: cloudlogocycle 20s infinite; }
-    body.home .logo-container .header-logo.fish {
-      animation: fishlogocycle 20s infinite;
-      -webkit-animation: fishlogocycle 20s infinite; }
-    body.home .logo-container .header-logo.girl {
-      animation: girllogocycle 20s infinite;
-      -webkit-animation: girllogocycle 20s infinite; }
+    text-align: center; }
+    body.home .logo-container .header-logo.logo {
+      animation: logocycle 20s infinite;
+      -webkit-animation: logocycle 20s infinite; }
+    body.home .logo-container .header-logo.anim1 {
+      animation: anim1cycle 20s infinite;
+      -webkit-animation: anim1cycle 20s infinite; }
+    body.home .logo-container .header-logo.anim2 {
+      animation: anim2cycle 20s infinite;
+      -webkit-animation: anim2cycle 20s infinite; }
+    body.home .logo-container .header-logo.anim3 {
+      animation: anim3cycle 20s infinite;
+      -webkit-animation: anim3cycle 20s infinite; }
+    body.home .logo-container .header-logo.anim4 {
+      animation: anim4cycle 20s infinite;
+      -webkit-animation: anim4cycle 20s infinite; }
 
 /* Potentially temporary */
 .page-header {
@@ -4050,7 +3957,7 @@ div.logo-container {
       position: absolute;
       top: 0;
       left: 0; }
-      div.logo-container .content .header-logo.whale {
+      div.logo-container .content .header-logo.logo {
         position: relative; }
     div.logo-container .content h2 {
       font-family: "Karla", sans-serif;

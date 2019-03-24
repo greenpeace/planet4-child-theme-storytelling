@@ -8,33 +8,29 @@ body{
 
 	&.home .logo-container{
 		text-align: center;
-		animation: bgcolorchange 20s infinite;
-		-webkit-animation: bgcolorchange 20s infinite;
+		// animation: bgcolorchange 20s infinite;
+		// -webkit-animation: bgcolorchange 20s infinite;
 
 		.header-logo{
-			&.whale{
-				animation: whalelogocycle 20s infinite;
-				-webkit-animation: whalelogocycle 20s infinite;
+			&.logo{
+				animation: logocycle 20s infinite;
+				-webkit-animation: logocycle 20s infinite;
 			}
-			&.leaf{
-				animation: leaflogocycle 20s infinite;
-				-webkit-animation: leaflogocycle 20s infinite;
+			&.anim1{
+				animation: anim1cycle 20s infinite;
+				-webkit-animation: anim1cycle 20s infinite;
 			}
-			&.gecko{
-				animation: geckologocycle 20s infinite;
-				-webkit-animation: geckologocycle 20s infinite;
+			&.anim2{
+				animation: anim2cycle 20s infinite;
+				-webkit-animation: anim2cycle 20s infinite;
 			}
-			&.cloud{
-				animation: cloudlogocycle 20s infinite;
-				-webkit-animation: cloudlogocycle 20s infinite;
+			&.anim3{
+				animation: anim3cycle 20s infinite;
+				-webkit-animation: anim3cycle 20s infinite;
 			}
-			&.fish{
-				animation: fishlogocycle 20s infinite;
-				-webkit-animation: fishlogocycle 20s infinite;
-			}
-			&.girl{
-				animation: girllogocycle 20s infinite;
-				-webkit-animation: girllogocycle 20s infinite;
+			&.anim4{
+				animation: anim4cycle 20s infinite;
+				-webkit-animation: anim4cycle 20s infinite;
 			}
 		}
 	}
@@ -87,7 +83,7 @@ div.logo-container{
 			top: 0;
 			left: 0;
 
-			&.whale{
+			&.logo{
 				position: relative;
 			}
 		}
