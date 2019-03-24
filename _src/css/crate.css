@@ -15,140 +15,120 @@ and so on...
 @keyframes logocycle {
   0% {
     opacity: 1; }
-  13% {
+  20% {
     opacity: 1; }
-  15% {
+  25% {
     opacity: 0; }
-  90% {
+  95% {
     opacity: 0; }
-  92% {
-    opacity: 1; }
   100% {
     opacity: 1; } }
 
 @-webkit-keyframes logocycle {
   0% {
     opacity: 1; }
-  13% {
+  20% {
     opacity: 1; }
-  15% {
+  25% {
     opacity: 0; }
-  90% {
+  95% {
     opacity: 0; }
-  92% {
-    opacity: 1; }
   100% {
     opacity: 1; } }
 
 @keyframes anim1cycle {
   0% {
     opacity: 0; }
-  13% {
+  23% {
     opacity: 0; }
-  15% {
+  27% {
     opacity: 1; }
-  28% {
+  95% {
     opacity: 1; }
-  30% {
-    opacity: 0; }
   100% {
     opacity: 0; } }
 
 @-webkit-keyframes anim1cycle {
   0% {
     opacity: 0; }
-  13% {
+  23% {
     opacity: 0; }
-  15% {
+  27% {
     opacity: 1; }
-  28% {
+  93% {
     opacity: 1; }
-  30% {
-    opacity: 0; }
   100% {
     opacity: 0; } }
 
 @keyframes anim2cycle {
   0% {
     opacity: 0; }
-  28% {
+  40% {
     opacity: 0; }
-  30% {
-    opacity: 1; }
-  43% {
-    opacity: 1; }
   45% {
-    opacity: 0; }
+    opacity: 1; }
+  93% {
+    opacity: 1; }
   100% {
     opacity: 0; } }
 
 @-webkit-keyframes anim2cycle {
   0% {
     opacity: 0; }
-  28% {
+  40% {
     opacity: 0; }
-  30% {
-    opacity: 1; }
-  43% {
-    opacity: 1; }
   45% {
-    opacity: 0; }
+    opacity: 1; }
+  93% {
+    opacity: 1; }
   100% {
     opacity: 0; } }
 
 @keyframes anim3cycle {
   0% {
     opacity: 0; }
-  43% {
+  55% {
     opacity: 0; }
-  45% {
-    opacity: 1; }
-  58% {
-    opacity: 1; }
   60% {
-    opacity: 0; }
+    opacity: 1; }
+  93% {
+    opacity: 1; }
   100% {
     opacity: 0; } }
 
 @-webkit-keyframes anim3cycle {
   0% {
     opacity: 0; }
-  43% {
+  55% {
     opacity: 0; }
-  45% {
-    opacity: 1; }
-  58% {
-    opacity: 1; }
   60% {
-    opacity: 0; }
+    opacity: 1; }
+  93% {
+    opacity: 1; }
   100% {
     opacity: 0; } }
 
 @keyframes anim4cycle {
   0% {
     opacity: 0; }
-  58% {
+  70% {
     opacity: 0; }
-  60% {
-    opacity: 1; }
-  73% {
-    opacity: 1; }
   75% {
-    opacity: 0; }
+    opacity: 1; }
+  93% {
+    opacity: 1; }
   100% {
     opacity: 0; } }
 
 @-webkit-keyframes anim4cycle {
   0% {
     opacity: 0; }
-  58% {
+  70% {
     opacity: 0; }
-  60% {
-    opacity: 1; }
-  73% {
-    opacity: 1; }
   75% {
-    opacity: 0; }
+    opacity: 1; }
+  93% {
+    opacity: 1; }
   100% {
     opacity: 0; } }
 
@@ -3904,20 +3884,20 @@ body {
   body.home .logo-container {
     text-align: center; }
     body.home .logo-container .header-logo.logo {
-      animation: logocycle 20s infinite;
-      -webkit-animation: logocycle 20s infinite; }
+      animation: logocycle 12s infinite;
+      -webkit-animation: logocycle 12s infinite; }
     body.home .logo-container .header-logo.anim1 {
-      animation: anim1cycle 20s infinite;
-      -webkit-animation: anim1cycle 20s infinite; }
+      animation: anim1cycle 12s infinite;
+      -webkit-animation: anim1cycle 12s infinite; }
     body.home .logo-container .header-logo.anim2 {
-      animation: anim2cycle 20s infinite;
-      -webkit-animation: anim2cycle 20s infinite; }
+      animation: anim2cycle 12s infinite;
+      -webkit-animation: anim2cycle 12s infinite; }
     body.home .logo-container .header-logo.anim3 {
-      animation: anim3cycle 20s infinite;
-      -webkit-animation: anim3cycle 20s infinite; }
+      animation: anim3cycle 12s infinite;
+      -webkit-animation: anim3cycle 12s infinite; }
     body.home .logo-container .header-logo.anim4 {
-      animation: anim4cycle 20s infinite;
-      -webkit-animation: anim4cycle 20s infinite; }
+      animation: anim4cycle 12s infinite;
+      -webkit-animation: anim4cycle 12s infinite; }
 
 /* Potentially temporary */
 .page-header {
@@ -3925,29 +3905,30 @@ body {
 
 /* * */
 div.logo-container {
-  height: 400px;
+  height: 325px;
   text-align: center;
   padding-top: 110px;
   position: relative;
   text-align: left; }
+  @media (min-width: 576px) {
+    div.logo-container {
+      height: 400px; } }
   @media (min-width: 768px) {
     div.logo-container {
-      height: 475px; } }
+      height: 500px; } }
   div.logo-container .content {
     position: absolute;
     left: 50%;
     top: 50%;
-    padding: 0 20px;
     width: 100%;
-    transform: translate(-50%, -50%); }
-    @media (min-width: 576px) {
-      div.logo-container .content {
-        padding: 0 40px; } }
+    transform: translate(-50%, -50%);
+    max-width: 750px; }
     @media (min-width: 768px) {
       div.logo-container .content {
-        width: 700px;
-        padding: 0;
         transform: translate(-50%, -55%); } }
+    @media (min-width: 992px) {
+      div.logo-container .content {
+        transform: translate(-50%, -49%); } }
     div.logo-container .content .logos {
       position: relative; }
     div.logo-container .content .header-logo {

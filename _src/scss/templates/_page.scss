@@ -13,24 +13,24 @@ body{
 
 		.header-logo{
 			&.logo{
-				animation: logocycle 20s infinite;
-				-webkit-animation: logocycle 20s infinite;
+				animation: logocycle 12s infinite;
+				-webkit-animation: logocycle 12s infinite;
 			}
 			&.anim1{
-				animation: anim1cycle 20s infinite;
-				-webkit-animation: anim1cycle 20s infinite;
+				animation: anim1cycle 12s infinite;
+				-webkit-animation: anim1cycle 12s infinite;
 			}
 			&.anim2{
-				animation: anim2cycle 20s infinite;
-				-webkit-animation: anim2cycle 20s infinite;
+				animation: anim2cycle 12s infinite;
+				-webkit-animation: anim2cycle 12s infinite;
 			}
 			&.anim3{
-				animation: anim3cycle 20s infinite;
-				-webkit-animation: anim3cycle 20s infinite;
+				animation: anim3cycle 12s infinite;
+				-webkit-animation: anim3cycle 12s infinite;
 			}
 			&.anim4{
-				animation: anim4cycle 20s infinite;
-				-webkit-animation: anim4cycle 20s infinite;
+				animation: anim4cycle 12s infinite;
+				-webkit-animation: anim4cycle 12s infinite;
 			}
 		}
 	}
@@ -43,32 +43,34 @@ body{
 /* * */
 
 div.logo-container{
-	height: 400px;
+	height: 325px;
 	text-align: center;
 	padding-top: 110px;
 	position: relative;
 	text-align: left;
 
+	@include small-and-up {
+		height: 400px;
+	}
+
 	@include medium-and-up {
-		height: 475px;
+		height: 500px;
 	}
 
 	.content{
 		position: absolute;
 	    left: 50%;
 	    top: 50%;
-	    padding: 0 20px;
 	    width: 100%;
 	    transform: translate(-50%, -50%);
-
-	    @include small-and-up {
-			padding: 0 40px;
-		}
+	    max-width: 750px;
 
 	    @include medium-and-up {
-			width: 700px;
-			padding: 0;
 			transform: translate(-50%, -55%);
+		}
+
+		@include large-and-up {
+			transform: translate(-50%, -49%);
 		}
 
 		.logos{
