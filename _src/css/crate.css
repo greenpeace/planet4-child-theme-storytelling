@@ -62,27 +62,33 @@ and so on...
 
 @keyframes anim2cycle {
   0% {
-    opacity: 0; }
+    opacity: 0;
+    transform: translateX(0); }
   40% {
-    opacity: 0; }
+    opacity: 0;
+    transform: translateX(0); }
   45% {
     opacity: 1; }
   93% {
     opacity: 1; }
   100% {
-    opacity: 0; } }
+    opacity: 0;
+    transform: translateX(-15px); } }
 
 @-webkit-keyframes anim2cycle {
   0% {
-    opacity: 0; }
+    opacity: 0;
+    transform: translateX(0); }
   40% {
-    opacity: 0; }
+    opacity: 0;
+    transform: translateX(0); }
   45% {
     opacity: 1; }
   93% {
     opacity: 1; }
   100% {
-    opacity: 0; } }
+    opacity: 0;
+    transform: translateX(-15px); } }
 
 @keyframes anim3cycle {
   0% {
