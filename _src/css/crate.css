@@ -4402,10 +4402,13 @@ body.template-blank {
   position: relative;
   padding-left: 80px;
   margin: auto;
-  max-width: 675px; }
+  max-width: 675px;
+  background-size: 50px;
+  background-repeat: no-repeat; }
   @media (min-width: 768px) {
     .tools-list {
-      padding-left: 110px; } }
+      padding-left: 110px;
+      background-size: 80px; } }
   .tools-list h2 {
     font-weight: bold;
     text-transform: uppercase;
@@ -4414,19 +4417,6 @@ body.template-blank {
     @media (min-width: 768px) {
       .tools-list h2 {
         margin-bottom: 35px; } }
-  .tools-list::before {
-    content: '';
-    background-image: url("../../images/image.svg");
-    background-size: contain;
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 0;
-    left: 0; }
-    @media (min-width: 768px) {
-      .tools-list::before {
-        width: 80px;
-        height: 80px; } }
   .tools-list .tools {
     display: block; }
     @media (min-width: 576px) {
