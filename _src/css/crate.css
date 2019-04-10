@@ -4372,7 +4372,8 @@ body.template-girl {
   body.template-girl .image-block::after {
     background: #f7b848; }
   body.template-girl article.study {
-    background-color: #f7b848; }
+    background-color: #f7b848;
+    color: #1a1a1a; }
     body.template-girl article.study::before {
       border-color: transparent transparent #f7b848 transparent; }
     body.template-girl article.study::after {

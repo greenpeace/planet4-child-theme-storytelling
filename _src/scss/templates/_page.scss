@@ -749,6 +749,7 @@ body.template-girl{
 
     article.study{
 		background-color: $secondary-orange;
+		color: #1a1a1a;
 
 		&::before {
 		    border-color: transparent transparent $secondary-orange transparent;
