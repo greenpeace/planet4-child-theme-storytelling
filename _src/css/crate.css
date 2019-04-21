@@ -62,33 +62,27 @@ and so on...
 
 @keyframes anim2cycle {
   0% {
-    opacity: 0;
-    transform: translateX(0); }
+    opacity: 0; }
   40% {
-    opacity: 0;
-    transform: translateX(0); }
+    opacity: 0; }
   45% {
     opacity: 1; }
   93% {
     opacity: 1; }
   100% {
-    opacity: 0;
-    transform: translateX(-15px); } }
+    opacity: 0; } }
 
 @-webkit-keyframes anim2cycle {
   0% {
-    opacity: 0;
-    transform: translateX(0); }
+    opacity: 0; }
   40% {
-    opacity: 0;
-    transform: translateX(0); }
+    opacity: 0; }
   45% {
     opacity: 1; }
   93% {
     opacity: 1; }
   100% {
-    opacity: 0;
-    transform: translateX(-15px); } }
+    opacity: 0; } }
 
 @keyframes anim3cycle {
   0% {
@@ -3887,21 +3881,21 @@ section.four-column {
 body {
   background: #fff;
   font-family: "Karla", sans-serif; }
-  body.home .logo-container {
+  body .logo-container {
     text-align: center; }
-    body.home .logo-container .header-logo.logo {
+    body .logo-container .header-logo.logo {
       animation: logocycle 12s infinite;
       -webkit-animation: logocycle 12s infinite; }
-    body.home .logo-container .header-logo.anim1 {
+    body .logo-container .header-logo.anim1 {
       animation: anim1cycle 12s infinite;
       -webkit-animation: anim1cycle 12s infinite; }
-    body.home .logo-container .header-logo.anim2 {
+    body .logo-container .header-logo.anim2 {
       animation: anim2cycle 12s infinite;
       -webkit-animation: anim2cycle 12s infinite; }
-    body.home .logo-container .header-logo.anim3 {
+    body .logo-container .header-logo.anim3 {
       animation: anim3cycle 12s infinite;
       -webkit-animation: anim3cycle 12s infinite; }
-    body.home .logo-container .header-logo.anim4 {
+    body .logo-container .header-logo.anim4 {
       animation: anim4cycle 12s infinite;
       -webkit-animation: anim4cycle 12s infinite; }
 
