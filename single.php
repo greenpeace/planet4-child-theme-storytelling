@@ -37,6 +37,7 @@ $context['og_title']            = $post->get_og_title();
 $context['og_description']      = $post->get_og_description();
 $context['og_image_data']       = $post->get_og_image();
 $context['custom_body_classes'] = 'template-fish';
+$context['anim_folder']         = 'anim_fish';
 
 $context['filter_url'] = add_query_arg( [
 	's'                                       => ' ',
