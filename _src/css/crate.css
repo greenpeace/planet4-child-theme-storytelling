@@ -2883,7 +2883,8 @@ div.page-template .alignright {
         margin: 0 0 10px 15px; } }
 
 a {
-  transition: 0.2s all ease-in-out; }
+  transition: 0.2s all ease-in-out;
+  display: inline-block; }
   a:hover, a:active, a:focus {
     text-decoration: none; }
 
@@ -3020,7 +3021,6 @@ div.page-template ul:not(.checklist),
 .single-post-container ul:not(.checklist),
 div.page-template ol,
 .single-post-container ol {
-  list-style: none;
   padding: 0 0 0 20px; }
   div.page-template ul:not(.checklist) li,
   .single-post-container ul:not(.checklist) li,
@@ -3030,12 +3030,15 @@ div.page-template ol,
     padding: 0 0 0 20px !important;
     position: relative; }
 
-div.page-template ul:not(.checklist) li::before,
-.single-post-container ul:not(.checklist) li::before {
-  content: "\2022";
-  font-weight: bold;
-  position: absolute;
-  left: 0; }
+div.page-template ul:not(.checklist),
+.single-post-container ul:not(.checklist) {
+  list-style: none; }
+  div.page-template ul:not(.checklist) li::before,
+  .single-post-container ul:not(.checklist) li::before {
+    content: "\2022";
+    font-weight: bold;
+    position: absolute;
+    left: 0; }
 
 .skewed-overlay {
   display: none; }
