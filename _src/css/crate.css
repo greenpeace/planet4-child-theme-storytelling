@@ -12,231 +12,123 @@ and so on...
  * *  Homepage Header Background animations 
  * * * * */
 @import url("https://fonts.googleapis.com/css?family=Karla:400,400i,700");
-@keyframes bgcolorchange {
-  0% {
-    background: transparent; }
-  13% {
-    background: transparent; }
-  15% {
-    background: #1e3920; }
-  28% {
-    background: #1e3920; }
-  30% {
-    background: #f7b848; }
-  43% {
-    background: #f7b848; }
-  45% {
-    background: #943d3a; }
-  58% {
-    background: #943d3a; }
-  60% {
-    background: #86a640; }
-  73% {
-    background: #86a640; }
-  75% {
-    background: #ed5e48; }
-  90% {
-    background: #ed5e48; }
-  92% {
-    background: transparent; }
-  100% {
-    background: transparent; } }
-
-@-webkit-keyframes bgcolorchange {
-  0% {
-    background: transparent; }
-  13% {
-    background: transparent; }
-  15% {
-    background: #1e3920; }
-  28% {
-    background: #1e3920; }
-  30% {
-    background: #f7b848; }
-  43% {
-    background: #f7b848; }
-  45% {
-    background: #943d3a; }
-  58% {
-    background: #943d3a; }
-  60% {
-    background: #86a640; }
-  73% {
-    background: #86a640; }
-  75% {
-    background: #ed5e48; }
-  90% {
-    background: #ed5e48; }
-  92% {
-    background: transparent; }
-  100% {
-    background: transparent; } }
-
-@keyframes whalelogocycle {
+@keyframes logocycle {
   0% {
     opacity: 1; }
-  13% {
+  20% {
     opacity: 1; }
-  15% {
+  25% {
     opacity: 0; }
-  90% {
+  95% {
     opacity: 0; }
-  92% {
-    opacity: 1; }
   100% {
     opacity: 1; } }
 
-@-webkit-keyframes whalelogocycle {
+@-webkit-keyframes logocycle {
   0% {
     opacity: 1; }
-  13% {
+  20% {
     opacity: 1; }
-  15% {
+  25% {
     opacity: 0; }
-  90% {
+  95% {
     opacity: 0; }
-  92% {
-    opacity: 1; }
   100% {
     opacity: 1; } }
 
-@keyframes leaflogocycle {
+@keyframes anim1cycle {
   0% {
     opacity: 0; }
-  13% {
+  23% {
     opacity: 0; }
-  15% {
+  27% {
     opacity: 1; }
-  28% {
+  93% {
     opacity: 1; }
-  30% {
-    opacity: 0; }
   100% {
     opacity: 0; } }
 
-@-webkit-keyframes leaflogocycle {
+@-webkit-keyframes anim1cycle {
   0% {
     opacity: 0; }
-  13% {
+  23% {
     opacity: 0; }
-  15% {
+  27% {
     opacity: 1; }
-  28% {
+  93% {
     opacity: 1; }
-  30% {
-    opacity: 0; }
   100% {
     opacity: 0; } }
 
-@keyframes girllogocycle {
+@keyframes anim2cycle {
   0% {
     opacity: 0; }
-  28% {
-    opacity: 0; }
-  30% {
-    opacity: 1; }
-  43% {
-    opacity: 1; }
-  45% {
-    opacity: 0; }
-  100% {
-    opacity: 0; } }
-
-@-webkit-keyframes girllogocycle {
-  0% {
-    opacity: 0; }
-  28% {
-    opacity: 0; }
-  30% {
-    opacity: 1; }
-  43% {
-    opacity: 1; }
-  45% {
-    opacity: 0; }
-  100% {
-    opacity: 0; } }
-
-@keyframes geckologocycle {
-  0% {
-    opacity: 0; }
-  43% {
+  40% {
     opacity: 0; }
   45% {
     opacity: 1; }
-  58% {
+  93% {
     opacity: 1; }
-  60% {
-    opacity: 0; }
   100% {
     opacity: 0; } }
 
-@-webkit-keyframes geckologocycle {
+@-webkit-keyframes anim2cycle {
   0% {
     opacity: 0; }
-  43% {
+  40% {
     opacity: 0; }
   45% {
     opacity: 1; }
-  58% {
+  93% {
     opacity: 1; }
-  60% {
-    opacity: 0; }
   100% {
     opacity: 0; } }
 
-@keyframes cloudlogocycle {
+@keyframes anim3cycle {
   0% {
     opacity: 0; }
-  58% {
+  55% {
     opacity: 0; }
   60% {
     opacity: 1; }
-  73% {
+  93% {
     opacity: 1; }
-  75% {
-    opacity: 0; }
   100% {
     opacity: 0; } }
 
-@-webkit-keyframes cloudlogocycle {
+@-webkit-keyframes anim3cycle {
   0% {
     opacity: 0; }
-  58% {
+  55% {
     opacity: 0; }
   60% {
     opacity: 1; }
-  73% {
+  93% {
     opacity: 1; }
-  75% {
-    opacity: 0; }
   100% {
     opacity: 0; } }
 
-@keyframes fishlogocycle {
+@keyframes anim4cycle {
   0% {
     opacity: 0; }
-  73% {
+  70% {
     opacity: 0; }
   75% {
     opacity: 1; }
-  90% {
+  93% {
     opacity: 1; }
-  92% {
-    opacity: 0; }
   100% {
     opacity: 0; } }
 
-@-webkit-keyframes fishlogocycle {
+@-webkit-keyframes anim4cycle {
   0% {
     opacity: 0; }
-  73% {
+  70% {
     opacity: 0; }
   75% {
     opacity: 1; }
-  90% {
+  93% {
     opacity: 1; }
-  92% {
-    opacity: 0; }
   100% {
     opacity: 0; } }
 
@@ -3128,7 +3020,6 @@ div.page-template ul:not(.checklist),
 .single-post-container ul:not(.checklist),
 div.page-template ol,
 .single-post-container ol {
-  list-style: none;
   padding: 0 0 0 20px; }
   div.page-template ul:not(.checklist) li,
   .single-post-container ul:not(.checklist) li,
@@ -3138,12 +3029,15 @@ div.page-template ol,
     padding: 0 0 0 20px !important;
     position: relative; }
 
-div.page-template ul:not(.checklist) li::before,
-.single-post-container ul:not(.checklist) li::before {
-  content: "\2022";
-  font-weight: bold;
-  position: absolute;
-  left: 0; }
+div.page-template ul:not(.checklist),
+.single-post-container ul:not(.checklist) {
+  list-style: none; }
+  div.page-template ul:not(.checklist) li::before,
+  .single-post-container ul:not(.checklist) li::before {
+    content: "\2022";
+    font-weight: bold;
+    position: absolute;
+    left: 0; }
 
 .skewed-overlay {
   display: none; }
@@ -3928,42 +3822,42 @@ footer.site-footer {
   flex: none; }
 
 /* P4 Block Modifications (Blog Page Only) */
-.blog-tiles .article-listing {
+body:not(.single-post) .blog-tiles .article-listing {
   margin-top: 30px; }
-  .blog-tiles .article-listing .page-section-header {
+  body:not(.single-post) .blog-tiles .article-listing .page-section-header {
     opacity: 0;
     position: absolute;
     pointer-events: none; }
-  .blog-tiles .article-listing .article-list-section {
+  body:not(.single-post) .blog-tiles .article-listing .article-list-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 25px; }
-    .blog-tiles .article-listing .article-list-section::after {
+    body:not(.single-post) .blog-tiles .article-listing .article-list-section::after {
       display: none; }
-    .blog-tiles .article-listing .article-list-section .article-list-item {
+    body:not(.single-post) .blog-tiles .article-listing .article-list-section .article-list-item {
       margin: 25px 0;
       flex-direction: column; }
       @media (min-width: 768px) {
-        .blog-tiles .article-listing .article-list-section .article-list-item {
+        body:not(.single-post) .blog-tiles .article-listing .article-list-section .article-list-item {
           width: 48%; } }
-      .blog-tiles .article-listing .article-list-section .article-list-item .article-list-item-body {
+      body:not(.single-post) .blog-tiles .article-listing .article-list-section .article-list-item .article-list-item-body {
         padding-left: 0;
         padding-right: 0; }
         @media (min-width: 768px) {
-          .blog-tiles .article-listing .article-list-section .article-list-item .article-list-item-body {
+          body:not(.single-post) .blog-tiles .article-listing .article-list-section .article-list-item .article-list-item-body {
             padding: 0; } }
-      .blog-tiles .article-listing .article-list-section .article-list-item .article-list-item-image {
+      body:not(.single-post) .blog-tiles .article-listing .article-list-section .article-list-item .article-list-item-image {
         margin-bottom: 15px;
         background: #f7b848; }
-        .blog-tiles .article-listing .article-list-section .article-list-item .article-list-item-image img {
+        body:not(.single-post) .blog-tiles .article-listing .article-list-section .article-list-item .article-list-item-image img {
           -webkit-transition: all 0.3s;
           -moz-transition: all 0.3s;
           -o-transition: all 0.3s;
           transition: all 0.3s; }
-      .blog-tiles .article-listing .article-list-section .article-list-item a:hover img,
-      .blog-tiles .article-listing .article-list-section .article-list-item a:focus img,
-      .blog-tiles .article-listing .article-list-section .article-list-item a:active img {
+      body:not(.single-post) .blog-tiles .article-listing .article-list-section .article-list-item a:hover img,
+      body:not(.single-post) .blog-tiles .article-listing .article-list-section .article-list-item a:focus img,
+      body:not(.single-post) .blog-tiles .article-listing .article-list-section .article-list-item a:active img {
         opacity: 0.5; }
 
 section.four-column {
@@ -3989,28 +3883,23 @@ section.four-column {
 body {
   background: #fff;
   font-family: "Karla", sans-serif; }
-  body.home .logo-container {
-    text-align: center;
-    animation: bgcolorchange 20s infinite;
-    -webkit-animation: bgcolorchange 20s infinite; }
-    body.home .logo-container .header-logo.whale {
-      animation: whalelogocycle 20s infinite;
-      -webkit-animation: whalelogocycle 20s infinite; }
-    body.home .logo-container .header-logo.leaf {
-      animation: leaflogocycle 20s infinite;
-      -webkit-animation: leaflogocycle 20s infinite; }
-    body.home .logo-container .header-logo.gecko {
-      animation: geckologocycle 20s infinite;
-      -webkit-animation: geckologocycle 20s infinite; }
-    body.home .logo-container .header-logo.cloud {
-      animation: cloudlogocycle 20s infinite;
-      -webkit-animation: cloudlogocycle 20s infinite; }
-    body.home .logo-container .header-logo.fish {
-      animation: fishlogocycle 20s infinite;
-      -webkit-animation: fishlogocycle 20s infinite; }
-    body.home .logo-container .header-logo.girl {
-      animation: girllogocycle 20s infinite;
-      -webkit-animation: girllogocycle 20s infinite; }
+  body .logo-container {
+    text-align: center; }
+    body .logo-container .header-logo.logo {
+      animation: logocycle 12s infinite;
+      -webkit-animation: logocycle 12s infinite; }
+    body .logo-container .header-logo.anim1 {
+      animation: anim1cycle 12s infinite;
+      -webkit-animation: anim1cycle 12s infinite; }
+    body .logo-container .header-logo.anim2 {
+      animation: anim2cycle 12s infinite;
+      -webkit-animation: anim2cycle 12s infinite; }
+    body .logo-container .header-logo.anim3 {
+      animation: anim3cycle 12s infinite;
+      -webkit-animation: anim3cycle 12s infinite; }
+    body .logo-container .header-logo.anim4 {
+      animation: anim4cycle 12s infinite;
+      -webkit-animation: anim4cycle 12s infinite; }
 
 /* Potentially temporary */
 .page-header {
@@ -4018,29 +3907,30 @@ body {
 
 /* * */
 div.logo-container {
-  height: 400px;
+  height: 325px;
   text-align: center;
   padding-top: 110px;
   position: relative;
   text-align: left; }
+  @media (min-width: 576px) {
+    div.logo-container {
+      height: 400px; } }
   @media (min-width: 768px) {
     div.logo-container {
-      height: 475px; } }
+      height: 500px; } }
   div.logo-container .content {
     position: absolute;
     left: 50%;
     top: 50%;
-    padding: 0 20px;
     width: 100%;
-    transform: translate(-50%, -50%); }
-    @media (min-width: 576px) {
-      div.logo-container .content {
-        padding: 0 40px; } }
+    transform: translate(-50%, -50%);
+    max-width: 750px; }
     @media (min-width: 768px) {
       div.logo-container .content {
-        width: 700px;
-        padding: 0;
         transform: translate(-50%, -55%); } }
+    @media (min-width: 992px) {
+      div.logo-container .content {
+        transform: translate(-50%, -49%); } }
     div.logo-container .content .logos {
       position: relative; }
     div.logo-container .content .header-logo {
@@ -4050,7 +3940,7 @@ div.logo-container {
       position: absolute;
       top: 0;
       left: 0; }
-      div.logo-container .content .header-logo.whale {
+      div.logo-container .content .header-logo.logo {
         position: relative; }
     div.logo-container .content h2 {
       font-family: "Karla", sans-serif;
@@ -4478,7 +4368,8 @@ body.template-girl {
   body.template-girl .image-block::after {
     background: #f7b848; }
   body.template-girl article.study {
-    background-color: #f7b848; }
+    background-color: #f7b848;
+    color: #1a1a1a; }
     body.template-girl article.study::before {
       border-color: transparent transparent #f7b848 transparent; }
     body.template-girl article.study::after {
@@ -4508,10 +4399,13 @@ body.template-blank {
   position: relative;
   padding-left: 80px;
   margin: auto;
-  max-width: 675px; }
+  max-width: 675px;
+  background-size: 50px;
+  background-repeat: no-repeat; }
   @media (min-width: 768px) {
     .tools-list {
-      padding-left: 110px; } }
+      padding-left: 110px;
+      background-size: 80px; } }
   .tools-list h2 {
     font-weight: bold;
     text-transform: uppercase;
@@ -4520,19 +4414,6 @@ body.template-blank {
     @media (min-width: 768px) {
       .tools-list h2 {
         margin-bottom: 35px; } }
-  .tools-list::before {
-    content: '';
-    background-image: url("../../images/image.svg");
-    background-size: contain;
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 0;
-    left: 0; }
-    @media (min-width: 768px) {
-      .tools-list::before {
-        width: 80px;
-        height: 80px; } }
   .tools-list .tools {
     display: block; }
     @media (min-width: 576px) {
@@ -4647,7 +4528,7 @@ article.single-post-container {
     @media (min-width: 576px) {
       .exercise .exercise-item {
         padding: 25px 25px 0; } }
-    .exercise .exercise-item a:not(.button) {
+    .exercise .exercise-item a[data-toggle] {
       display: block;
       text-decoration: none;
       font-weight: bold;
@@ -4656,16 +4537,16 @@ article.single-post-container {
       margin-bottom: 30px;
       padding-left: 50px; }
       @media (min-width: 576px) {
-        .exercise .exercise-item a:not(.button) {
+        .exercise .exercise-item a[data-toggle] {
           font-size: 1.125rem;
           padding-left: 55px; } }
       @media (min-width: 768px) {
-        .exercise .exercise-item a:not(.button) {
+        .exercise .exercise-item a[data-toggle] {
           padding-left: 85px; } }
       @media (min-width: 992px) {
-        .exercise .exercise-item a:not(.button) {
+        .exercise .exercise-item a[data-toggle] {
           font-size: 1.25rem; } }
-      .exercise .exercise-item a:not(.button) span {
+      .exercise .exercise-item a[data-toggle] span {
         position: absolute;
         width: 25px;
         height: 25px;
@@ -4674,22 +4555,22 @@ article.single-post-container {
         background-color: transparent;
         margin: 8px 0 0 5px; }
         @media (min-width: 576px) {
-          .exercise .exercise-item a:not(.button) span {
+          .exercise .exercise-item a[data-toggle] span {
             font-size: 1.125rem;
             margin: 10px; } }
         @media (min-width: 768px) {
-          .exercise .exercise-item a:not(.button) span {
+          .exercise .exercise-item a[data-toggle] span {
             width: 50px;
             height: 50px; } }
-        html[dir="rtl"] .exercise .exercise-item a:not(.button) span {
+        html[dir="rtl"] .exercise .exercise-item a[data-toggle] span {
           right: auto;
           left: 0; }
-        .exercise .exercise-item a:not(.button) span:before, .exercise .exercise-item a:not(.button) span:after {
+        .exercise .exercise-item a[data-toggle] span:before, .exercise .exercise-item a[data-toggle] span:after {
           content: "";
           position: absolute;
           background-color: #3ea19e;
           transition: all 0.25s ease-out; }
-        .exercise .exercise-item a:not(.button) span:before {
+        .exercise .exercise-item a[data-toggle] span:before {
           top: 0;
           left: 50%;
           width: 4px;
@@ -4697,26 +4578,26 @@ article.single-post-container {
           margin-left: -2px;
           transform: rotate(90deg); }
           @media (min-width: 768px) {
-            .exercise .exercise-item a:not(.button) span:before {
+            .exercise .exercise-item a[data-toggle] span:before {
               width: 6px; } }
-        .exercise .exercise-item a:not(.button) span:after {
+        .exercise .exercise-item a[data-toggle] span:after {
           top: 50%;
           left: 0;
           width: 100%;
           height: 4px;
           margin-top: -2px; }
           @media (min-width: 768px) {
-            .exercise .exercise-item a:not(.button) span:after {
+            .exercise .exercise-item a[data-toggle] span:after {
               top: 48%;
               height: 6px; } }
-      .exercise .exercise-item a:not(.button):hover span:before,
-      .exercise .exercise-item a:not(.button):hover span:after, .exercise .exercise-item a:not(.button):active span:before,
-      .exercise .exercise-item a:not(.button):active span:after, .exercise .exercise-item a:not(.button):focus span:before,
-      .exercise .exercise-item a:not(.button):focus span:after {
+      .exercise .exercise-item a[data-toggle]:hover span:before,
+      .exercise .exercise-item a[data-toggle]:hover span:after, .exercise .exercise-item a[data-toggle]:active span:before,
+      .exercise .exercise-item a[data-toggle]:active span:after, .exercise .exercise-item a[data-toggle]:focus span:before,
+      .exercise .exercise-item a[data-toggle]:focus span:after {
         background-color: #1e3920; }
-      .exercise .exercise-item a:not(.button).collapsed span:before {
+      .exercise .exercise-item a[data-toggle].collapsed span:before {
         transform: rotate(180deg); }
-      .exercise .exercise-item a:not(.button).collapsed span:after {
+      .exercise .exercise-item a[data-toggle].collapsed span:after {
         transform: rotate(180deg); }
     .exercise .exercise-item .collapse, .exercise .exercise-item .collapsing {
       height: 0;

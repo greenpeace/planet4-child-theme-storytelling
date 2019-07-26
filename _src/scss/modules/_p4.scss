@@ -95,7 +95,7 @@
 
 /* P4 Block Modifications (Blog Page Only) */
 
-.blog-tiles{
+body:not(.single-post) .blog-tiles{
 	.article-listing{
 		margin-top: 30px;
 

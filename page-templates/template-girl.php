@@ -16,5 +16,6 @@ $page_meta_data = get_post_meta( $post->ID );
 
 $context['post']                = $post;
 $context['custom_body_classes'] = 'template-girl';
+$context['anim_folder'] = 'anim_girl';
 
 Timber::render( array( 'page.twig' ), $context );

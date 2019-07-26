@@ -4,18 +4,19 @@
 	<div class="logo-container">
 		<div class="content animated fadeIn">
 			<div class="logos">
-				{% include 'blocks/whale_logo.twig' %}
-				{% include 'blocks/leaf_logo.twig' %}
-				{% include 'blocks/gecko_logo.twig' %}
-				{% include 'blocks/cloud_logo.twig' %}
-				{% include 'blocks/fish_logo.twig' %}
-				{% include 'blocks/girl_logo.twig' %}
+				{% include 'blocks/anim_logos.twig' %}
+				{% include 'blocks/anim_1.twig' %}
+				{% include 'blocks/anim_2.twig' %}
+				{% include 'blocks/anim_3.twig' %}
+				{% include 'blocks/anim_4.twig' %}
 			</div>
+			{#
 			{% if fn('is_front_page') %}
-				<!-- <h2>{{ __( 'Write your Story. Change the World.', 'planet4-child-theme-storytelling' ) }}</h2> -->
+				<h2>{{ __( 'Write your Story. Change the World.', 'planet4-child-theme-storytelling' ) }}</h2>
 			{% else %}
 				<h2>{{ post.title }}</h2>
-			{% endif %}
+			{% endif %} 
+			#}
 		</div>
 	</div>
 	<div class="page-template">
