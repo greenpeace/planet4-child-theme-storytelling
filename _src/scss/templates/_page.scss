@@ -98,7 +98,7 @@ div.logo-container{
 	}
 }
 
-div.page-template {
+.page-content {
 	width: 100%;
     margin: 0 0 75px;
     padding: 25px 0;
@@ -192,7 +192,7 @@ ul.checklist {
 
 /* Diagonal div Styles */
 
-div.page-template::before,
+.page-content::before,
 .diagonal-top::before,
 .diagonal-topbottom::before,
 article.single-post-container::before {
@@ -211,7 +211,7 @@ article.single-post-container::before {
 		border-width: 0 100vw 125px 0;
 	}
 }
-div.page-template::after,
+.page-content::after,
 .diagonal-bottom::after,
 .diagonal-topbottom::after,
 article.single-post-container::after {

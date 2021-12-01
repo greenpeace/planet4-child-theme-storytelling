@@ -10,16 +10,9 @@
 				{% include 'blocks/anim_3.twig' %}
 				{% include 'blocks/anim_4.twig' %}
 			</div>
-			{#
-			{% if fn('is_front_page') %}
-				<h2>{{ __( 'Write your Story. Change the World.', 'planet4-child-theme-storytelling' ) }}</h2>
-			{% else %}
-				<h2>{{ post.title }}</h2>
-			{% endif %} 
-			#}
 		</div>
 	</div>
-	<div class="page-template">
+	<div class="page-content">
 		{{ post.content|raw }}
 	</div>
 {% endblock %}

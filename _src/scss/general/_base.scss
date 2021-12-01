@@ -149,7 +149,7 @@ p{
 	text-align: right;
 }
 
-div.page-template .alignleft{
+.page-content .alignleft{
 	display: block;
 	margin: 10px auto;
 
@@ -171,7 +171,7 @@ div.page-template .alignleft{
 	}
 }
 
-div.page-template .alignright{
+.page-content .alignright {
 	display: block;
 	margin: 10px auto;
 
@@ -193,7 +193,7 @@ div.page-template .alignright{
 	}
 }
 
-a{
+a {
 	transition: 0.2s all ease-in-out;
 
 	&:hover,
@@ -204,7 +204,7 @@ a{
 }
 
 button:focus,
-button:hover{
+button:hover {
 	outline: none;
 }
 
@@ -329,9 +329,9 @@ blockquote{
 	}
 }
 
-div.page-template ul:not(.checklist),
+.page-content ul:not(.checklist),
 .single-post-container ul:not(.checklist),
-div.page-template ol,
+.page-content ol,
 .single-post-container ol {
 	padding: 0 0 0 20px;
 
@@ -342,7 +342,7 @@ div.page-template ol,
 	}
 }
 
-div.page-template ul:not(.checklist),
+.page-content ul:not(.checklist),
 .single-post-container ul:not(.checklist) {
 	list-style: none;
 	
