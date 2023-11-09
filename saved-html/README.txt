@@ -1,1 +1,0 @@
-This folder's purpose is to store "fragile" HTML templates created in the WP Admin, just in case something happens to the DB. These files will take the place of custom built templates until further notice (so the content can still be edited via WP Admin). 
